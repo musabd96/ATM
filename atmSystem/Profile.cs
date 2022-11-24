@@ -18,9 +18,10 @@ namespace atmSystem
             InitializeComponent();
 
 
-            
-            
-            
+
+            //change pin panel unvisible
+            pnlCchanPin.Visible = false;
+
 
 
             picMenuBar.Dock = DockStyle.Right;
@@ -36,7 +37,7 @@ namespace atmSystem
         {
             picMenuBar.Dock = DockStyle.Right;
             lbMenuBar.Text = "";
-            pnlMenuBar.Size = new Size(130, 99);
+            pnlMenuBar.Size = new Size(130, 101);
             btnHome.Visible = false;
 
         }
@@ -52,6 +53,7 @@ namespace atmSystem
             //If the deposite panel open the home btn in menu bar will disable or enable if not
 
             btnProfile.Enabled = false;
+
 
         }
 
@@ -77,7 +79,7 @@ namespace atmSystem
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-
+            pnlCchanPin.Visible = false;
         }
 
         private void btnService_Click(object sender, EventArgs e)
@@ -112,6 +114,14 @@ namespace atmSystem
             //Close menu bar 
 
             menuBarClose();
+        }
+
+        private void btnTrans_Click(object sender, EventArgs e)
+        {
+
+
+            pnlCchanPin.Visible = true;
+
         }
     }
 

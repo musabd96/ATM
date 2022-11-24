@@ -67,6 +67,8 @@
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnService = new System.Windows.Forms.Button();
+            this.pnlCchanPin = new System.Windows.Forms.Panel();
+            this.btnTrans = new System.Windows.Forms.Button();
             this.pnlProfWh.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -75,31 +77,24 @@
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
+            this.pnlCchanPin.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlProfWh
             // 
+            this.pnlProfWh.Controls.Add(this.btnTrans);
+            this.pnlProfWh.Controls.Add(this.pnlCchanPin);
             this.pnlProfWh.Controls.Add(this.panel1);
             this.pnlProfWh.Controls.Add(this.lbAcc);
             this.pnlProfWh.Controls.Add(this.label7);
             this.pnlProfWh.Controls.Add(this.label5);
-            this.pnlProfWh.Controls.Add(this.btnSave);
             this.pnlProfWh.Controls.Add(this.label6);
             this.pnlProfWh.Controls.Add(this.label3);
             this.pnlProfWh.Controls.Add(this.lbaddress);
             this.pnlProfWh.Controls.Add(this.lbContact);
             this.pnlProfWh.Controls.Add(this.lbEmail);
-            this.pnlProfWh.Controls.Add(this.panel4);
-            this.pnlProfWh.Controls.Add(this.panel2);
-            this.pnlProfWh.Controls.Add(this.pnlWithAmt);
             this.pnlProfWh.Controls.Add(this.lbname);
             this.pnlProfWh.Controls.Add(this.lbFullName);
-            this.pnlProfWh.Controls.Add(this.label15);
-            this.pnlProfWh.Controls.Add(this.label14);
-            this.pnlProfWh.Controls.Add(this.lbstarWd);
-            this.pnlProfWh.Controls.Add(this.label13);
-            this.pnlProfWh.Controls.Add(this.label12);
-            this.pnlProfWh.Controls.Add(this.lbchangePin);
             this.pnlProfWh.Controls.Add(this.label4);
             this.pnlProfWh.Controls.Add(this.lbAccNr);
             this.pnlProfWh.Controls.Add(this.lbLogin);
@@ -157,7 +152,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(537, 266);
+            this.btnSave.Location = new System.Drawing.Point(145, 162);
             this.btnSave.Margin = new System.Windows.Forms.Padding(0);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(101, 43);
@@ -221,7 +216,7 @@
             this.panel4.BackColor = System.Drawing.Color.SteelBlue;
             this.panel4.Controls.Add(this.txtConfPin);
             this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(521, 219);
+            this.panel4.Location = new System.Drawing.Point(129, 115);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.panel4.Size = new System.Drawing.Size(141, 30);
@@ -242,7 +237,7 @@
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.Controls.Add(this.textNewPin);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(521, 181);
+            this.panel2.Location = new System.Drawing.Point(129, 77);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.panel2.Size = new System.Drawing.Size(141, 30);
@@ -263,7 +258,7 @@
             this.pnlWithAmt.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlWithAmt.Controls.Add(this.txtOldPin);
             this.pnlWithAmt.ForeColor = System.Drawing.Color.White;
-            this.pnlWithAmt.Location = new System.Drawing.Point(521, 145);
+            this.pnlWithAmt.Location = new System.Drawing.Point(129, 41);
             this.pnlWithAmt.Name = "pnlWithAmt";
             this.pnlWithAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.pnlWithAmt.Size = new System.Drawing.Size(141, 30);
@@ -303,7 +298,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(524, 188);
+            this.label15.Location = new System.Drawing.Point(132, 84);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(0, 24);
             this.label15.TabIndex = 0;
@@ -312,7 +307,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(398, 227);
+            this.label14.Location = new System.Drawing.Point(6, 123);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(117, 22);
             this.label14.TabIndex = 2;
@@ -322,7 +317,7 @@
             // 
             this.lbstarWd.AutoSize = true;
             this.lbstarWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbstarWd.Location = new System.Drawing.Point(521, 152);
+            this.lbstarWd.Location = new System.Drawing.Point(129, 48);
             this.lbstarWd.Name = "lbstarWd";
             this.lbstarWd.Size = new System.Drawing.Size(0, 24);
             this.lbstarWd.TabIndex = 0;
@@ -331,7 +326,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(446, 189);
+            this.label13.Location = new System.Drawing.Point(54, 85);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(69, 22);
             this.label13.TabIndex = 2;
@@ -341,7 +336,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(427, 153);
+            this.label12.Location = new System.Drawing.Point(35, 49);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 22);
             this.label12.TabIndex = 2;
@@ -351,7 +346,7 @@
             // 
             this.lbchangePin.AutoSize = true;
             this.lbchangePin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbchangePin.Location = new System.Drawing.Point(517, 110);
+            this.lbchangePin.Location = new System.Drawing.Point(125, 6);
             this.lbchangePin.Name = "lbchangePin";
             this.lbchangePin.Size = new System.Drawing.Size(118, 22);
             this.lbchangePin.TabIndex = 2;
@@ -540,6 +535,39 @@
             this.btnService.UseVisualStyleBackColor = false;
             this.btnService.Click += new System.EventHandler(this.btnService_Click);
             // 
+            // pnlCchanPin
+            // 
+            this.pnlCchanPin.Controls.Add(this.lbchangePin);
+            this.pnlCchanPin.Controls.Add(this.label12);
+            this.pnlCchanPin.Controls.Add(this.label13);
+            this.pnlCchanPin.Controls.Add(this.lbstarWd);
+            this.pnlCchanPin.Controls.Add(this.label14);
+            this.pnlCchanPin.Controls.Add(this.btnSave);
+            this.pnlCchanPin.Controls.Add(this.label15);
+            this.pnlCchanPin.Controls.Add(this.pnlWithAmt);
+            this.pnlCchanPin.Controls.Add(this.panel2);
+            this.pnlCchanPin.Controls.Add(this.panel4);
+            this.pnlCchanPin.Location = new System.Drawing.Point(398, 119);
+            this.pnlCchanPin.Name = "pnlCchanPin";
+            this.pnlCchanPin.Size = new System.Drawing.Size(294, 232);
+            this.pnlCchanPin.TabIndex = 6;
+            // 
+            // btnTrans
+            // 
+            this.btnTrans.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnTrans.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrans.FlatAppearance.BorderSize = 0;
+            this.btnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrans.ForeColor = System.Drawing.Color.White;
+            this.btnTrans.Location = new System.Drawing.Point(72, 276);
+            this.btnTrans.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTrans.Name = "btnTrans";
+            this.btnTrans.Size = new System.Drawing.Size(105, 46);
+            this.btnTrans.TabIndex = 7;
+            this.btnTrans.Text = "Change Pin";
+            this.btnTrans.UseVisualStyleBackColor = false;
+            this.btnTrans.Click += new System.EventHandler(this.btnTrans_Click);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -571,6 +599,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).EndInit();
+            this.pnlCchanPin.ResumeLayout(false);
+            this.pnlCchanPin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -616,5 +646,7 @@
         private System.Windows.Forms.Label lbstarWd;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Panel pnlCchanPin;
+        private System.Windows.Forms.Button btnTrans;
     }
 }
