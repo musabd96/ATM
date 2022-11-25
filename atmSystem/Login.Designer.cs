@@ -137,7 +137,7 @@
             this.txtPinConf.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPinConf.Location = new System.Drawing.Point(0, 0);
             this.txtPinConf.Name = "txtPinConf";
-            this.txtPinConf.Size = new System.Drawing.Size(300, 29);
+            this.txtPinConf.Size = new System.Drawing.Size(300, 35);
             this.txtPinConf.TabIndex = 5;
             // 
             // panel4
@@ -158,7 +158,7 @@
             this.txtPinReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPinReg.Location = new System.Drawing.Point(0, 0);
             this.txtPinReg.Name = "txtPinReg";
-            this.txtPinReg.Size = new System.Drawing.Size(300, 29);
+            this.txtPinReg.Size = new System.Drawing.Size(300, 35);
             this.txtPinReg.TabIndex = 4;
             // 
             // panel2
@@ -179,7 +179,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(0, 0);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(300, 29);
+            this.txtEmail.Size = new System.Drawing.Size(300, 35);
             this.txtEmail.TabIndex = 2;
             // 
             // panel3
@@ -200,7 +200,7 @@
             this.txtAccNrReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccNrReg.Location = new System.Drawing.Point(0, 0);
             this.txtAccNrReg.Name = "txtAccNrReg";
-            this.txtAccNrReg.Size = new System.Drawing.Size(300, 29);
+            this.txtAccNrReg.Size = new System.Drawing.Size(300, 35);
             this.txtAccNrReg.TabIndex = 3;
             // 
             // panel1
@@ -221,7 +221,7 @@
             this.txtFullName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFullName.Location = new System.Drawing.Point(0, 0);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(300, 29);
+            this.txtFullName.Size = new System.Drawing.Size(300, 35);
             this.txtFullName.TabIndex = 1;
             // 
             // btnClose
@@ -258,7 +258,7 @@
             this.lbInv.ForeColor = System.Drawing.Color.Red;
             this.lbInv.Location = new System.Drawing.Point(128, 55);
             this.lbInv.Name = "lbInv";
-            this.lbInv.Size = new System.Drawing.Size(0, 15);
+            this.lbInv.Size = new System.Drawing.Size(0, 18);
             this.lbInv.TabIndex = 6;
             // 
             // lbNot
@@ -268,7 +268,7 @@
             this.lbNot.ForeColor = System.Drawing.Color.Red;
             this.lbNot.Location = new System.Drawing.Point(28, 364);
             this.lbNot.Name = "lbNot";
-            this.lbNot.Size = new System.Drawing.Size(0, 15);
+            this.lbNot.Size = new System.Drawing.Size(0, 18);
             this.lbNot.TabIndex = 6;
             // 
             // label6
@@ -277,7 +277,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(27, 251);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 24);
+            this.label6.Size = new System.Drawing.Size(48, 29);
             this.label6.TabIndex = 6;
             this.label6.Text = "Pin";
             // 
@@ -287,7 +287,7 @@
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmail.Location = new System.Drawing.Point(25, 135);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(57, 24);
+            this.lbEmail.Size = new System.Drawing.Size(74, 29);
             this.lbEmail.TabIndex = 6;
             this.lbEmail.Text = "Email";
             // 
@@ -297,7 +297,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(28, 309);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 24);
+            this.label7.Size = new System.Drawing.Size(138, 29);
             this.label7.TabIndex = 7;
             this.label7.Text = "Confirm Pin";
             // 
@@ -307,7 +307,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(26, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
+            this.label3.Size = new System.Drawing.Size(98, 29);
             this.label3.TabIndex = 7;
             this.label3.Text = "Account";
             // 
@@ -317,7 +317,7 @@
             this.lbFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFName.Location = new System.Drawing.Point(24, 77);
             this.lbFName.Name = "lbFName";
-            this.lbFName.Size = new System.Drawing.Size(97, 24);
+            this.lbFName.Size = new System.Drawing.Size(124, 29);
             this.lbFName.TabIndex = 7;
             this.lbFName.Text = "Full Name";
             // 
@@ -327,7 +327,7 @@
             this.lbSingUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSingUp.Location = new System.Drawing.Point(33, 13);
             this.lbSingUp.Name = "lbSingUp";
-            this.lbSingUp.Size = new System.Drawing.Size(95, 25);
+            this.lbSingUp.Size = new System.Drawing.Size(117, 31);
             this.lbSingUp.TabIndex = 8;
             this.lbSingUp.Text = "Sing Up";
             // 
@@ -337,7 +337,7 @@
             this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnkRegister.Location = new System.Drawing.Point(134, 387);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(92, 25);
+            this.LnkRegister.Size = new System.Drawing.Size(116, 31);
             this.LnkRegister.TabIndex = 4;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Register";
@@ -376,7 +376,7 @@
             this.txtPin.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPin.Location = new System.Drawing.Point(0, 0);
             this.txtPin.Name = "txtPin";
-            this.txtPin.Size = new System.Drawing.Size(300, 29);
+            this.txtPin.Size = new System.Drawing.Size(300, 35);
             this.txtPin.TabIndex = 2;
             // 
             // pnlAccNr
@@ -397,7 +397,7 @@
             this.txtAccNr.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccNr.Location = new System.Drawing.Point(0, 0);
             this.txtAccNr.Name = "txtAccNr";
-            this.txtAccNr.Size = new System.Drawing.Size(300, 29);
+            this.txtAccNr.Size = new System.Drawing.Size(300, 35);
             this.txtAccNr.TabIndex = 1;
             // 
             // lbInvalid
@@ -407,7 +407,7 @@
             this.lbInvalid.ForeColor = System.Drawing.Color.Red;
             this.lbInvalid.Location = new System.Drawing.Point(100, 91);
             this.lbInvalid.Name = "lbInvalid";
-            this.lbInvalid.Size = new System.Drawing.Size(0, 20);
+            this.lbInvalid.Size = new System.Drawing.Size(0, 25);
             this.lbInvalid.TabIndex = 0;
             // 
             // lbNoAcc
@@ -416,7 +416,7 @@
             this.lbNoAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNoAcc.Location = new System.Drawing.Point(88, 355);
             this.lbNoAcc.Name = "lbNoAcc";
-            this.lbNoAcc.Size = new System.Drawing.Size(170, 20);
+            this.lbNoAcc.Size = new System.Drawing.Size(209, 25);
             this.lbNoAcc.TabIndex = 0;
             this.lbNoAcc.Text = "Don\'t have an Account";
             // 
@@ -426,7 +426,7 @@
             this.lbPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPin.Location = new System.Drawing.Point(34, 217);
             this.lbPin.Name = "lbPin";
-            this.lbPin.Size = new System.Drawing.Size(42, 24);
+            this.lbPin.Size = new System.Drawing.Size(54, 29);
             this.lbPin.TabIndex = 0;
             this.lbPin.Text = "Pin:";
             // 
@@ -436,7 +436,7 @@
             this.lbAccNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccNr.Location = new System.Drawing.Point(33, 131);
             this.lbAccNr.Name = "lbAccNr";
-            this.lbAccNr.Size = new System.Drawing.Size(105, 24);
+            this.lbAccNr.Size = new System.Drawing.Size(130, 29);
             this.lbAccNr.TabIndex = 0;
             this.lbAccNr.Text = "Account Nr";
             // 
@@ -446,7 +446,7 @@
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogin.Location = new System.Drawing.Point(33, 55);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(70, 25);
+            this.lbLogin.Size = new System.Drawing.Size(85, 31);
             this.lbLogin.TabIndex = 0;
             this.lbLogin.Text = "Login";
             // 
@@ -468,7 +468,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(59, 156);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 73);
+            this.label1.Size = new System.Drawing.Size(211, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "ATM";
             // 
@@ -478,13 +478,13 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(88, 233);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 24);
+            this.label2.Size = new System.Drawing.Size(104, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 450);

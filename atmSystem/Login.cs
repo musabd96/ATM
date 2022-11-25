@@ -55,7 +55,7 @@ namespace atmSystem
              * -fullName
              * -email
              * -balance
-             * 
+             * -transaction table
              * 
              * 
              * 
