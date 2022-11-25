@@ -4,8 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Security;
 using System.Reflection.Emit;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -184,9 +188,6 @@ namespace atmSystem
         {
             // TextBox - withdrawal home.cs[Design] window
         }
-
-
-
         private void label3_Click(object sender, EventArgs e)
         {
             // invalid  * - "label" withdrawal home.cs[Design] window
@@ -206,24 +207,24 @@ namespace atmSystem
         {
             // * -  withdrawal home.cs[Design] window
         }
-
+        DateTime start;
         private void btnOkeyWith_Click_1(object sender, EventArgs e)
         {
-                // show entered withdrawal - withdrawal home.cs[Design] window
+            // show entered withdrawal - withdrawal home.cs[Design] window
                 int a;
                 a = int.Parse(txtcashWd.Text);
-
-                if (a >= 10000)
-                {
-                    lbinvWd.Show();
-                    lbstarWd.Show();
-                    lbMaxWd.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Du tog ut " + a);
-                }
+            
+            if (a >= 10000)
+            {
+                lbinvWd.Show();
+                lbstarWd.Show();
+                lbMaxWd.Show();
             }
+            else
+            {
+                 MessageBox.Show("Du tog ut " + a);
+            }
+         }
     }
         
 }
