@@ -207,7 +207,6 @@ namespace atmSystem
         {
             // * -  withdrawal home.cs[Design] window
         }
-        DateTime start;
         private void btnOkeyWith_Click_1(object sender, EventArgs e)
         {
             // show entered withdrawal - withdrawal home.cs[Design] window
