@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace atmSystem
 {
@@ -178,6 +180,50 @@ namespace atmSystem
 
             menuBarClose();
         }
+        private void txtcashWd_TextChanged(object sender, EventArgs e)
+        {
+            // TextBox - withdrawal home.cs[Design] window
+        }
+
+
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            // invalid  * - "label" withdrawal home.cs[Design] window
+        }
+
+        private void lbMaxWd_Click(object sender, EventArgs e)
+        {
+            // Max 10 000 SEK - withdrawal home.cs[Design] window
+        }
+
+        private void lbinvWd_Click(object sender, EventArgs e)
+        {
+            // invalid - withdrawal home.cs[Design] window
+        }
+
+        private void lbstarWd_Click(object sender, EventArgs e)
+        {
+            // * -  withdrawal home.cs[Design] window
+        }
+
+        private void btnOkeyWith_Click_1(object sender, EventArgs e)
+        {
+                // show entered withdrawal - withdrawal home.cs[Design] window
+                int a;
+                a = int.Parse(txtcashWd.Text);
+
+                if (a >= 10000)
+                {
+                    lbinvWd.Show();
+                    lbstarWd.Show();
+                    lbMaxWd.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Du tog ut " + a);
+                }
+            }
     }
         
 }

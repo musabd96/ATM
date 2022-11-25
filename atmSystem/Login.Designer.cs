@@ -35,6 +35,7 @@
             this.txtPinConf = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtPinReg = new System.Windows.Forms.TextBox();
+            this.lbNot = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -42,8 +43,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.lbInv = new System.Windows.Forms.Label();
-            this.lbNot = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.pnlLogIn.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -166,6 +166,17 @@
             this.txtPinReg.Size = new System.Drawing.Size(300, 29);
             this.txtPinReg.TabIndex = 4;
             // 
+            // lbNot
+            // 
+            this.lbNot.AutoSize = true;
+            this.lbNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNot.ForeColor = System.Drawing.Color.Red;
+            this.lbNot.Location = new System.Drawing.Point(33, 369);
+            this.lbNot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNot.Name = "lbNot";
+            this.lbNot.Size = new System.Drawing.Size(0, 15);
+            this.lbNot.TabIndex = 6;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
@@ -247,6 +258,22 @@
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRegister.FlatAppearance.BorderSize = 0;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(76, 395);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(220, 35);
+            this.btnRegister.TabIndex = 6;
+            this.btnRegister.TabStop = false;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // lbInv
             // 
             this.lbInv.AutoSize = true;
@@ -257,17 +284,6 @@
             this.lbInv.Name = "lbInv";
             this.lbInv.Size = new System.Drawing.Size(0, 15);
             this.lbInv.TabIndex = 6;
-            // 
-            // lbNot
-            // 
-            this.lbNot.AutoSize = true;
-            this.lbNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNot.ForeColor = System.Drawing.Color.Red;
-            this.lbNot.Location = new System.Drawing.Point(33, 369);
-            this.lbNot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbNot.Name = "lbNot";
-            this.lbNot.Size = new System.Drawing.Size(0, 15);
-            this.lbNot.TabIndex = 6;
             // 
             // label6
             // 
@@ -497,22 +513,6 @@
             this.label2.Size = new System.Drawing.Size(83, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(76, 395);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(0);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(220, 35);
-            this.btnRegister.TabIndex = 6;
-            this.btnRegister.TabStop = false;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // Login
             // 

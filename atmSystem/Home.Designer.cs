@@ -497,6 +497,7 @@
             this.btnOkeyWith.TabIndex = 3;
             this.btnOkeyWith.Text = "Ok";
             this.btnOkeyWith.UseVisualStyleBackColor = false;
+            this.btnOkeyWith.Click += new System.EventHandler(this.btnOkeyWith_Click_1);
             // 
             // btn500
             // 
@@ -534,6 +535,7 @@
             this.txtcashWd.Name = "txtcashWd";
             this.txtcashWd.Size = new System.Drawing.Size(85, 29);
             this.txtcashWd.TabIndex = 1;
+            this.txtcashWd.TextChanged += new System.EventHandler(this.txtcashWd_TextChanged);
             // 
             // lbMaxWd
             // 
@@ -544,6 +546,7 @@
             this.lbMaxWd.Size = new System.Drawing.Size(280, 16);
             this.lbMaxWd.TabIndex = 0;
             this.lbMaxWd.Text = "Maximum amount withdaw per day 10 000 SEK";
+            this.lbMaxWd.Visible = false;
             // 
             // lbNoAcc
             // 
@@ -565,6 +568,8 @@
             this.lbstarWd.Size = new System.Drawing.Size(18, 24);
             this.lbstarWd.TabIndex = 0;
             this.lbstarWd.Text = "*";
+            this.lbstarWd.Visible = false;
+            this.lbstarWd.Click += new System.EventHandler(this.lbstarWd_Click);
             // 
             // lbinvWd
             // 
@@ -576,6 +581,8 @@
             this.lbinvWd.Size = new System.Drawing.Size(46, 16);
             this.lbinvWd.TabIndex = 0;
             this.lbinvWd.Text = "invalid";
+            this.lbinvWd.Visible = false;
+            this.lbinvWd.Click += new System.EventHandler(this.lbinvWd_Click);
             // 
             // label9
             // 
