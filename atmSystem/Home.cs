@@ -187,6 +187,9 @@ namespace atmSystem
         private void txtcashWd_TextChanged(object sender, EventArgs e)
         {
             // TextBox - withdrawal home.cs[Design] window
+            lbinvWd.Hide();
+            lbstarWd.Hide();
+            lbMaxWd.Hide();
         }
         private void label3_Click(object sender, EventArgs e)
         {
@@ -219,15 +222,16 @@ namespace atmSystem
                 lbstarWd.Show();
                 lbMaxWd.Show();
             }
-            if(a == 69)
-            {
-                System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=d1YBv2mWll0");
-            }
             else
             {
                  MessageBox.Show("Du tog ut " + a);
             }
-         }
+            //IDK :D
+            if (a == 69)
+            {
+                System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=d1YBv2mWll0");
+            }
+        }
     }
         
 }
