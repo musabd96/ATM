@@ -226,11 +226,7 @@ namespace atmSystem
             {
                  MessageBox.Show("Du tog ut " + a);
             }
-            //IDK :D
-            if (a == 69)
-            {
-                System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=d1YBv2mWll0");
-            }
+            
         }
     }
         

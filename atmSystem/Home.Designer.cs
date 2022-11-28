@@ -144,7 +144,7 @@
             this.lbMenuBar.ForeColor = System.Drawing.Color.White;
             this.lbMenuBar.Location = new System.Drawing.Point(54, 12);
             this.lbMenuBar.Name = "lbMenuBar";
-            this.lbMenuBar.Size = new System.Drawing.Size(59, 24);
+            this.lbMenuBar.Size = new System.Drawing.Size(73, 29);
             this.lbMenuBar.TabIndex = 0;
             this.lbMenuBar.Text = "Menu";
             // 
@@ -282,7 +282,7 @@
             this.lbstarDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbstarDp.Location = new System.Drawing.Point(183, 171);
             this.lbstarDp.Name = "lbstarDp";
-            this.lbstarDp.Size = new System.Drawing.Size(18, 24);
+            this.lbstarDp.Size = new System.Drawing.Size(24, 29);
             this.lbstarDp.TabIndex = 9;
             this.lbstarDp.Text = "*";
             // 
@@ -293,7 +293,7 @@
             this.lbinvDp.ForeColor = System.Drawing.Color.Red;
             this.lbinvDp.Location = new System.Drawing.Point(116, 171);
             this.lbinvDp.Name = "lbinvDp";
-            this.lbinvDp.Size = new System.Drawing.Size(49, 16);
+            this.lbinvDp.Size = new System.Drawing.Size(61, 20);
             this.lbinvDp.TabIndex = 10;
             this.lbinvDp.Text = "Invalid ";
             // 
@@ -315,7 +315,7 @@
             this.txtAmDep.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmDep.Location = new System.Drawing.Point(0, 0);
             this.txtAmDep.Name = "txtAmDep";
-            this.txtAmDep.Size = new System.Drawing.Size(300, 29);
+            this.txtAmDep.Size = new System.Drawing.Size(300, 35);
             this.txtAmDep.TabIndex = 3;
             // 
             // btnOkey
@@ -339,7 +339,7 @@
             this.lbAccNrDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccNrDep.Location = new System.Drawing.Point(140, 16);
             this.lbAccNrDep.Name = "lbAccNrDep";
-            this.lbAccNrDep.Size = new System.Drawing.Size(27, 24);
+            this.lbAccNrDep.Size = new System.Drawing.Size(34, 29);
             this.lbAccNrDep.TabIndex = 6;
             this.lbAccNrDep.Text = "nr";
             // 
@@ -349,7 +349,7 @@
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmail.Location = new System.Drawing.Point(12, 16);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(110, 24);
+            this.lbEmail.Size = new System.Drawing.Size(136, 29);
             this.lbEmail.TabIndex = 6;
             this.lbEmail.Text = "Account Nr:";
             // 
@@ -359,7 +359,7 @@
             this.lbMaxDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaxDp.Location = new System.Drawing.Point(221, 204);
             this.lbMaxDp.Name = "lbMaxDp";
-            this.lbMaxDp.Size = new System.Drawing.Size(224, 13);
+            this.lbMaxDp.Size = new System.Drawing.Size(298, 17);
             this.lbMaxDp.TabIndex = 7;
             this.lbMaxDp.Text = "Maximum amount deposit per day 10 000 SEK";
             // 
@@ -369,7 +369,7 @@
             this.lbAmDip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAmDip.Location = new System.Drawing.Point(203, 140);
             this.lbAmDip.Name = "lbAmDip";
-            this.lbAmDip.Size = new System.Drawing.Size(142, 24);
+            this.lbAmDip.Size = new System.Drawing.Size(180, 29);
             this.lbAmDip.TabIndex = 7;
             this.lbAmDip.Text = "Amount deposit";
             // 
@@ -379,7 +379,7 @@
             this.lbBalDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBalDep.Location = new System.Drawing.Point(134, 41);
             this.lbBalDep.Name = "lbBalDep";
-            this.lbBalDep.Size = new System.Drawing.Size(73, 24);
+            this.lbBalDep.Size = new System.Drawing.Size(92, 29);
             this.lbBalDep.TabIndex = 7;
             this.lbBalDep.Text = "amount";
             // 
@@ -389,7 +389,7 @@
             this.lbFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFName.Location = new System.Drawing.Point(42, 41);
             this.lbFName.Name = "lbFName";
-            this.lbFName.Size = new System.Drawing.Size(83, 24);
+            this.lbFName.Size = new System.Drawing.Size(106, 29);
             this.lbFName.TabIndex = 7;
             this.lbFName.Text = "Balance:";
             // 
@@ -399,7 +399,7 @@
             this.lbDepo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDepo.Location = new System.Drawing.Point(275, 6);
             this.lbDepo.Name = "lbDepo";
-            this.lbDepo.Size = new System.Drawing.Size(122, 37);
+            this.lbDepo.Size = new System.Drawing.Size(150, 46);
             this.lbDepo.TabIndex = 8;
             this.lbDepo.Text = "Diposit";
             // 
@@ -533,7 +533,7 @@
             this.txtcashWd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcashWd.Location = new System.Drawing.Point(0, 0);
             this.txtcashWd.Name = "txtcashWd";
-            this.txtcashWd.Size = new System.Drawing.Size(85, 29);
+            this.txtcashWd.Size = new System.Drawing.Size(85, 35);
             this.txtcashWd.TabIndex = 1;
             this.txtcashWd.TextChanged += new System.EventHandler(this.txtcashWd_TextChanged);
             // 
@@ -543,7 +543,7 @@
             this.lbMaxWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaxWd.Location = new System.Drawing.Point(193, 235);
             this.lbMaxWd.Name = "lbMaxWd";
-            this.lbMaxWd.Size = new System.Drawing.Size(280, 16);
+            this.lbMaxWd.Size = new System.Drawing.Size(359, 20);
             this.lbMaxWd.TabIndex = 0;
             this.lbMaxWd.Text = "Maximum amount withdaw per day 10 000 SEK";
             this.lbMaxWd.Visible = false;
@@ -554,7 +554,7 @@
             this.lbNoAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNoAcc.Location = new System.Drawing.Point(225, 149);
             this.lbNoAcc.Name = "lbNoAcc";
-            this.lbNoAcc.Size = new System.Drawing.Size(207, 20);
+            this.lbNoAcc.Size = new System.Drawing.Size(252, 25);
             this.lbNoAcc.TabIndex = 0;
             this.lbNoAcc.Text = "Enter the amount withdraw: ";
             // 
@@ -565,7 +565,7 @@
             this.lbstarWd.ForeColor = System.Drawing.Color.Red;
             this.lbstarWd.Location = new System.Drawing.Point(273, 200);
             this.lbstarWd.Name = "lbstarWd";
-            this.lbstarWd.Size = new System.Drawing.Size(18, 24);
+            this.lbstarWd.Size = new System.Drawing.Size(24, 29);
             this.lbstarWd.TabIndex = 0;
             this.lbstarWd.Text = "*";
             this.lbstarWd.Visible = false;
@@ -578,7 +578,7 @@
             this.lbinvWd.ForeColor = System.Drawing.Color.Red;
             this.lbinvWd.Location = new System.Drawing.Point(221, 201);
             this.lbinvWd.Name = "lbinvWd";
-            this.lbinvWd.Size = new System.Drawing.Size(46, 16);
+            this.lbinvWd.Size = new System.Drawing.Size(56, 20);
             this.lbinvWd.TabIndex = 0;
             this.lbinvWd.Text = "invalid";
             this.lbinvWd.Visible = false;
@@ -590,7 +590,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(377, 198);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 24);
+            this.label9.Size = new System.Drawing.Size(61, 29);
             this.label9.TabIndex = 0;
             this.label9.Text = "SEK";
             // 
@@ -600,7 +600,7 @@
             this.lbAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAcc.Location = new System.Drawing.Point(132, 66);
             this.lbAcc.Name = "lbAcc";
-            this.lbAcc.Size = new System.Drawing.Size(27, 24);
+            this.lbAcc.Size = new System.Drawing.Size(34, 29);
             this.lbAcc.TabIndex = 0;
             this.lbAcc.Text = "nr";
             // 
@@ -610,7 +610,7 @@
             this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbname.Location = new System.Drawing.Point(128, 30);
             this.lbname.Name = "lbname";
-            this.lbname.Size = new System.Drawing.Size(58, 24);
+            this.lbname.Size = new System.Drawing.Size(73, 29);
             this.lbname.TabIndex = 0;
             this.lbname.Text = "name";
             // 
@@ -620,7 +620,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(68, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 24);
+            this.label4.Size = new System.Drawing.Size(76, 29);
             this.label4.TabIndex = 0;
             this.label4.Text = "Hello!";
             // 
@@ -630,7 +630,7 @@
             this.lbAccNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccNr.Location = new System.Drawing.Point(9, 66);
             this.lbAccNr.Name = "lbAccNr";
-            this.lbAccNr.Size = new System.Drawing.Size(110, 24);
+            this.lbAccNr.Size = new System.Drawing.Size(136, 29);
             this.lbAccNr.TabIndex = 0;
             this.lbAccNr.Text = "Account Nr:";
             // 
@@ -640,7 +640,7 @@
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogin.Location = new System.Drawing.Point(265, 16);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(157, 37);
+            this.lbLogin.Size = new System.Drawing.Size(195, 46);
             this.lbLogin.TabIndex = 0;
             this.lbLogin.Text = "Welcome";
             // 
@@ -663,7 +663,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(259, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 73);
+            this.label1.Size = new System.Drawing.Size(211, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "ATM";
             // 
@@ -673,13 +673,13 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(314, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 24);
+            this.label2.Size = new System.Drawing.Size(104, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 450);
