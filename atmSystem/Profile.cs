@@ -19,14 +19,9 @@ namespace atmSystem
 
 
 
-            //change pin panel unvisible
-            pnlCchanPin.Visible = false;
-
-
-
             picMenuBar.Dock = DockStyle.Right;
             lbMenuBar.Text = "";
-            pnlMenuBar.Size = new Size(130, 101);
+            pnlMenuBar.Size = new Size(130, 100);
             btnHome.Visible = false;
         }
 
@@ -37,7 +32,7 @@ namespace atmSystem
         {
             picMenuBar.Dock = DockStyle.Right;
             lbMenuBar.Text = "";
-            pnlMenuBar.Size = new Size(130, 101);
+            pnlMenuBar.Size = new Size(130, 100);
             btnHome.Visible = false;
 
         }
@@ -77,29 +72,16 @@ namespace atmSystem
             this.Close();
         }
 
-        private void btnDeposit_Click(object sender, EventArgs e)
-        {
-            pnlCchanPin.Visible = false;
-        }
+       
 
         private void btnService_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hi! 'customer Name'. Thank you for you contact us!", "Customer Server");
         }
 
-        private void plnAtmProf_Paint(object sender, PaintEventArgs e)
-        {
-            //Close menu bar 
+       
 
-            menuBarClose();
-        }
-
-        private void pnlProfWh_Paint(object sender, PaintEventArgs e)
-        {
-            //Close menu bar 
-
-            menuBarClose();
-        }
+       
 
         private void plnAtmProf_Click(object sender, EventArgs e)
         {
@@ -116,13 +98,7 @@ namespace atmSystem
             menuBarClose();
         }
 
-        private void btnTrans_Click(object sender, EventArgs e)
-        {
-
-
-            pnlCchanPin.Visible = true;
-
-        }
+        
     }
 
        

@@ -65,6 +65,7 @@
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbPinNotMtch = new System.Windows.Forms.Label();
             this.pnlLogIn.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -90,10 +91,10 @@
             this.pnlLogIn.Controls.Add(this.lbPin);
             this.pnlLogIn.Controls.Add(this.lbAccNr);
             this.pnlLogIn.Controls.Add(this.lbLogin);
-            this.pnlLogIn.Location = new System.Drawing.Point(311, 2);
+            this.pnlLogIn.Location = new System.Drawing.Point(314, 5);
             this.pnlLogIn.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLogIn.Name = "pnlLogIn";
-            this.pnlLogIn.Size = new System.Drawing.Size(389, 448);
+            this.pnlLogIn.Size = new System.Drawing.Size(380, 440);
             this.pnlLogIn.TabIndex = 4;
             // 
             // pnlRegister
@@ -107,6 +108,7 @@
             this.pnlRegister.Controls.Add(this.btnClose);
             this.pnlRegister.Controls.Add(this.btnRegister);
             this.pnlRegister.Controls.Add(this.lbInv);
+            this.pnlRegister.Controls.Add(this.lbPinNotMtch);
             this.pnlRegister.Controls.Add(this.label6);
             this.pnlRegister.Controls.Add(this.lbEmail);
             this.pnlRegister.Controls.Add(this.label7);
@@ -114,10 +116,10 @@
             this.pnlRegister.Controls.Add(this.lbFName);
             this.pnlRegister.Controls.Add(this.lbSingUp);
             this.pnlRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlRegister.Location = new System.Drawing.Point(0, -1);
+            this.pnlRegister.Location = new System.Drawing.Point(0, 430);
             this.pnlRegister.Margin = new System.Windows.Forms.Padding(2);
             this.pnlRegister.Name = "pnlRegister";
-            this.pnlRegister.Size = new System.Drawing.Size(389, 449);
+            this.pnlRegister.Size = new System.Drawing.Size(380, 10);
             this.pnlRegister.TabIndex = 5;
             // 
             // panel5
@@ -140,7 +142,7 @@
             this.txtPinConf.Location = new System.Drawing.Point(0, 0);
             this.txtPinConf.Margin = new System.Windows.Forms.Padding(2);
             this.txtPinConf.Name = "txtPinConf";
-            this.txtPinConf.Size = new System.Drawing.Size(300, 35);
+            this.txtPinConf.Size = new System.Drawing.Size(300, 29);
             this.txtPinConf.TabIndex = 5;
             // 
             // panel4
@@ -163,7 +165,7 @@
             this.txtPinReg.Location = new System.Drawing.Point(0, 0);
             this.txtPinReg.Margin = new System.Windows.Forms.Padding(2);
             this.txtPinReg.Name = "txtPinReg";
-            this.txtPinReg.Size = new System.Drawing.Size(300, 35);
+            this.txtPinReg.Size = new System.Drawing.Size(300, 29);
             this.txtPinReg.TabIndex = 4;
             // 
             // lbNot
@@ -171,10 +173,10 @@
             this.lbNot.AutoSize = true;
             this.lbNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNot.ForeColor = System.Drawing.Color.Red;
-            this.lbNot.Location = new System.Drawing.Point(33, 369);
+            this.lbNot.Location = new System.Drawing.Point(25, 284);
             this.lbNot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNot.Name = "lbNot";
-            this.lbNot.Size = new System.Drawing.Size(0, 18);
+            this.lbNot.Size = new System.Drawing.Size(0, 15);
             this.lbNot.TabIndex = 6;
             // 
             // panel2
@@ -197,7 +199,7 @@
             this.txtEmail.Location = new System.Drawing.Point(0, 0);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(300, 35);
+            this.txtEmail.Size = new System.Drawing.Size(300, 29);
             this.txtEmail.TabIndex = 2;
             // 
             // panel3
@@ -220,7 +222,7 @@
             this.txtAccNrReg.Location = new System.Drawing.Point(0, 0);
             this.txtAccNrReg.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccNrReg.Name = "txtAccNrReg";
-            this.txtAccNrReg.Size = new System.Drawing.Size(300, 35);
+            this.txtAccNrReg.Size = new System.Drawing.Size(300, 29);
             this.txtAccNrReg.TabIndex = 3;
             // 
             // panel1
@@ -243,7 +245,7 @@
             this.txtFullName.Location = new System.Drawing.Point(0, 0);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(300, 35);
+            this.txtFullName.Size = new System.Drawing.Size(300, 29);
             this.txtFullName.TabIndex = 1;
             // 
             // btnClose
@@ -252,7 +254,7 @@
             this.btnClose.Location = new System.Drawing.Point(345, 7);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(23, 17);
+            this.btnClose.Size = new System.Drawing.Size(31, 22);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnClose.TabIndex = 1;
             this.btnClose.TabStop = false;
@@ -267,7 +269,7 @@
             this.btnRegister.Location = new System.Drawing.Point(76, 395);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(0);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(220, 35);
+            this.btnRegister.Size = new System.Drawing.Size(165, 27);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.TabStop = false;
             this.btnRegister.Text = "Register";
@@ -279,10 +281,10 @@
             this.lbInv.AutoSize = true;
             this.lbInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInv.ForeColor = System.Drawing.Color.Red;
-            this.lbInv.Location = new System.Drawing.Point(96, 42);
+            this.lbInv.Location = new System.Drawing.Point(121, 49);
             this.lbInv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbInv.Name = "lbInv";
-            this.lbInv.Size = new System.Drawing.Size(0, 18);
+            this.lbInv.Size = new System.Drawing.Size(0, 15);
             this.lbInv.TabIndex = 6;
             // 
             // label6
@@ -292,7 +294,7 @@
             this.label6.Location = new System.Drawing.Point(27, 251);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 29);
+            this.label6.Size = new System.Drawing.Size(37, 24);
             this.label6.TabIndex = 6;
             this.label6.Text = "Pin";
             // 
@@ -303,7 +305,7 @@
             this.lbEmail.Location = new System.Drawing.Point(25, 135);
             this.lbEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(74, 29);
+            this.lbEmail.Size = new System.Drawing.Size(57, 24);
             this.lbEmail.TabIndex = 6;
             this.lbEmail.Text = "Email";
             // 
@@ -311,10 +313,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 309);
+            this.label7.Location = new System.Drawing.Point(25, 309);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 29);
+            this.label7.Size = new System.Drawing.Size(107, 24);
             this.label7.TabIndex = 7;
             this.label7.Text = "Confirm Pin";
             // 
@@ -325,7 +327,7 @@
             this.label3.Location = new System.Drawing.Point(26, 193);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 29);
+            this.label3.Size = new System.Drawing.Size(80, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Account";
             // 
@@ -336,7 +338,7 @@
             this.lbFName.Location = new System.Drawing.Point(24, 77);
             this.lbFName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFName.Name = "lbFName";
-            this.lbFName.Size = new System.Drawing.Size(124, 29);
+            this.lbFName.Size = new System.Drawing.Size(97, 24);
             this.lbFName.TabIndex = 7;
             this.lbFName.Text = "Full Name";
             // 
@@ -347,7 +349,7 @@
             this.lbSingUp.Location = new System.Drawing.Point(33, 13);
             this.lbSingUp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSingUp.Name = "lbSingUp";
-            this.lbSingUp.Size = new System.Drawing.Size(117, 31);
+            this.lbSingUp.Size = new System.Drawing.Size(95, 25);
             this.lbSingUp.TabIndex = 8;
             this.lbSingUp.Text = "Sing Up";
             // 
@@ -358,7 +360,7 @@
             this.LnkRegister.Location = new System.Drawing.Point(134, 387);
             this.LnkRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(116, 31);
+            this.LnkRegister.Size = new System.Drawing.Size(92, 25);
             this.LnkRegister.TabIndex = 4;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Register";
@@ -373,7 +375,7 @@
             this.btnLogin.Location = new System.Drawing.Point(76, 309);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(220, 35);
+            this.btnLogin.Size = new System.Drawing.Size(165, 27);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -399,7 +401,7 @@
             this.txtPin.Location = new System.Drawing.Point(0, 0);
             this.txtPin.Margin = new System.Windows.Forms.Padding(2);
             this.txtPin.Name = "txtPin";
-            this.txtPin.Size = new System.Drawing.Size(300, 35);
+            this.txtPin.Size = new System.Drawing.Size(300, 29);
             this.txtPin.TabIndex = 2;
             // 
             // pnlAccNr
@@ -422,7 +424,7 @@
             this.txtAccNr.Location = new System.Drawing.Point(0, 0);
             this.txtAccNr.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccNr.Name = "txtAccNr";
-            this.txtAccNr.Size = new System.Drawing.Size(300, 35);
+            this.txtAccNr.Size = new System.Drawing.Size(300, 29);
             this.txtAccNr.TabIndex = 1;
             // 
             // lbInvalid
@@ -430,10 +432,10 @@
             this.lbInvalid.AutoSize = true;
             this.lbInvalid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInvalid.ForeColor = System.Drawing.Color.Red;
-            this.lbInvalid.Location = new System.Drawing.Point(75, 70);
+            this.lbInvalid.Location = new System.Drawing.Point(56, 54);
             this.lbInvalid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbInvalid.Name = "lbInvalid";
-            this.lbInvalid.Size = new System.Drawing.Size(0, 25);
+            this.lbInvalid.Size = new System.Drawing.Size(0, 20);
             this.lbInvalid.TabIndex = 0;
             // 
             // lbNoAcc
@@ -443,7 +445,7 @@
             this.lbNoAcc.Location = new System.Drawing.Point(88, 355);
             this.lbNoAcc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNoAcc.Name = "lbNoAcc";
-            this.lbNoAcc.Size = new System.Drawing.Size(209, 25);
+            this.lbNoAcc.Size = new System.Drawing.Size(170, 20);
             this.lbNoAcc.TabIndex = 0;
             this.lbNoAcc.Text = "Don\'t have an Account";
             // 
@@ -454,7 +456,7 @@
             this.lbPin.Location = new System.Drawing.Point(34, 217);
             this.lbPin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPin.Name = "lbPin";
-            this.lbPin.Size = new System.Drawing.Size(54, 29);
+            this.lbPin.Size = new System.Drawing.Size(42, 24);
             this.lbPin.TabIndex = 0;
             this.lbPin.Text = "Pin:";
             // 
@@ -465,7 +467,7 @@
             this.lbAccNr.Location = new System.Drawing.Point(33, 131);
             this.lbAccNr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccNr.Name = "lbAccNr";
-            this.lbAccNr.Size = new System.Drawing.Size(130, 29);
+            this.lbAccNr.Size = new System.Drawing.Size(105, 24);
             this.lbAccNr.TabIndex = 0;
             this.lbAccNr.Text = "Account Nr";
             // 
@@ -476,7 +478,7 @@
             this.lbLogin.Location = new System.Drawing.Point(33, 55);
             this.lbLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(85, 31);
+            this.lbLogin.Size = new System.Drawing.Size(70, 25);
             this.lbLogin.TabIndex = 0;
             this.lbLogin.Text = "Login";
             // 
@@ -486,20 +488,20 @@
             this.plnAtm.Controls.Add(this.label1);
             this.plnAtm.Controls.Add(this.label2);
             this.plnAtm.ForeColor = System.Drawing.Color.White;
-            this.plnAtm.Location = new System.Drawing.Point(1, -1);
+            this.plnAtm.Location = new System.Drawing.Point(4, 5);
             this.plnAtm.Margin = new System.Windows.Forms.Padding(0);
             this.plnAtm.Name = "plnAtm";
-            this.plnAtm.Size = new System.Drawing.Size(310, 451);
+            this.plnAtm.Size = new System.Drawing.Size(310, 440);
             this.plnAtm.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 119);
+            this.label1.Location = new System.Drawing.Point(59, 156);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 91);
+            this.label1.Size = new System.Drawing.Size(170, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "ATM";
             // 
@@ -510,13 +512,25 @@
             this.label2.Location = new System.Drawing.Point(88, 233);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 29);
+            this.label2.Size = new System.Drawing.Size(83, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
+            // lbPinNotMtch
+            // 
+            this.lbPinNotMtch.AutoSize = true;
+            this.lbPinNotMtch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPinNotMtch.ForeColor = System.Drawing.Color.Red;
+            this.lbPinNotMtch.Location = new System.Drawing.Point(31, 368);
+            this.lbPinNotMtch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPinNotMtch.Name = "lbPinNotMtch";
+            this.lbPinNotMtch.Size = new System.Drawing.Size(75, 13);
+            this.lbPinNotMtch.TabIndex = 6;
+            this.lbPinNotMtch.Text = "Pin not match!";
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 450);
@@ -524,7 +538,8 @@
             this.Controls.Add(this.plnAtm);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.MinimizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -592,6 +607,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Label lbPinNotMtch;
     }
 }
 
