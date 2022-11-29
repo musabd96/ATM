@@ -92,9 +92,10 @@
             this.pnlMenuBar.Controls.Add(this.btnProfile);
             this.pnlMenuBar.Controls.Add(this.btnHome);
             this.pnlMenuBar.Controls.Add(this.btnService);
-            this.pnlMenuBar.Location = new System.Drawing.Point(571, 1);
+            this.pnlMenuBar.Location = new System.Drawing.Point(428, 1);
+            this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(130, 101);
+            this.pnlMenuBar.Size = new System.Drawing.Size(98, 77);
             this.pnlMenuBar.TabIndex = 6;
             // 
             // btnLogout
@@ -107,10 +108,10 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::atmSystem.Properties.Resources.icons8_logout_50__1_;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1, 176);
+            this.btnLogout.Location = new System.Drawing.Point(1, 135);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(124, 39);
+            this.btnLogout.Size = new System.Drawing.Size(93, 30);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "       Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -120,9 +121,10 @@
             // 
             this.panel3.Controls.Add(this.picMenuBar);
             this.panel3.Controls.Add(this.lbMenuBar);
-            this.panel3.Location = new System.Drawing.Point(4, 15);
+            this.panel3.Location = new System.Drawing.Point(3, 11);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(121, 44);
+            this.panel3.Size = new System.Drawing.Size(91, 34);
             this.panel3.TabIndex = 0;
             // 
             // picMenuBar
@@ -130,8 +132,9 @@
             this.picMenuBar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picMenuBar.Image = global::atmSystem.Properties.Resources.icons8_menu_squared_48;
             this.picMenuBar.Location = new System.Drawing.Point(0, 0);
+            this.picMenuBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picMenuBar.Name = "picMenuBar";
-            this.picMenuBar.Size = new System.Drawing.Size(49, 41);
+            this.picMenuBar.Size = new System.Drawing.Size(37, 31);
             this.picMenuBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMenuBar.TabIndex = 0;
             this.picMenuBar.TabStop = false;
@@ -142,9 +145,10 @@
             this.lbMenuBar.AutoSize = true;
             this.lbMenuBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMenuBar.ForeColor = System.Drawing.Color.White;
-            this.lbMenuBar.Location = new System.Drawing.Point(54, 12);
+            this.lbMenuBar.Location = new System.Drawing.Point(40, 9);
+            this.lbMenuBar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMenuBar.Name = "lbMenuBar";
-            this.lbMenuBar.Size = new System.Drawing.Size(73, 29);
+            this.lbMenuBar.Size = new System.Drawing.Size(59, 24);
             this.lbMenuBar.TabIndex = 0;
             this.lbMenuBar.Text = "Menu";
             // 
@@ -158,11 +162,11 @@
             this.btnProfile.ForeColor = System.Drawing.Color.White;
             this.btnProfile.Image = global::atmSystem.Properties.Resources.icons8_customer_32__6_;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(1, 98);
+            this.btnProfile.Location = new System.Drawing.Point(1, 75);
             this.btnProfile.Margin = new System.Windows.Forms.Padding(0);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnProfile.Size = new System.Drawing.Size(124, 39);
+            this.btnProfile.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnProfile.Size = new System.Drawing.Size(93, 30);
             this.btnProfile.TabIndex = 3;
             this.btnProfile.Text = "  Profile";
             this.btnProfile.UseVisualStyleBackColor = false;
@@ -178,10 +182,10 @@
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = global::atmSystem.Properties.Resources.icons8_home_page_50__3_;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(1, 59);
+            this.btnHome.Location = new System.Drawing.Point(1, 45);
             this.btnHome.Margin = new System.Windows.Forms.Padding(0);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(124, 39);
+            this.btnHome.Size = new System.Drawing.Size(93, 30);
             this.btnHome.TabIndex = 3;
             this.btnHome.Text = "     Home";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -197,10 +201,10 @@
             this.btnService.ForeColor = System.Drawing.Color.White;
             this.btnService.Image = global::atmSystem.Properties.Resources.icons8_customer_support_50__2_;
             this.btnService.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnService.Location = new System.Drawing.Point(1, 137);
+            this.btnService.Location = new System.Drawing.Point(1, 105);
             this.btnService.Margin = new System.Windows.Forms.Padding(0);
             this.btnService.Name = "btnService";
-            this.btnService.Size = new System.Drawing.Size(124, 39);
+            this.btnService.Size = new System.Drawing.Size(93, 30);
             this.btnService.TabIndex = 3;
             this.btnService.Text = "       Service";
             this.btnService.UseVisualStyleBackColor = false;
@@ -229,31 +233,32 @@
             this.pnlLogIn.Controls.Add(this.label4);
             this.pnlLogIn.Controls.Add(this.lbAccNr);
             this.pnlLogIn.Controls.Add(this.lbLogin);
-            this.pnlLogIn.Location = new System.Drawing.Point(0, 100);
+            this.pnlLogIn.Location = new System.Drawing.Point(0, 76);
             this.pnlLogIn.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLogIn.Name = "pnlLogIn";
-            this.pnlLogIn.Size = new System.Drawing.Size(701, 355);
+            this.pnlLogIn.Size = new System.Drawing.Size(526, 271);
             this.pnlLogIn.TabIndex = 5;
             this.pnlLogIn.Click += new System.EventHandler(this.pnlLogIn_Click);
+            this.pnlLogIn.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogIn_Paint_1);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(3, 92);
+            this.panel1.Location = new System.Drawing.Point(2, 70);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(701, 10);
+            this.panel1.Size = new System.Drawing.Size(526, 8);
             this.panel1.TabIndex = 3;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(6, 322);
+            this.panel7.Location = new System.Drawing.Point(4, 246);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(701, 10);
+            this.panel7.Size = new System.Drawing.Size(526, 8);
             this.panel7.TabIndex = 3;
             // 
             // pnlDeposit
@@ -270,9 +275,10 @@
             this.pnlDeposit.Controls.Add(this.lbFName);
             this.pnlDeposit.Controls.Add(this.lbDepo);
             this.pnlDeposit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDeposit.Location = new System.Drawing.Point(0, 62);
+            this.pnlDeposit.Location = new System.Drawing.Point(0, 256);
+            this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDeposit.Name = "pnlDeposit";
-            this.pnlDeposit.Size = new System.Drawing.Size(701, 293);
+            this.pnlDeposit.Size = new System.Drawing.Size(526, 15);
             this.pnlDeposit.TabIndex = 5;
             this.pnlDeposit.Click += new System.EventHandler(this.pnlDeposit_Click);
             // 
@@ -280,9 +286,10 @@
             // 
             this.lbstarDp.AutoSize = true;
             this.lbstarDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbstarDp.Location = new System.Drawing.Point(183, 171);
+            this.lbstarDp.Location = new System.Drawing.Point(137, 131);
+            this.lbstarDp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbstarDp.Name = "lbstarDp";
-            this.lbstarDp.Size = new System.Drawing.Size(24, 29);
+            this.lbstarDp.Size = new System.Drawing.Size(18, 24);
             this.lbstarDp.TabIndex = 9;
             this.lbstarDp.Text = "*";
             // 
@@ -291,9 +298,10 @@
             this.lbinvDp.AutoSize = true;
             this.lbinvDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbinvDp.ForeColor = System.Drawing.Color.Red;
-            this.lbinvDp.Location = new System.Drawing.Point(116, 171);
+            this.lbinvDp.Location = new System.Drawing.Point(87, 131);
+            this.lbinvDp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbinvDp.Name = "lbinvDp";
-            this.lbinvDp.Size = new System.Drawing.Size(61, 20);
+            this.lbinvDp.Size = new System.Drawing.Size(49, 16);
             this.lbinvDp.TabIndex = 10;
             this.lbinvDp.Text = "Invalid ";
             // 
@@ -302,10 +310,11 @@
             this.pnlDpAmt.BackColor = System.Drawing.Color.DodgerBlue;
             this.pnlDpAmt.Controls.Add(this.txtAmDep);
             this.pnlDpAmt.ForeColor = System.Drawing.Color.White;
-            this.pnlDpAmt.Location = new System.Drawing.Point(200, 163);
+            this.pnlDpAmt.Location = new System.Drawing.Point(150, 125);
+            this.pnlDpAmt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDpAmt.Name = "pnlDpAmt";
-            this.pnlDpAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.pnlDpAmt.Size = new System.Drawing.Size(300, 30);
+            this.pnlDpAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.pnlDpAmt.Size = new System.Drawing.Size(225, 23);
             this.pnlDpAmt.TabIndex = 3;
             // 
             // txtAmDep
@@ -314,8 +323,9 @@
             this.txtAmDep.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAmDep.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmDep.Location = new System.Drawing.Point(0, 0);
+            this.txtAmDep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAmDep.Name = "txtAmDep";
-            this.txtAmDep.Size = new System.Drawing.Size(300, 35);
+            this.txtAmDep.Size = new System.Drawing.Size(225, 29);
             this.txtAmDep.TabIndex = 3;
             // 
             // btnOkey
@@ -324,10 +334,10 @@
             this.btnOkey.FlatAppearance.BorderSize = 0;
             this.btnOkey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOkey.ForeColor = System.Drawing.Color.White;
-            this.btnOkey.Location = new System.Drawing.Point(224, 237);
+            this.btnOkey.Location = new System.Drawing.Point(168, 181);
             this.btnOkey.Margin = new System.Windows.Forms.Padding(0);
             this.btnOkey.Name = "btnOkey";
-            this.btnOkey.Size = new System.Drawing.Size(235, 35);
+            this.btnOkey.Size = new System.Drawing.Size(176, 27);
             this.btnOkey.TabIndex = 6;
             this.btnOkey.TabStop = false;
             this.btnOkey.Text = "Okey";
@@ -337,9 +347,10 @@
             // 
             this.lbAccNrDep.AutoSize = true;
             this.lbAccNrDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccNrDep.Location = new System.Drawing.Point(140, 16);
+            this.lbAccNrDep.Location = new System.Drawing.Point(105, 12);
+            this.lbAccNrDep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccNrDep.Name = "lbAccNrDep";
-            this.lbAccNrDep.Size = new System.Drawing.Size(34, 29);
+            this.lbAccNrDep.Size = new System.Drawing.Size(27, 24);
             this.lbAccNrDep.TabIndex = 6;
             this.lbAccNrDep.Text = "nr";
             // 
@@ -347,9 +358,10 @@
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(12, 16);
+            this.lbEmail.Location = new System.Drawing.Point(9, 12);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(136, 29);
+            this.lbEmail.Size = new System.Drawing.Size(110, 24);
             this.lbEmail.TabIndex = 6;
             this.lbEmail.Text = "Account Nr:";
             // 
@@ -357,9 +369,10 @@
             // 
             this.lbMaxDp.AutoSize = true;
             this.lbMaxDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaxDp.Location = new System.Drawing.Point(221, 204);
+            this.lbMaxDp.Location = new System.Drawing.Point(166, 156);
+            this.lbMaxDp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMaxDp.Name = "lbMaxDp";
-            this.lbMaxDp.Size = new System.Drawing.Size(298, 17);
+            this.lbMaxDp.Size = new System.Drawing.Size(224, 13);
             this.lbMaxDp.TabIndex = 7;
             this.lbMaxDp.Text = "Maximum amount deposit per day 10 000 SEK";
             // 
@@ -367,9 +380,10 @@
             // 
             this.lbAmDip.AutoSize = true;
             this.lbAmDip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAmDip.Location = new System.Drawing.Point(203, 140);
+            this.lbAmDip.Location = new System.Drawing.Point(152, 107);
+            this.lbAmDip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAmDip.Name = "lbAmDip";
-            this.lbAmDip.Size = new System.Drawing.Size(180, 29);
+            this.lbAmDip.Size = new System.Drawing.Size(142, 24);
             this.lbAmDip.TabIndex = 7;
             this.lbAmDip.Text = "Amount deposit";
             // 
@@ -377,9 +391,10 @@
             // 
             this.lbBalDep.AutoSize = true;
             this.lbBalDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBalDep.Location = new System.Drawing.Point(134, 41);
+            this.lbBalDep.Location = new System.Drawing.Point(100, 31);
+            this.lbBalDep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbBalDep.Name = "lbBalDep";
-            this.lbBalDep.Size = new System.Drawing.Size(92, 29);
+            this.lbBalDep.Size = new System.Drawing.Size(73, 24);
             this.lbBalDep.TabIndex = 7;
             this.lbBalDep.Text = "amount";
             // 
@@ -387,9 +402,10 @@
             // 
             this.lbFName.AutoSize = true;
             this.lbFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFName.Location = new System.Drawing.Point(42, 41);
+            this.lbFName.Location = new System.Drawing.Point(32, 31);
+            this.lbFName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFName.Name = "lbFName";
-            this.lbFName.Size = new System.Drawing.Size(106, 29);
+            this.lbFName.Size = new System.Drawing.Size(83, 24);
             this.lbFName.TabIndex = 7;
             this.lbFName.Text = "Balance:";
             // 
@@ -397,9 +413,10 @@
             // 
             this.lbDepo.AutoSize = true;
             this.lbDepo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDepo.Location = new System.Drawing.Point(275, 6);
+            this.lbDepo.Location = new System.Drawing.Point(206, 5);
+            this.lbDepo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDepo.Name = "lbDepo";
-            this.lbDepo.Size = new System.Drawing.Size(150, 46);
+            this.lbDepo.Size = new System.Drawing.Size(122, 37);
             this.lbDepo.TabIndex = 8;
             this.lbDepo.Text = "Diposit";
             // 
@@ -410,10 +427,10 @@
             this.btn200.FlatAppearance.BorderSize = 0;
             this.btn200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn200.ForeColor = System.Drawing.Color.White;
-            this.btn200.Location = new System.Drawing.Point(6, 206);
+            this.btn200.Location = new System.Drawing.Point(4, 158);
             this.btn200.Margin = new System.Windows.Forms.Padding(0);
             this.btn200.Name = "btn200";
-            this.btn200.Size = new System.Drawing.Size(125, 51);
+            this.btn200.Size = new System.Drawing.Size(94, 39);
             this.btn200.TabIndex = 3;
             this.btn200.Text = "200";
             this.btn200.UseVisualStyleBackColor = false;
@@ -426,10 +443,10 @@
             this.btnTrans.FlatAppearance.BorderSize = 0;
             this.btnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrans.ForeColor = System.Drawing.Color.White;
-            this.btnTrans.Location = new System.Drawing.Point(571, 147);
+            this.btnTrans.Location = new System.Drawing.Point(428, 112);
             this.btnTrans.Margin = new System.Windows.Forms.Padding(0);
             this.btnTrans.Name = "btnTrans";
-            this.btnTrans.Size = new System.Drawing.Size(125, 51);
+            this.btnTrans.Size = new System.Drawing.Size(94, 39);
             this.btnTrans.TabIndex = 3;
             this.btnTrans.Text = "Transaction";
             this.btnTrans.UseVisualStyleBackColor = false;
@@ -442,10 +459,10 @@
             this.btnBalance.FlatAppearance.BorderSize = 0;
             this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBalance.ForeColor = System.Drawing.Color.White;
-            this.btnBalance.Location = new System.Drawing.Point(571, 206);
+            this.btnBalance.Location = new System.Drawing.Point(428, 158);
             this.btnBalance.Margin = new System.Windows.Forms.Padding(0);
             this.btnBalance.Name = "btnBalance";
-            this.btnBalance.Size = new System.Drawing.Size(125, 51);
+            this.btnBalance.Size = new System.Drawing.Size(94, 39);
             this.btnBalance.TabIndex = 3;
             this.btnBalance.Text = "Balance";
             this.btnBalance.UseVisualStyleBackColor = false;
@@ -458,10 +475,10 @@
             this.btnDeposit.FlatAppearance.BorderSize = 0;
             this.btnDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeposit.ForeColor = System.Drawing.Color.White;
-            this.btnDeposit.Location = new System.Drawing.Point(571, 267);
+            this.btnDeposit.Location = new System.Drawing.Point(428, 204);
             this.btnDeposit.Margin = new System.Windows.Forms.Padding(0);
             this.btnDeposit.Name = "btnDeposit";
-            this.btnDeposit.Size = new System.Drawing.Size(125, 51);
+            this.btnDeposit.Size = new System.Drawing.Size(94, 39);
             this.btnDeposit.TabIndex = 3;
             this.btnDeposit.Text = "Deposit";
             this.btnDeposit.UseVisualStyleBackColor = false;
@@ -474,10 +491,10 @@
             this.btn100.FlatAppearance.BorderSize = 0;
             this.btn100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn100.ForeColor = System.Drawing.Color.White;
-            this.btn100.Location = new System.Drawing.Point(6, 267);
+            this.btn100.Location = new System.Drawing.Point(4, 204);
             this.btn100.Margin = new System.Windows.Forms.Padding(0);
             this.btn100.Name = "btn100";
-            this.btn100.Size = new System.Drawing.Size(125, 51);
+            this.btn100.Size = new System.Drawing.Size(94, 39);
             this.btn100.TabIndex = 3;
             this.btn100.Text = "100";
             this.btn100.UseVisualStyleBackColor = false;
@@ -490,10 +507,10 @@
             this.btnOkeyWith.FlatAppearance.BorderSize = 0;
             this.btnOkeyWith.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOkeyWith.ForeColor = System.Drawing.Color.White;
-            this.btnOkeyWith.Location = new System.Drawing.Point(272, 261);
+            this.btnOkeyWith.Location = new System.Drawing.Point(204, 200);
             this.btnOkeyWith.Margin = new System.Windows.Forms.Padding(0);
             this.btnOkeyWith.Name = "btnOkeyWith";
-            this.btnOkeyWith.Size = new System.Drawing.Size(125, 38);
+            this.btnOkeyWith.Size = new System.Drawing.Size(94, 29);
             this.btnOkeyWith.TabIndex = 3;
             this.btnOkeyWith.Text = "Ok";
             this.btnOkeyWith.UseVisualStyleBackColor = false;
@@ -506,10 +523,10 @@
             this.btn500.FlatAppearance.BorderSize = 0;
             this.btn500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn500.ForeColor = System.Drawing.Color.White;
-            this.btn500.Location = new System.Drawing.Point(6, 147);
+            this.btn500.Location = new System.Drawing.Point(4, 112);
             this.btn500.Margin = new System.Windows.Forms.Padding(0);
             this.btn500.Name = "btn500";
-            this.btn500.Size = new System.Drawing.Size(125, 51);
+            this.btn500.Size = new System.Drawing.Size(94, 39);
             this.btn500.TabIndex = 3;
             this.btn500.Text = "500";
             this.btn500.UseVisualStyleBackColor = false;
@@ -520,10 +537,11 @@
             this.pnlWithAmt.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlWithAmt.Controls.Add(this.txtcashWd);
             this.pnlWithAmt.ForeColor = System.Drawing.Color.White;
-            this.pnlWithAmt.Location = new System.Drawing.Point(289, 193);
+            this.pnlWithAmt.Location = new System.Drawing.Point(217, 148);
+            this.pnlWithAmt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlWithAmt.Name = "pnlWithAmt";
-            this.pnlWithAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.pnlWithAmt.Size = new System.Drawing.Size(85, 30);
+            this.pnlWithAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.pnlWithAmt.Size = new System.Drawing.Size(64, 23);
             this.pnlWithAmt.TabIndex = 1;
             // 
             // txtcashWd
@@ -532,18 +550,22 @@
             this.txtcashWd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtcashWd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcashWd.Location = new System.Drawing.Point(0, 0);
+            this.txtcashWd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtcashWd.Name = "txtcashWd";
-            this.txtcashWd.Size = new System.Drawing.Size(85, 35);
+            this.txtcashWd.Size = new System.Drawing.Size(64, 29);
             this.txtcashWd.TabIndex = 1;
             this.txtcashWd.TextChanged += new System.EventHandler(this.txtcashWd_TextChanged);
+            this.txtcashWd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcashWd_KeyDown_1);
+            this.txtcashWd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcashWd_KeyPress_1);
             // 
             // lbMaxWd
             // 
             this.lbMaxWd.AutoSize = true;
             this.lbMaxWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaxWd.Location = new System.Drawing.Point(193, 235);
+            this.lbMaxWd.Location = new System.Drawing.Point(145, 180);
+            this.lbMaxWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMaxWd.Name = "lbMaxWd";
-            this.lbMaxWd.Size = new System.Drawing.Size(359, 20);
+            this.lbMaxWd.Size = new System.Drawing.Size(280, 16);
             this.lbMaxWd.TabIndex = 0;
             this.lbMaxWd.Text = "Maximum amount withdaw per day 10 000 SEK";
             this.lbMaxWd.Visible = false;
@@ -552,9 +574,10 @@
             // 
             this.lbNoAcc.AutoSize = true;
             this.lbNoAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNoAcc.Location = new System.Drawing.Point(225, 149);
+            this.lbNoAcc.Location = new System.Drawing.Point(169, 114);
+            this.lbNoAcc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNoAcc.Name = "lbNoAcc";
-            this.lbNoAcc.Size = new System.Drawing.Size(252, 25);
+            this.lbNoAcc.Size = new System.Drawing.Size(207, 20);
             this.lbNoAcc.TabIndex = 0;
             this.lbNoAcc.Text = "Enter the amount withdraw: ";
             // 
@@ -563,9 +586,10 @@
             this.lbstarWd.AutoSize = true;
             this.lbstarWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbstarWd.ForeColor = System.Drawing.Color.Red;
-            this.lbstarWd.Location = new System.Drawing.Point(273, 200);
+            this.lbstarWd.Location = new System.Drawing.Point(205, 153);
+            this.lbstarWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbstarWd.Name = "lbstarWd";
-            this.lbstarWd.Size = new System.Drawing.Size(24, 29);
+            this.lbstarWd.Size = new System.Drawing.Size(18, 24);
             this.lbstarWd.TabIndex = 0;
             this.lbstarWd.Text = "*";
             this.lbstarWd.Visible = false;
@@ -576,9 +600,10 @@
             this.lbinvWd.AutoSize = true;
             this.lbinvWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbinvWd.ForeColor = System.Drawing.Color.Red;
-            this.lbinvWd.Location = new System.Drawing.Point(221, 201);
+            this.lbinvWd.Location = new System.Drawing.Point(166, 154);
+            this.lbinvWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbinvWd.Name = "lbinvWd";
-            this.lbinvWd.Size = new System.Drawing.Size(56, 20);
+            this.lbinvWd.Size = new System.Drawing.Size(46, 16);
             this.lbinvWd.TabIndex = 0;
             this.lbinvWd.Text = "invalid";
             this.lbinvWd.Visible = false;
@@ -588,9 +613,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(377, 198);
+            this.label9.Location = new System.Drawing.Point(283, 151);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 29);
+            this.label9.Size = new System.Drawing.Size(47, 24);
             this.label9.TabIndex = 0;
             this.label9.Text = "SEK";
             // 
@@ -598,9 +624,10 @@
             // 
             this.lbAcc.AutoSize = true;
             this.lbAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAcc.Location = new System.Drawing.Point(132, 66);
+            this.lbAcc.Location = new System.Drawing.Point(99, 50);
+            this.lbAcc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAcc.Name = "lbAcc";
-            this.lbAcc.Size = new System.Drawing.Size(34, 29);
+            this.lbAcc.Size = new System.Drawing.Size(27, 24);
             this.lbAcc.TabIndex = 0;
             this.lbAcc.Text = "nr";
             // 
@@ -608,9 +635,10 @@
             // 
             this.lbname.AutoSize = true;
             this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbname.Location = new System.Drawing.Point(128, 30);
+            this.lbname.Location = new System.Drawing.Point(96, 23);
+            this.lbname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbname.Name = "lbname";
-            this.lbname.Size = new System.Drawing.Size(73, 29);
+            this.lbname.Size = new System.Drawing.Size(58, 24);
             this.lbname.TabIndex = 0;
             this.lbname.Text = "name";
             // 
@@ -618,9 +646,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(68, 30);
+            this.label4.Location = new System.Drawing.Point(51, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 29);
+            this.label4.Size = new System.Drawing.Size(59, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "Hello!";
             // 
@@ -628,9 +657,10 @@
             // 
             this.lbAccNr.AutoSize = true;
             this.lbAccNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccNr.Location = new System.Drawing.Point(9, 66);
+            this.lbAccNr.Location = new System.Drawing.Point(7, 50);
+            this.lbAccNr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccNr.Name = "lbAccNr";
-            this.lbAccNr.Size = new System.Drawing.Size(136, 29);
+            this.lbAccNr.Size = new System.Drawing.Size(110, 24);
             this.lbAccNr.TabIndex = 0;
             this.lbAccNr.Text = "Account Nr:";
             // 
@@ -638,9 +668,10 @@
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogin.Location = new System.Drawing.Point(265, 16);
+            this.lbLogin.Location = new System.Drawing.Point(199, 12);
+            this.lbLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(195, 46);
+            this.lbLogin.Size = new System.Drawing.Size(157, 37);
             this.lbLogin.TabIndex = 0;
             this.lbLogin.Text = "Welcome";
             // 
@@ -653,7 +684,7 @@
             this.plnAtm.Location = new System.Drawing.Point(0, 1);
             this.plnAtm.Margin = new System.Windows.Forms.Padding(0);
             this.plnAtm.Name = "plnAtm";
-            this.plnAtm.Size = new System.Drawing.Size(571, 101);
+            this.plnAtm.Size = new System.Drawing.Size(428, 77);
             this.plnAtm.TabIndex = 4;
             this.plnAtm.Click += new System.EventHandler(this.plnAtm_Click);
             // 
@@ -661,9 +692,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(259, 0);
+            this.label1.Location = new System.Drawing.Point(194, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 91);
+            this.label1.Size = new System.Drawing.Size(170, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "ATM";
             // 
@@ -671,18 +703,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(314, 66);
+            this.label2.Location = new System.Drawing.Point(236, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 29);
+            this.label2.Size = new System.Drawing.Size(83, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(700, 450);
+            this.ClientSize = new System.Drawing.Size(525, 344);
             this.Controls.Add(this.pnlMenuBar);
             this.Controls.Add(this.pnlLogIn);
             this.Controls.Add(this.plnAtm);
@@ -690,7 +723,6 @@
             this.ForeColor = System.Drawing.Color.DodgerBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

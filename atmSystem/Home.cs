@@ -187,6 +187,7 @@ namespace atmSystem
         private void txtcashWd_TextChanged(object sender, EventArgs e)
         {
             // TextBox - withdrawal home.cs[Design] window
+            txtcashWd.BackColor = Color.White;
             lbinvWd.Hide();
             lbstarWd.Hide();
             lbMaxWd.Hide();
@@ -213,20 +214,41 @@ namespace atmSystem
         private void btnOkeyWith_Click_1(object sender, EventArgs e)
         {
             // show entered withdrawal - withdrawal home.cs[Design] window
-                int a;
-                a = int.Parse(txtcashWd.Text);
-            
-            if (a >= 10000)
+            int a;
+            a = int.Parse(txtcashWd.Text);
+            if (a <= 10000)
             {
-                lbinvWd.Show();
-                lbstarWd.Show();
-                lbMaxWd.Show();
+                MessageBox.Show("Du tog ut " + a);
             }
             else
             {
-                 MessageBox.Show("Du tog ut " + a);
+                lbMaxWd.Show();
+                lbinvWd.Show();
+                lbstarWd.Show();
+                txtcashWd.BackColor = Color.Red;
             }
-            
+        }
+        // Enterknappen utför OK-knapptryck
+        private void txtcashWd_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnOkeyWith.PerformClick();
+            }
+        }
+        // txtcashWd Only digits, return, delete can be entered
+        private void txtcashWd_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsNumber(ch) && ch != 8 && ch != 46 && ch != 13)
+            {
+                e.Handled = true;
+            }
+        }
+        // Home.cs[Design] accepterar EnterOK knapp / remove ding sound
+        private void pnlLogIn_Paint_1(object sender, PaintEventArgs e)
+        {
+            this.AcceptButton = this.btnOkeyWith;
         }
     }
         
