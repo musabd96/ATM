@@ -45,6 +45,7 @@
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.lbInv = new System.Windows.Forms.Label();
+            this.lbPinNotMtch = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbPinNotMtch = new System.Windows.Forms.Label();
             this.pnlLogIn.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -286,6 +286,18 @@
             this.lbInv.Name = "lbInv";
             this.lbInv.Size = new System.Drawing.Size(0, 15);
             this.lbInv.TabIndex = 6;
+            // 
+            // lbPinNotMtch
+            // 
+            this.lbPinNotMtch.AutoSize = true;
+            this.lbPinNotMtch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPinNotMtch.ForeColor = System.Drawing.Color.Red;
+            this.lbPinNotMtch.Location = new System.Drawing.Point(31, 368);
+            this.lbPinNotMtch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPinNotMtch.Name = "lbPinNotMtch";
+            this.lbPinNotMtch.Size = new System.Drawing.Size(75, 13);
+            this.lbPinNotMtch.TabIndex = 6;
+            this.lbPinNotMtch.Text = "Pin not match!";
             // 
             // label6
             // 
@@ -516,18 +528,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
-            // lbPinNotMtch
-            // 
-            this.lbPinNotMtch.AutoSize = true;
-            this.lbPinNotMtch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPinNotMtch.ForeColor = System.Drawing.Color.Red;
-            this.lbPinNotMtch.Location = new System.Drawing.Point(31, 368);
-            this.lbPinNotMtch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbPinNotMtch.Name = "lbPinNotMtch";
-            this.lbPinNotMtch.Size = new System.Drawing.Size(75, 13);
-            this.lbPinNotMtch.TabIndex = 6;
-            this.lbPinNotMtch.Text = "Pin not match!";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -538,7 +538,7 @@
             this.Controls.Add(this.plnAtm);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -13,9 +13,14 @@ namespace atmSystem
 {
     public partial class Login : Form
     {
+
+        public string UserName = "1234";
+        public string Pin = "Admin";
+
         public Login()
         {
-            InitializeComponent();
+             
+             InitializeComponent();
 
             //when the program start the registration,login and ATM logo labels will be this positions.
             pnlRegister.Height = 0;
@@ -43,9 +48,19 @@ namespace atmSystem
         //Login button
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if(txtAccNr.Text == UserName)
+            {
+                Home home = new Home();
+                home.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("bajs");
+            }
 
-            //MySQL 
 
+            //MySQL         
             /* login account and pin code 
              * create mysql server name it
              * create tabel and name it
@@ -64,9 +79,7 @@ namespace atmSystem
 
 
             
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+           
 
         }
 
