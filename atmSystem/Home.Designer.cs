@@ -93,9 +93,9 @@
             this.pnlMenuBar.Controls.Add(this.btnHome);
             this.pnlMenuBar.Controls.Add(this.btnService);
             this.pnlMenuBar.Location = new System.Drawing.Point(570, 1);
-            this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(130, 99);
+            this.pnlMenuBar.Size = new System.Drawing.Size(130, 225);
             this.pnlMenuBar.TabIndex = 6;
             // 
             // btnLogout
@@ -122,7 +122,7 @@
             this.panel3.Controls.Add(this.picMenuBar);
             this.panel3.Controls.Add(this.lbMenuBar);
             this.panel3.Location = new System.Drawing.Point(3, 15);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(121, 44);
             this.panel3.TabIndex = 0;
@@ -132,7 +132,7 @@
             this.picMenuBar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picMenuBar.Image = global::atmSystem.Properties.Resources.icons8_menu_squared_48;
             this.picMenuBar.Location = new System.Drawing.Point(0, 0);
-            this.picMenuBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMenuBar.Margin = new System.Windows.Forms.Padding(2);
             this.picMenuBar.Name = "picMenuBar";
             this.picMenuBar.Size = new System.Drawing.Size(49, 41);
             this.picMenuBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +275,7 @@
             this.pnlDeposit.Controls.Add(this.lbDepo);
             this.pnlDeposit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlDeposit.Location = new System.Drawing.Point(0, 331);
-            this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDeposit.Name = "pnlDeposit";
             this.pnlDeposit.Size = new System.Drawing.Size(701, 10);
             this.pnlDeposit.TabIndex = 5;
@@ -311,7 +311,7 @@
             this.pnlDpAmt.Controls.Add(this.txtAmDep);
             this.pnlDpAmt.ForeColor = System.Drawing.Color.White;
             this.pnlDpAmt.Location = new System.Drawing.Point(200, 163);
-            this.pnlDpAmt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDpAmt.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDpAmt.Name = "pnlDpAmt";
             this.pnlDpAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.pnlDpAmt.Size = new System.Drawing.Size(300, 30);
@@ -323,7 +323,7 @@
             this.txtAmDep.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAmDep.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmDep.Location = new System.Drawing.Point(0, 0);
-            this.txtAmDep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAmDep.Margin = new System.Windows.Forms.Padding(2);
             this.txtAmDep.Name = "txtAmDep";
             this.txtAmDep.Size = new System.Drawing.Size(300, 29);
             this.txtAmDep.TabIndex = 3;
@@ -538,7 +538,7 @@
             this.pnlWithAmt.Controls.Add(this.txtcashWd);
             this.pnlWithAmt.ForeColor = System.Drawing.Color.White;
             this.pnlWithAmt.Location = new System.Drawing.Point(289, 193);
-            this.pnlWithAmt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlWithAmt.Margin = new System.Windows.Forms.Padding(2);
             this.pnlWithAmt.Name = "pnlWithAmt";
             this.pnlWithAmt.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.pnlWithAmt.Size = new System.Drawing.Size(85, 30);
@@ -550,7 +550,7 @@
             this.txtcashWd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtcashWd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcashWd.Location = new System.Drawing.Point(0, 0);
-            this.txtcashWd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcashWd.Margin = new System.Windows.Forms.Padding(2);
             this.txtcashWd.Name = "txtcashWd";
             this.txtcashWd.Size = new System.Drawing.Size(85, 29);
             this.txtcashWd.TabIndex = 1;
