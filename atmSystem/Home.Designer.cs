@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlMenuBar = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.picMenuBar = new System.Windows.Forms.PictureBox();
             this.lbMenuBar = new System.Windows.Forms.Label();
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnService = new System.Windows.Forms.Button();
             this.pnlLogIn = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -74,14 +69,19 @@
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.picMenuBar = new System.Windows.Forms.PictureBox();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnService = new System.Windows.Forms.Button();
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
             this.pnlLogIn.SuspendLayout();
             this.pnlDeposit.SuspendLayout();
             this.pnlDpAmt.SuspendLayout();
             this.pnlWithAmt.SuspendLayout();
             this.plnAtm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuBar
@@ -95,27 +95,8 @@
             this.pnlMenuBar.Location = new System.Drawing.Point(570, 1);
             this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(130, 225);
+            this.pnlMenuBar.Size = new System.Drawing.Size(130, 101);
             this.pnlMenuBar.TabIndex = 6;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = global::atmSystem.Properties.Resources.icons8_logout_50__1_;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 178);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(124, 39);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = "       Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panel3
             // 
@@ -126,19 +107,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(121, 44);
             this.panel3.TabIndex = 0;
-            // 
-            // picMenuBar
-            // 
-            this.picMenuBar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMenuBar.Image = global::atmSystem.Properties.Resources.icons8_menu_squared_48;
-            this.picMenuBar.Location = new System.Drawing.Point(0, 0);
-            this.picMenuBar.Margin = new System.Windows.Forms.Padding(2);
-            this.picMenuBar.Name = "picMenuBar";
-            this.picMenuBar.Size = new System.Drawing.Size(49, 41);
-            this.picMenuBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMenuBar.TabIndex = 0;
-            this.picMenuBar.TabStop = false;
-            this.picMenuBar.Click += new System.EventHandler(this.picMenuBar_Click);
             // 
             // lbMenuBar
             // 
@@ -151,64 +119,6 @@
             this.lbMenuBar.Size = new System.Drawing.Size(59, 24);
             this.lbMenuBar.TabIndex = 0;
             this.lbMenuBar.Text = "Menu";
-            // 
-            // btnProfile
-            // 
-            this.btnProfile.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfile.FlatAppearance.BorderSize = 0;
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfile.ForeColor = System.Drawing.Color.White;
-            this.btnProfile.Image = global::atmSystem.Properties.Resources.icons8_customer_32__6_;
-            this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(0, 100);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnProfile.Size = new System.Drawing.Size(124, 39);
-            this.btnProfile.TabIndex = 3;
-            this.btnProfile.Text = "  Profile";
-            this.btnProfile.UseVisualStyleBackColor = false;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::atmSystem.Properties.Resources.icons8_home_page_50__3_;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 61);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(124, 39);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "     Home";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnService
-            // 
-            this.btnService.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnService.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnService.FlatAppearance.BorderSize = 0;
-            this.btnService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnService.ForeColor = System.Drawing.Color.White;
-            this.btnService.Image = global::atmSystem.Properties.Resources.icons8_customer_support_50__2_;
-            this.btnService.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnService.Location = new System.Drawing.Point(0, 139);
-            this.btnService.Margin = new System.Windows.Forms.Padding(0);
-            this.btnService.Name = "btnService";
-            this.btnService.Size = new System.Drawing.Size(124, 39);
-            this.btnService.TabIndex = 3;
-            this.btnService.Text = "       Service";
-            this.btnService.UseVisualStyleBackColor = false;
-            this.btnService.Click += new System.EventHandler(this.btnService_Click);
             // 
             // pnlLogIn
             // 
@@ -448,7 +358,7 @@
             this.btnTrans.Name = "btnTrans";
             this.btnTrans.Size = new System.Drawing.Size(125, 51);
             this.btnTrans.TabIndex = 3;
-            this.btnTrans.Text = "Transaction";
+            this.btnTrans.Text = "Mini statment";
             this.btnTrans.UseVisualStyleBackColor = false;
             this.btnTrans.Click += new System.EventHandler(this.btnTrans_Click);
             // 
@@ -708,6 +618,96 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::atmSystem.Properties.Resources.icons8_logout_50__1_;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(0, 178);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(124, 39);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "       Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // picMenuBar
+            // 
+            this.picMenuBar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMenuBar.Image = global::atmSystem.Properties.Resources.icons8_menu_squared_48;
+            this.picMenuBar.Location = new System.Drawing.Point(0, 0);
+            this.picMenuBar.Margin = new System.Windows.Forms.Padding(2);
+            this.picMenuBar.Name = "picMenuBar";
+            this.picMenuBar.Size = new System.Drawing.Size(49, 41);
+            this.picMenuBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMenuBar.TabIndex = 0;
+            this.picMenuBar.TabStop = false;
+            this.picMenuBar.Click += new System.EventHandler(this.picMenuBar_Click);
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.ForeColor = System.Drawing.Color.White;
+            this.btnProfile.Image = global::atmSystem.Properties.Resources.icons8_customer_32__6_;
+            this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfile.Location = new System.Drawing.Point(0, 100);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(0);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnProfile.Size = new System.Drawing.Size(124, 39);
+            this.btnProfile.TabIndex = 3;
+            this.btnProfile.Text = "  Profile";
+            this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::atmSystem.Properties.Resources.icons8_home_page_50__3_;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 61);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(124, 39);
+            this.btnHome.TabIndex = 3;
+            this.btnHome.Text = "     Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnService
+            // 
+            this.btnService.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnService.FlatAppearance.BorderSize = 0;
+            this.btnService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnService.ForeColor = System.Drawing.Color.White;
+            this.btnService.Image = global::atmSystem.Properties.Resources.icons8_customer_support_50__2_;
+            this.btnService.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnService.Location = new System.Drawing.Point(0, 139);
+            this.btnService.Margin = new System.Windows.Forms.Padding(0);
+            this.btnService.Name = "btnService";
+            this.btnService.Size = new System.Drawing.Size(124, 39);
+            this.btnService.TabIndex = 3;
+            this.btnService.Text = "       Service";
+            this.btnService.UseVisualStyleBackColor = false;
+            this.btnService.Click += new System.EventHandler(this.btnService_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -728,7 +728,6 @@
             this.pnlMenuBar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).EndInit();
             this.pnlLogIn.ResumeLayout(false);
             this.pnlLogIn.PerformLayout();
             this.pnlDeposit.ResumeLayout(false);
@@ -739,6 +738,7 @@
             this.pnlWithAmt.PerformLayout();
             this.plnAtm.ResumeLayout(false);
             this.plnAtm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).EndInit();
             this.ResumeLayout(false);
 
         }
