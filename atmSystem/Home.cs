@@ -276,10 +276,19 @@ namespace atmSystem
         {
             dataBase dataBase = new dataBase();
             dataBase.getData();
-            newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
-            dataBase.newBalance();
-            dataBase.getData();
-            dataBase.miniStatement();
+            if (Convert.ToInt32(dataBase.balanceDb) > cashWd)
+            {
+
+                newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
+                dataBase.newBalance();
+                dataBase.getData();
+                dataBase.miniStatement();
+            }
+            else
+            {
+                MessageBox.Show("Du har inte tillräckligt med pengar");
+            }
+            
         }
     }
         
