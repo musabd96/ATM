@@ -62,11 +62,11 @@
             this.lbNoAcc = new System.Windows.Forms.Label();
             this.lbPin = new System.Windows.Forms.Label();
             this.lbAccNr = new System.Windows.Forms.Label();
+            this.lberror = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lberror = new System.Windows.Forms.Label();
             this.pnlLogIn.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -486,6 +486,16 @@
             this.lbAccNr.TabIndex = 0;
             this.lbAccNr.Text = "Account Nr";
             // 
+            // lberror
+            // 
+            this.lberror.AutoSize = true;
+            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberror.Location = new System.Drawing.Point(143, 92);
+            this.lberror.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lberror.Name = "lberror";
+            this.lberror.Size = new System.Drawing.Size(0, 16);
+            this.lberror.TabIndex = 0;
+            // 
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
@@ -530,16 +540,6 @@
             this.label2.Size = new System.Drawing.Size(83, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
-            // 
-            // lberror
-            // 
-            this.lberror.AutoSize = true;
-            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lberror.Location = new System.Drawing.Point(143, 92);
-            this.lberror.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lberror.Name = "lberror";
-            this.lberror.Size = new System.Drawing.Size(0, 16);
-            this.lberror.TabIndex = 0;
             // 
             // Login
             // 

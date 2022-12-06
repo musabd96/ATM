@@ -1,4 +1,5 @@
-﻿using System;
+﻿using atmMachine;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -120,7 +121,8 @@ namespace atmSystem
         {
 
             //Close menu bar 
-
+            cashWd = 500;
+            withdraw();
             menuBarClose();
 
             MessageBox.Show("Du har tagit ut 500kr");
@@ -130,7 +132,8 @@ namespace atmSystem
         private void btn100_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-
+            cashWd = 100;
+            withdraw();
             menuBarClose();
 
             MessageBox.Show("Du har tagit ut 100kr");
@@ -140,7 +143,8 @@ namespace atmSystem
         private void btn200_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-
+            cashWd = 200;
+            withdraw();
             menuBarClose();
 
             MessageBox.Show("Du har tagit ut 200kr");
@@ -222,8 +226,8 @@ namespace atmSystem
         private void btnOkeyWith_Click_1(object sender, EventArgs e)
         {
             // show entered withdrawal - withdrawal home.cs[Design] window
-                int a;
-                a = int.Parse(txtcashWd.Text);
+            int a;
+            a = int.Parse(txtcashWd.Text);
             
             if (a >= 10000)
             {
@@ -233,9 +237,21 @@ namespace atmSystem
             }
             else
             {
-                 MessageBox.Show("Du tog ut " + a);
+                cashWd = a;
+                withdraw();
+                MessageBox.Show("Du tog ut " + a);
             }
             
+        }
+        private void withdraw()
+        {
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            MessageBox.Show($"{dataBase.balanceDb} {cashWd}");
+            newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
+            dataBase.newBalance();
+            dataBase.getData();
+            MessageBox.Show($"{dataBase.balanceDb}");
         }
     }
         
