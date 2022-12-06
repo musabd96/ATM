@@ -196,8 +196,12 @@ namespace atmSystem
         private void btnTrans_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-
             menuBarClose();
+
+            miniStatement miniStatement = new miniStatement();
+            miniStatement.miniStat();
+            miniStatement.Show();
+            this.Close();
         }
 
         private void btnBalance_Click(object sender, EventArgs e)

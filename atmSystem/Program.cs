@@ -16,7 +16,7 @@ namespace atmSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new miniStatement());
+            Application.Run(new Login());
         }
     }
 }

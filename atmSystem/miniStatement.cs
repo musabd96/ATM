@@ -1,4 +1,5 @@
 ﻿using atmMachine;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,17 @@ namespace atmSystem
         {
             InitializeComponent();
             menuBarClose();
+        }
+
+        internal void miniStat()
+        {
+            MySqlConnection conn = new MySqlConnection($"SERVER={dataBase.server};DATABASE={dataBase.database};UID={dataBase.user};PASSWORD={dataBase.pass};");
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM cusdata.ministat  WHERE accNr= '" + dataBase.accountNr + "'", conn);
+            conn.Open();
+            DataSet ds = new DataSet();
+            adapter.Fill(ds, "ministat");
+            dataGridView1.DataSource = ds.Tables["ministat"];
+            conn.Close();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
