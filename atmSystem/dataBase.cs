@@ -20,7 +20,7 @@ namespace atmMachine
         public static string server = "localhost";
         public static string database = "cusdata";
         public static string user = "root";
-        public static string pass = "allia";
+        public static string pass = "Xy7ce2e2";
 
 
         //From data base

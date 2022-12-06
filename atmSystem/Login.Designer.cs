@@ -62,6 +62,7 @@
             this.lbNoAcc = new System.Windows.Forms.Label();
             this.lbPin = new System.Windows.Forms.Label();
             this.lbAccNr = new System.Windows.Forms.Label();
+            this.lberror = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -90,6 +91,7 @@
             this.pnlLogIn.Controls.Add(this.lbNoAcc);
             this.pnlLogIn.Controls.Add(this.lbPin);
             this.pnlLogIn.Controls.Add(this.lbAccNr);
+            this.pnlLogIn.Controls.Add(this.lberror);
             this.pnlLogIn.Controls.Add(this.lbLogin);
             this.pnlLogIn.Location = new System.Drawing.Point(314, 5);
             this.pnlLogIn.Margin = new System.Windows.Forms.Padding(0);
@@ -438,6 +440,7 @@
             this.txtAccNr.Name = "txtAccNr";
             this.txtAccNr.Size = new System.Drawing.Size(300, 29);
             this.txtAccNr.TabIndex = 1;
+            this.txtAccNr.Click += new System.EventHandler(this.txtAccNr_Click);
             // 
             // lbInvalid
             // 
@@ -482,6 +485,16 @@
             this.lbAccNr.Size = new System.Drawing.Size(105, 24);
             this.lbAccNr.TabIndex = 0;
             this.lbAccNr.Text = "Account Nr";
+            // 
+            // lberror
+            // 
+            this.lberror.AutoSize = true;
+            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberror.Location = new System.Drawing.Point(143, 92);
+            this.lberror.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lberror.Name = "lberror";
+            this.lberror.Size = new System.Drawing.Size(0, 16);
+            this.lberror.TabIndex = 0;
             // 
             // lbLogin
             // 
@@ -608,6 +621,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label lbPinNotMtch;
+        private System.Windows.Forms.Label lberror;
     }
 }
 

@@ -356,22 +356,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 48F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F);
             this.label1.Location = new System.Drawing.Point(259, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 78);
+            this.label1.Size = new System.Drawing.Size(167, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "ATM";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label2.Location = new System.Drawing.Point(297, 77);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 22);
+            this.label2.Size = new System.Drawing.Size(83, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
@@ -395,7 +395,7 @@
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::atmSystem.Properties.Resources.icons8_logout_50__1_;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -433,12 +433,12 @@
             // lbMenuBar
             // 
             this.lbMenuBar.AutoSize = true;
-            this.lbMenuBar.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.lbMenuBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.lbMenuBar.ForeColor = System.Drawing.Color.White;
             this.lbMenuBar.Location = new System.Drawing.Point(54, 12);
             this.lbMenuBar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMenuBar.Name = "lbMenuBar";
-            this.lbMenuBar.Size = new System.Drawing.Size(63, 22);
+            this.lbMenuBar.Size = new System.Drawing.Size(59, 24);
             this.lbMenuBar.TabIndex = 0;
             this.lbMenuBar.Text = "Menu";
             // 
@@ -448,7 +448,7 @@
             this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProfile.FlatAppearance.BorderSize = 0;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.btnProfile.ForeColor = System.Drawing.Color.White;
             this.btnProfile.Image = global::atmSystem.Properties.Resources.icons8_customer_32__6_;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -467,7 +467,7 @@
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = global::atmSystem.Properties.Resources.icons8_home_page_50__3_;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -486,7 +486,7 @@
             this.btnService.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnService.FlatAppearance.BorderSize = 0;
             this.btnService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnService.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.btnService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.btnService.ForeColor = System.Drawing.Color.White;
             this.btnService.Image = global::atmSystem.Properties.Resources.icons8_customer_support_50__2_;
             this.btnService.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
