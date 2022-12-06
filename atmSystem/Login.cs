@@ -1,4 +1,5 @@
-﻿using System;
+﻿using atmMachine;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,30 +44,8 @@ namespace atmSystem
         //Login button
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
-            //MySQL 
-
-            /* login account and pin code 
-             * create mysql server name it
-             * create tabel and name it
-             * tabel will countain 
-             * -accNr
-             * -pin
-             * -fullName
-             * -email
-             * -balance
-             * -transaction table
-             * 
-             * 
-             * 
-             */
-
-
-
-            
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+            login();
+              
 
         }
 
@@ -126,6 +105,90 @@ namespace atmSystem
 
 
             }
+        }
+
+        //Login 
+        public void login()
+        {
+            try
+            {
+                dataBase dataBase = new dataBase();
+                Home home = new Home();
+
+
+                string accountNr = txtAccNr.Text;
+                string pin = txtPin.Text;
+
+                if (accountNr == "admin" && pin == "admin")
+                {
+
+                    accountNr = home.userAccNr;
+                    home.userAccNr = txtAccNr.Text;
+                    home.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    try
+                    {
+                        dataBase.accountNr = int.Parse(accountNr);
+
+                        dataBase.getData();
+
+
+
+                        if (dataBase.accountNrDb == Convert.ToInt32(accountNr) && dataBase.pinDb == pin)
+                        {
+                            this.Hide();
+                            
+
+                            home.Show();
+                        }
+
+                        else
+                        {
+                            lberror.Text = "Wrong account and pin!";
+                            lberror.ForeColor = Color.Red;
+                            txtAccNr.ForeColor = Color.Red;
+                            pnlAccNr.BackColor = Color.Red;
+                            pnlPin.BackColor = Color.Red;
+                            txtPin.ForeColor = Color.Red;
+                            txtAccNr.SelectAll();
+                            txtPin.SelectAll();
+                            txtAccNr.Focus();
+
+
+
+                        }
+
+                    }
+                    catch
+                    {
+                        
+
+                        txtAccNr.ForeColor = Color.Red;
+                        pnlAccNr.BackColor = Color.Red;
+                        pnlPin.BackColor = Color.Red;
+                        txtPin.ForeColor = Color.Red;
+                        txtAccNr.SelectAll();
+                        txtPin.SelectAll();
+                        txtAccNr.Focus();
+
+                    }
+
+                }
+
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void txtAccNr_Click(object sender, EventArgs e)
+        {
+            lberror.Text = "";
+
         }
     }
 }
