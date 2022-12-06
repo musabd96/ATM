@@ -136,7 +136,7 @@
             this.pnlMenuBar.Location = new System.Drawing.Point(571, -1);
             this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(130, 232);
+            this.pnlMenuBar.Size = new System.Drawing.Size(130, 101);
             this.pnlMenuBar.TabIndex = 8;
             // 
             // btnLogout
