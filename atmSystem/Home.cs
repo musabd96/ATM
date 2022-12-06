@@ -4,14 +4,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Net.Security;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -120,51 +112,29 @@ namespace atmSystem
         private void btn100_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-            try
-            {
-                cashWd = 100;
-                withdraw();
-                MessageBox.Show("Du har tagit ut 100kr");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            menuBarClose();
+            fastWd = 100;
+            withdraw();
+            
             menuBarClose();
             //substract blance in data base
         }
 
         private void btn200_Click(object sender, EventArgs e)
         {
+            fastWd = 200;
+            withdraw();
             //Close menu bar 
-            try
-            {
-                cashWd = 200;
-                withdraw();
-                MessageBox.Show("Du har tagit ut 200kr");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
             menuBarClose();
             //substract blance in data base
         }
         private void btn500_Click(object sender, EventArgs e)
         {
 
+            fastWd = 500;
+            withdraw();
             //Close menu bar
-            try
-            {
-                cashWd = 500;
-                withdraw();
-                MessageBox.Show("Du har tagit ut 500kr");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
             menuBarClose();
             //substract blance in data base
         }
@@ -176,7 +146,7 @@ namespace atmSystem
 
             menuBarClose();
 
-            MessageBox.Show("Hi! 'customer Name'. Thank you for you contact us!", "Customer Server");
+            MessageBox.Show($"Hi! {dataBase.fullName}. Thank you for you contact us!", "Customer Server");
         }
 
         private void plnAtm_Click(object sender, EventArgs e)
@@ -219,71 +189,74 @@ namespace atmSystem
 
             menuBarClose();
         }
-        private void txtcashWd_TextChanged(object sender, EventArgs e)
-        {
-            // TextBox - withdrawal home.cs[Design] window
-            lbinvWd.Hide();
-            lbstarWd.Hide();
-            lbMaxWd.Hide();
-        }
-        private void label3_Click(object sender, EventArgs e)
-        {
-            // invalid  * - "label" withdrawal home.cs[Design] window
-        }
+       
+        
 
-        private void lbMaxWd_Click(object sender, EventArgs e)
-        {
-            // Max 10 000 SEK - withdrawal home.cs[Design] window
-        }
+        
 
-        private void lbinvWd_Click(object sender, EventArgs e)
-        {
-            // invalid - withdrawal home.cs[Design] window
-        }
-
-        private void lbstarWd_Click(object sender, EventArgs e)
-        {
-            // * -  withdrawal home.cs[Design] window
-        }
-        private void btnOkeyWith_Click_1(object sender, EventArgs e)
-        {
-            // show entered withdrawal - withdrawal home.cs[Design] window
-        }
+       
         private void withdraw()
         {
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
             try
             {
-                dataBase dataBase = new dataBase();
-                dataBase.getData();
-                cashWd = Convert.ToInt32(txtcashWd.Text);
+                
+                if ( txtcashWd.Text == "")
+                {
+                    cashWd = fastWd;
+                }
+                else if( txtcashWd.Text != "")
+                {
+                    cashWd = Convert.ToInt32(txtcashWd.Text);
+                }
 
-                if (cashWd == "")
+                
+                if (cashWd >= 10000)
                 {
-                    lbinvWd.Show();
-                    lbstarWd.Show();
-                }
-                else if (Convert.ToInt32(cashWd) >= 10000)
-                {
-                    lbMaxWd.Show();
-                }
-                else if (Convert.ToInt32(dataBase.balanceDb) > cashWd)
-                {
-                    MessageBox.Show("Du har inte tillräckligt med pengar.");
+                    lbstarWd.Text = "*";
+                    
+                    lbMaxWd.ForeColor = Color.Red;
                 }
                 else
                 {
-                    withdraw();
-                    MessageBox.Show("Du tog ut " + cashWd);
-                    newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
-                    dataBase.newBalance();
-                    dataBase.getData();
-                    dataBase.miniStatement();
+                    if (Convert.ToInt32(dataBase.balanceDb) < cashWd)
+                    {
+                        MessageBox.Show("Du har inte tillräckligt med pengar.");
+
+                    }
+                    else
+                    {
+                        newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
+                        dataBase.newBalance();
+                        dataBase.getData();
+                        dataBase.miniStatement();
+                    }
+
                 }
+                
+                
+                    
             }
-            catch(Exception)
+            catch
             {
-                MessageBox.Show("Du måste mata in siffror.");
+                lbinvWd.Text = "Invalid inmatning.";
+
             }
+
+        }
+
+        private void btnOkeyWith_Click(object sender, EventArgs e)
+        {
+            withdraw();
+
+        }
+
+        private void txtcashWd_KeyDown(object sender, KeyEventArgs e)
+        {
+            lbstarWd.Text = "";
+            lbinvWd.Text = "";
+            lbMaxWd.ForeColor = Color.DodgerBlue;
         }
     }
         

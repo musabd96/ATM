@@ -514,7 +514,7 @@
             this.btnOkeyWith.TabIndex = 3;
             this.btnOkeyWith.Text = "Ok";
             this.btnOkeyWith.UseVisualStyleBackColor = false;
-            this.btnOkeyWith.Click += new System.EventHandler(this.btnOkeyWith_Click_1);
+            this.btnOkeyWith.Click += new System.EventHandler(this.btnOkeyWith_Click);
             // 
             // btn500
             // 
@@ -554,19 +554,18 @@
             this.txtcashWd.Name = "txtcashWd";
             this.txtcashWd.Size = new System.Drawing.Size(85, 29);
             this.txtcashWd.TabIndex = 1;
-            this.txtcashWd.TextChanged += new System.EventHandler(this.txtcashWd_TextChanged);
+            this.txtcashWd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcashWd_KeyDown);
             // 
             // lbMaxWd
             // 
             this.lbMaxWd.AutoSize = true;
             this.lbMaxWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaxWd.Location = new System.Drawing.Point(193, 235);
+            this.lbMaxWd.Location = new System.Drawing.Point(228, 231);
             this.lbMaxWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMaxWd.Name = "lbMaxWd";
-            this.lbMaxWd.Size = new System.Drawing.Size(280, 16);
+            this.lbMaxWd.Size = new System.Drawing.Size(231, 16);
             this.lbMaxWd.TabIndex = 0;
-            this.lbMaxWd.Text = "Maximum amount withdaw per day 10 000 SEK";
-            this.lbMaxWd.Visible = false;
+            this.lbMaxWd.Text = "Maximum amount withdaw 10 000 SEK";
             // 
             // lbNoAcc
             // 
@@ -587,25 +586,19 @@
             this.lbstarWd.Location = new System.Drawing.Point(273, 200);
             this.lbstarWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbstarWd.Name = "lbstarWd";
-            this.lbstarWd.Size = new System.Drawing.Size(18, 24);
+            this.lbstarWd.Size = new System.Drawing.Size(0, 24);
             this.lbstarWd.TabIndex = 0;
-            this.lbstarWd.Text = "*";
-            this.lbstarWd.Visible = false;
-            this.lbstarWd.Click += new System.EventHandler(this.lbstarWd_Click);
             // 
             // lbinvWd
             // 
             this.lbinvWd.AutoSize = true;
             this.lbinvWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbinvWd.ForeColor = System.Drawing.Color.Red;
-            this.lbinvWd.Location = new System.Drawing.Point(195, 199);
+            this.lbinvWd.Location = new System.Drawing.Point(176, 199);
             this.lbinvWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbinvWd.Name = "lbinvWd";
-            this.lbinvWd.Size = new System.Drawing.Size(46, 16);
+            this.lbinvWd.Size = new System.Drawing.Size(0, 16);
             this.lbinvWd.TabIndex = 0;
-            this.lbinvWd.Text = "invalid";
-            this.lbinvWd.Visible = false;
-            this.lbinvWd.Click += new System.EventHandler(this.lbinvWd_Click);
             // 
             // label9
             // 
@@ -779,7 +772,6 @@
         private System.Windows.Forms.Label lbMaxWd;
         private System.Windows.Forms.Label lbNoAcc;
         private System.Windows.Forms.Label lbstarWd;
-        private System.Windows.Forms.Label lbinvWd;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lbAcc;
         private System.Windows.Forms.Label lbname;
@@ -791,5 +783,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBalance;
         private System.Windows.Forms.Button btnTrans;
+        private System.Windows.Forms.Label lbinvWd;
     }
 }
