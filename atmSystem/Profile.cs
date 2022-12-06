@@ -11,6 +11,9 @@ using System.Runtime.InteropServices;
 
 namespace atmSystem
 {
+
+    //public static string newPin { get; set; }
+
     public partial class Profile : Form
     {
         public Profile()

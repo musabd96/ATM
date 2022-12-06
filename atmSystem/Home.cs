@@ -18,6 +18,15 @@ namespace atmSystem
 {
     public partial class Home : Form
     {
+        public string userAccNr { get; set; }
+        public string userFullName { get; set; }
+        //public string oldBalance { get; set; }
+        public static int newBalance { get; set; }
+        public static int cashDp { get; set; }
+        public static int cashWd { get; set; }
+        public static int fastWd { get; set; }
+
+
         public Home()
         {
             InitializeComponent();

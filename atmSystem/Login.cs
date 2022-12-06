@@ -48,7 +48,7 @@ namespace atmSystem
         //Login button
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtAccNr.Text == UserName)
+            if(txtAccNr.Text == UserName || txtAccNr.Text == Pin )
             {
                 Home home = new Home();
                 home.Show();
@@ -56,7 +56,7 @@ namespace atmSystem
             }
             else
             {
-                MessageBox.Show("bajs");
+                MessageBox.Show("Invalid Account number or pin.");
             }
 
 
