@@ -248,42 +248,42 @@ namespace atmSystem
         private void btnOkeyWith_Click_1(object sender, EventArgs e)
         {
             // show entered withdrawal - withdrawal home.cs[Design] window
-            if (txtcashWd.Text == "")
-            {
-                lbinvWd.Show();
-                lbstarWd.Show();
-            }
-            else if (Convert.ToInt32(txtcashWd.Text) >= 10000)
-            {
-                lbMaxWd.Show();
-            }
-            else
-            {
-                try
-                {
-                    cashWd = Convert.ToInt32(txtcashWd.Text);
-                    withdraw();
-                    MessageBox.Show("Du tog ut " + cashWd);
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-            
         }
         private void withdraw()
         {
+            try
+            {
+                dataBase dataBase = new dataBase();
+                dataBase.getData();
+                cashWd = Convert.ToInt32(txtcashWd.Text);
 
-
-
-
-            dataBase dataBase = new dataBase();
-            dataBase.getData();
-            newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
-            dataBase.newBalance();
-            dataBase.getData();
-            dataBase.miniStatement();
+                if (cashWd == "")
+                {
+                    lbinvWd.Show();
+                    lbstarWd.Show();
+                }
+                else if (Convert.ToInt32(cashWd) >= 10000)
+                {
+                    lbMaxWd.Show();
+                }
+                else if (Convert.ToInt32(dataBase.balanceDb) > cashWd)
+                {
+                    MessageBox.Show("Du har inte tillräckligt med pengar.");
+                }
+                else
+                {
+                    withdraw();
+                    MessageBox.Show("Du tog ut " + cashWd);
+                    newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
+                    dataBase.newBalance();
+                    dataBase.getData();
+                    dataBase.miniStatement();
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Du måste mata in siffror.");
+            }
         }
     }
         
