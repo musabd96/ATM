@@ -14,9 +14,14 @@ namespace atmSystem
 {
     public partial class Login : Form
     {
+
+        public string UserName = "1234";
+        public string Pin = "Admin";
+
         public Login()
         {
-            InitializeComponent();
+             
+             InitializeComponent();
 
             //when the program start the registration,login and ATM logo labels will be this positions.
             pnlRegister.Height = 0;
