@@ -274,6 +274,10 @@ namespace atmSystem
         }
         private void withdraw()
         {
+
+
+
+
             dataBase dataBase = new dataBase();
             dataBase.getData();
             newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
