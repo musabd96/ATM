@@ -36,7 +36,7 @@
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnService = new System.Windows.Forms.Button();
-            this.pnlLogIn = new System.Windows.Forms.Panel();
+            this.pnlWithdraw = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pnlDeposit = new System.Windows.Forms.Panel();
@@ -77,7 +77,7 @@
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
-            this.pnlLogIn.SuspendLayout();
+            this.pnlWithdraw.SuspendLayout();
             this.pnlDeposit.SuspendLayout();
             this.pnlDpAmt.SuspendLayout();
             this.pnlWithAmt.SuspendLayout();
@@ -210,35 +210,35 @@
             this.btnService.UseVisualStyleBackColor = false;
             this.btnService.Click += new System.EventHandler(this.btnService_Click);
             // 
-            // pnlLogIn
+            // pnlWithdraw
             // 
-            this.pnlLogIn.Controls.Add(this.panel1);
-            this.pnlLogIn.Controls.Add(this.panel7);
-            this.pnlLogIn.Controls.Add(this.pnlDeposit);
-            this.pnlLogIn.Controls.Add(this.btn200);
-            this.pnlLogIn.Controls.Add(this.btnTrans);
-            this.pnlLogIn.Controls.Add(this.btnBalance);
-            this.pnlLogIn.Controls.Add(this.btnDeposit);
-            this.pnlLogIn.Controls.Add(this.btn100);
-            this.pnlLogIn.Controls.Add(this.btnOkeyWith);
-            this.pnlLogIn.Controls.Add(this.btn500);
-            this.pnlLogIn.Controls.Add(this.pnlWithAmt);
-            this.pnlLogIn.Controls.Add(this.lbMaxWd);
-            this.pnlLogIn.Controls.Add(this.lbNoAcc);
-            this.pnlLogIn.Controls.Add(this.lbstarWd);
-            this.pnlLogIn.Controls.Add(this.lbinvWd);
-            this.pnlLogIn.Controls.Add(this.label9);
-            this.pnlLogIn.Controls.Add(this.lbAcc);
-            this.pnlLogIn.Controls.Add(this.lbname);
-            this.pnlLogIn.Controls.Add(this.label4);
-            this.pnlLogIn.Controls.Add(this.lbAccNr);
-            this.pnlLogIn.Controls.Add(this.lbLogin);
-            this.pnlLogIn.Location = new System.Drawing.Point(-1, 100);
-            this.pnlLogIn.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlLogIn.Name = "pnlLogIn";
-            this.pnlLogIn.Size = new System.Drawing.Size(701, 341);
-            this.pnlLogIn.TabIndex = 5;
-            this.pnlLogIn.Click += new System.EventHandler(this.pnlLogIn_Click);
+            this.pnlWithdraw.Controls.Add(this.panel1);
+            this.pnlWithdraw.Controls.Add(this.panel7);
+            this.pnlWithdraw.Controls.Add(this.pnlDeposit);
+            this.pnlWithdraw.Controls.Add(this.btn200);
+            this.pnlWithdraw.Controls.Add(this.btnTrans);
+            this.pnlWithdraw.Controls.Add(this.btnBalance);
+            this.pnlWithdraw.Controls.Add(this.btnDeposit);
+            this.pnlWithdraw.Controls.Add(this.btn100);
+            this.pnlWithdraw.Controls.Add(this.btnOkeyWith);
+            this.pnlWithdraw.Controls.Add(this.btn500);
+            this.pnlWithdraw.Controls.Add(this.pnlWithAmt);
+            this.pnlWithdraw.Controls.Add(this.lbMaxWd);
+            this.pnlWithdraw.Controls.Add(this.lbNoAcc);
+            this.pnlWithdraw.Controls.Add(this.lbstarWd);
+            this.pnlWithdraw.Controls.Add(this.lbinvWd);
+            this.pnlWithdraw.Controls.Add(this.label9);
+            this.pnlWithdraw.Controls.Add(this.lbAcc);
+            this.pnlWithdraw.Controls.Add(this.lbname);
+            this.pnlWithdraw.Controls.Add(this.label4);
+            this.pnlWithdraw.Controls.Add(this.lbAccNr);
+            this.pnlWithdraw.Controls.Add(this.lbLogin);
+            this.pnlWithdraw.Location = new System.Drawing.Point(-1, 100);
+            this.pnlWithdraw.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlWithdraw.Name = "pnlWithdraw";
+            this.pnlWithdraw.Size = new System.Drawing.Size(701, 341);
+            this.pnlWithdraw.TabIndex = 5;
+            this.pnlWithdraw.Click += new System.EventHandler(this.pnlLogIn_Click);
             // 
             // panel1
             // 
@@ -708,7 +708,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this.pnlMenuBar);
-            this.Controls.Add(this.pnlLogIn);
+            this.Controls.Add(this.pnlWithdraw);
             this.Controls.Add(this.plnAtm);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -722,8 +722,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).EndInit();
-            this.pnlLogIn.ResumeLayout(false);
-            this.pnlLogIn.PerformLayout();
+            this.pnlWithdraw.ResumeLayout(false);
+            this.pnlWithdraw.PerformLayout();
             this.pnlDeposit.ResumeLayout(false);
             this.pnlDeposit.PerformLayout();
             this.pnlDpAmt.ResumeLayout(false);
@@ -746,7 +746,7 @@
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnService;
-        private System.Windows.Forms.Panel pnlLogIn;
+        private System.Windows.Forms.Panel pnlWithdraw;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel pnlDeposit;

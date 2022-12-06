@@ -45,7 +45,8 @@ namespace atmSystem
         private void btnDeposit_Click(object sender, EventArgs e)
         {
             menuBarClose();
-            pnlDeposit.Height = pnlLogIn.Height;
+            btnHome.Enabled = true;
+            pnlDeposit.Height = pnlWithdraw.Height;
         }
 
         //Home button in menubar 
@@ -80,10 +81,13 @@ namespace atmSystem
             if (pnlDeposit.Height == 351)
             {
                 btnHome.Enabled = true;
+                
             }
             else if (pnlDeposit.Height == 0)
             {
                 btnHome.Enabled = false;
+                
+
             }
 
 
