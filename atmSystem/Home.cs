@@ -231,6 +231,8 @@ namespace atmSystem
                         dataBase.newBalance();
                         dataBase.getData();
                         dataBase.miniStatement();
+                        MessageBox.Show($"Du har tagit ut: {cashWd} SEK" +
+                                        $"\nfrån ditt Konto nummer: {dataBase.accountNrDb}");
                     }
 
                 }
