@@ -279,6 +279,7 @@ namespace atmSystem
             newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
             dataBase.newBalance();
             dataBase.getData();
+            dataBase.miniStatement();
         }
     }
         
