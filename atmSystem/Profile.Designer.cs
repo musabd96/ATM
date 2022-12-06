@@ -56,10 +56,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlMenuBar = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.picMenuBar = new System.Windows.Forms.PictureBox();
             this.lbMenuBar = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.picMenuBar = new System.Windows.Forms.PictureBox();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnService = new System.Windows.Forms.Button();
@@ -389,6 +389,28 @@
             this.pnlMenuBar.Size = new System.Drawing.Size(130, 100);
             this.pnlMenuBar.TabIndex = 8;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.picMenuBar);
+            this.panel3.Controls.Add(this.lbMenuBar);
+            this.panel3.Location = new System.Drawing.Point(3, 15);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(121, 44);
+            this.panel3.TabIndex = 0;
+            // 
+            // lbMenuBar
+            // 
+            this.lbMenuBar.AutoSize = true;
+            this.lbMenuBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lbMenuBar.ForeColor = System.Drawing.Color.White;
+            this.lbMenuBar.Location = new System.Drawing.Point(54, 12);
+            this.lbMenuBar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbMenuBar.Name = "lbMenuBar";
+            this.lbMenuBar.Size = new System.Drawing.Size(59, 24);
+            this.lbMenuBar.TabIndex = 0;
+            this.lbMenuBar.Text = "Menu";
+            // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.DodgerBlue;
@@ -408,16 +430,6 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.picMenuBar);
-            this.panel3.Controls.Add(this.lbMenuBar);
-            this.panel3.Location = new System.Drawing.Point(3, 15);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(121, 44);
-            this.panel3.TabIndex = 0;
-            // 
             // picMenuBar
             // 
             this.picMenuBar.Image = global::atmSystem.Properties.Resources.icons8_menu_squared_48;
@@ -429,18 +441,6 @@
             this.picMenuBar.TabIndex = 0;
             this.picMenuBar.TabStop = false;
             this.picMenuBar.Click += new System.EventHandler(this.picMenuBar_Click);
-            // 
-            // lbMenuBar
-            // 
-            this.lbMenuBar.AutoSize = true;
-            this.lbMenuBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lbMenuBar.ForeColor = System.Drawing.Color.White;
-            this.lbMenuBar.Location = new System.Drawing.Point(54, 12);
-            this.lbMenuBar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbMenuBar.Name = "lbMenuBar";
-            this.lbMenuBar.Size = new System.Drawing.Size(59, 24);
-            this.lbMenuBar.TabIndex = 0;
-            this.lbMenuBar.Text = "Menu";
             // 
             // btnProfile
             // 

@@ -20,7 +20,7 @@ namespace atmMachine
         public static string server = "localhost";
         public static string database = "cusdata";
         public static string user = "root";
-        public static string pass = "";
+        public static string pass = "allia";   // <------ write your database password here
 
 
         //From data base
@@ -36,7 +36,6 @@ namespace atmMachine
         //to data base 
         public static int accountNr { get; set; }
         public static string pin { get; set; }
-
         public static string fullName { get; set; }
         public static string email { get; set; }
         public static string balance { get; set; }
@@ -89,6 +88,7 @@ namespace atmMachine
 
         }
         
+        //New balace to balace column
         internal void newBalance()
         {
 
@@ -102,7 +102,8 @@ namespace atmMachine
             conn.Close();
 
         }
-        /*
+        
+        //Change current pin in pin column
         internal void newPin()
         {
 
@@ -114,8 +115,8 @@ namespace atmMachine
 
             conn.Close();
         }
-        */
-
+        
+        
         internal void miniStatement()
         {
             Random rand = new Random();

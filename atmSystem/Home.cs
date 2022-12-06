@@ -196,8 +196,12 @@ namespace atmSystem
         private void btnTrans_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-
             menuBarClose();
+
+            miniStatement miniStatement = new miniStatement();
+            miniStatement.miniStat();
+            miniStatement.Show();
+            this.Close();
         }
 
         private void btnBalance_Click(object sender, EventArgs e)
@@ -272,9 +276,19 @@ namespace atmSystem
         {
             dataBase dataBase = new dataBase();
             dataBase.getData();
-            newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
-            dataBase.newBalance();
-            dataBase.getData();
+            if (Convert.ToInt32(dataBase.balanceDb) > cashWd)
+            {
+
+                newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
+                dataBase.newBalance();
+                dataBase.getData();
+                dataBase.miniStatement();
+            }
+            else
+            {
+                MessageBox.Show("Du har inte tillräckligt med pengar");
+            }
+            
         }
     }
         

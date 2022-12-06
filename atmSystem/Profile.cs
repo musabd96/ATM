@@ -16,6 +16,8 @@ namespace atmSystem
 
     public partial class Profile : Form
     {
+
+        public static string newPin { get; set; }
         public Profile()
         {
             InitializeComponent();
