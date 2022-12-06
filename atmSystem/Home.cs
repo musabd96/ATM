@@ -116,43 +116,59 @@ namespace atmSystem
 
 
         //Withdraw
-
-        private void btn500_Click(object sender, EventArgs e)
-        {
-
-            //Close menu bar 
-            cashWd = 500;
-            withdraw();
-            menuBarClose();
-
-            MessageBox.Show("Du har tagit ut 500kr");
-            //substract blance in data base
-        }
-
+        #region BTN100-500
         private void btn100_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-            cashWd = 100;
-            withdraw();
+            try
+            {
+                cashWd = 100;
+                withdraw();
+                MessageBox.Show("Du har tagit ut 100kr");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             menuBarClose();
-
-            MessageBox.Show("Du har tagit ut 100kr");
+            menuBarClose();
             //substract blance in data base
         }
 
         private void btn200_Click(object sender, EventArgs e)
         {
             //Close menu bar 
-            cashWd = 200;
-            withdraw();
+            try
+            {
+                cashWd = 200;
+                withdraw();
+                MessageBox.Show("Du har tagit ut 200kr");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             menuBarClose();
-
-            MessageBox.Show("Du har tagit ut 200kr");
-
-
             //substract blance in data base
-
         }
+        private void btn500_Click(object sender, EventArgs e)
+        {
+
+            //Close menu bar
+            try
+            {
+                cashWd = 500;
+                withdraw();
+                MessageBox.Show("Du har tagit ut 500kr");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            menuBarClose();
+            //substract blance in data base
+        }
+        #endregion
 
         private void btnService_Click(object sender, EventArgs e)
         {
@@ -186,7 +202,9 @@ namespace atmSystem
 
         private void btnBalance_Click(object sender, EventArgs e)
         {
-            //Close menu bar 
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            MessageBox.Show($"Ditt Saldo är: {dataBase.balanceDb}");//Close menu bar 
 
             menuBarClose();
         }
@@ -226,20 +244,27 @@ namespace atmSystem
         private void btnOkeyWith_Click_1(object sender, EventArgs e)
         {
             // show entered withdrawal - withdrawal home.cs[Design] window
-            int a;
-            a = int.Parse(txtcashWd.Text);
-            
-            if (a >= 10000)
+            if (txtcashWd.Text == "")
             {
                 lbinvWd.Show();
                 lbstarWd.Show();
+            }
+            else if (Convert.ToInt32(txtcashWd.Text) >= 10000)
+            {
                 lbMaxWd.Show();
             }
             else
             {
-                cashWd = a;
-                withdraw();
-                MessageBox.Show("Du tog ut " + a);
+                try
+                {
+                    cashWd = Convert.ToInt32(txtcashWd.Text);
+                    withdraw();
+                    MessageBox.Show("Du tog ut " + cashWd);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             
         }
@@ -247,11 +272,9 @@ namespace atmSystem
         {
             dataBase dataBase = new dataBase();
             dataBase.getData();
-            MessageBox.Show($"{dataBase.balanceDb} {cashWd}");
             newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
             dataBase.newBalance();
             dataBase.getData();
-            MessageBox.Show($"{dataBase.balanceDb}");
         }
     }
         
