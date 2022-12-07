@@ -20,7 +20,7 @@ namespace atmMachine
         public static string server = "localhost";
         public static string database = "cusdata";
         public static string user = "root";
-        public static string pass = "0909";   // <------ write your database password here
+        public static string pass = "mamamia";   // <------ write your database password here
 
 
         //From data base
@@ -118,7 +118,6 @@ namespace atmMachine
         
         internal void miniStatement()
         {
-            Random rand = new Random();
             Home home = new Home();
 
 

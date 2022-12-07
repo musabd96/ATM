@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using atmMachine;
 
 namespace atmSystem
 {
@@ -28,6 +29,13 @@ namespace atmSystem
             lbMenuBar.Text = "";
             pnlMenuBar.Size = new Size(130, 100);
             btnHome.Visible = false;
+
+            // showing name, email & accNr currently logged in
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            lbFullName.Text = dataBase.fullNameDb;
+            lbEmail.Text = dataBase.emailDb;
+            lbAcc.Text = dataBase.accountNrDb.ToString();
         }
 
 

@@ -19,7 +19,7 @@ namespace atmSystem
         public static int cashWd { get; set; }
         public static int fastWd { get; set; }
 
-
+        
         public Home()
         {
             InitializeComponent();
@@ -30,8 +30,17 @@ namespace atmSystem
             lbMenuBar.Text = "";
             pnlMenuBar.Size = new Size(130, 99);
             btnHome.Visible = false;
-        }
 
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            // showing name & accNr currently logged in
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            lbAcc.Text = dataBase.accountNrDb.ToString();
+            lbname.Text = dataBase.fullNameDb;
+        }
 
         //logout button in menubar
         private void btnLogout_Click(object sender, EventArgs e)
