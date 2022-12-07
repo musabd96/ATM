@@ -14,7 +14,9 @@ namespace atmSystem
 {
     public partial class Login : Form
     {
-        
+        public static string accNr { get; set; }
+        public static string Pin { get; set; }
+
         public Login()
         {           
              InitializeComponent();
@@ -33,6 +35,9 @@ namespace atmSystem
         //Login 
         public void login()
         {
+            accNr = txtAccNr.Text;
+            Pin =  txtPin.Text;
+
             try
             {
                 dataBase dataBase = new dataBase();

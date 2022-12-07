@@ -49,28 +49,41 @@ namespace atmMachine
         //Get data from database 
         internal void getData()
         {
+
+            //Admin login
             Login login = new Login();
-
-
-
-            string Query = "SELECT * FROM  cusdata.useracc WHERE accNr= '" + accountNr + "' ";
-            conn.Open();
-            MySqlCommand cmd = new MySqlCommand(Query, conn);
-
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            while (reader.Read())
+            if ( Login.accNr == "admin")
             {
-                accountNrDb = (int)reader["accNr"];
-
-                pinDb = (string)reader["pin"];
-                fullNameDb = (string)reader["fullName"];
-                emailDb = (string)reader["email"];
-                balanceDb = (string)reader["balance"];
+                fullNameDb = "admin";
+                emailDb = "admin";
+                accountNrDb = 1234;
+                balanceDb = "1000000000";
 
 
             }
-            conn.Close();
+            else
+            {
+                string Query = "SELECT * FROM  cusdata.useracc WHERE accNr= '" + accountNr + "' ";
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(Query, conn);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    accountNrDb = (int)reader["accNr"];
+
+                    pinDb = (string)reader["pin"];
+                    fullNameDb = (string)reader["fullName"];
+                    emailDb = (string)reader["email"];
+                    balanceDb = (string)reader["balance"];
+
+
+                }
+                conn.Close();
+            }
+
+            
         }
 
         //insert data from database 

@@ -31,15 +31,27 @@ namespace atmSystem
             pnlMenuBar.Size = new Size(130, 99);
             btnHome.Visible = false;
 
+            
+
         }
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
             // showing name & accNr currently logged in
+           
             dataBase dataBase = new dataBase();
             dataBase.getData();
             lbAcc.Text = dataBase.accountNrDb.ToString();
             lbname.Text = dataBase.fullNameDb;
+
+            if(dataBase.accountNrDb == 1234)
+            {
+                btnminstat.Enabled = false;
+            }
+            else
+            {
+                btnminstat.Enabled = true;
+            }
         }
 
         //logout button in menubar

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.pnlMenuBar = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -53,7 +54,7 @@
             this.lbFName = new System.Windows.Forms.Label();
             this.lbDepo = new System.Windows.Forms.Label();
             this.btn200 = new System.Windows.Forms.Button();
-            this.btnTrans = new System.Windows.Forms.Button();
+            this.btnminstat = new System.Windows.Forms.Button();
             this.btnBalance = new System.Windows.Forms.Button();
             this.btnDeposit = new System.Windows.Forms.Button();
             this.btn100 = new System.Windows.Forms.Button();
@@ -216,7 +217,7 @@
             this.pnlWithdraw.Controls.Add(this.panel7);
             this.pnlWithdraw.Controls.Add(this.pnlDeposit);
             this.pnlWithdraw.Controls.Add(this.btn200);
-            this.pnlWithdraw.Controls.Add(this.btnTrans);
+            this.pnlWithdraw.Controls.Add(this.btnminstat);
             this.pnlWithdraw.Controls.Add(this.btnBalance);
             this.pnlWithdraw.Controls.Add(this.btnDeposit);
             this.pnlWithdraw.Controls.Add(this.btn100);
@@ -437,22 +438,22 @@
             this.btn200.UseVisualStyleBackColor = false;
             this.btn200.Click += new System.EventHandler(this.btn200_Click);
             // 
-            // btnTrans
+            // btnminstat
             // 
-            this.btnTrans.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnTrans.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTrans.FlatAppearance.BorderSize = 0;
-            this.btnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrans.ForeColor = System.Drawing.Color.White;
-            this.btnTrans.Location = new System.Drawing.Point(571, 128);
-            this.btnTrans.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTrans.Name = "btnTrans";
-            this.btnTrans.Size = new System.Drawing.Size(125, 51);
-            this.btnTrans.TabIndex = 3;
-            this.btnTrans.Text = "Mini statment";
-            this.btnTrans.UseVisualStyleBackColor = false;
-            this.btnTrans.Click += new System.EventHandler(this.btnTrans_Click);
+            this.btnminstat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnminstat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnminstat.FlatAppearance.BorderSize = 0;
+            this.btnminstat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnminstat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnminstat.ForeColor = System.Drawing.Color.White;
+            this.btnminstat.Location = new System.Drawing.Point(571, 128);
+            this.btnminstat.Margin = new System.Windows.Forms.Padding(0);
+            this.btnminstat.Name = "btnminstat";
+            this.btnminstat.Size = new System.Drawing.Size(125, 51);
+            this.btnminstat.TabIndex = 3;
+            this.btnminstat.Text = "Mini statment";
+            this.btnminstat.UseVisualStyleBackColor = false;
+            this.btnminstat.Click += new System.EventHandler(this.btnTrans_Click);
             // 
             // btnBalance
             // 
@@ -721,6 +722,7 @@
             this.ForeColor = System.Drawing.Color.DodgerBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -789,7 +791,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBalance;
-        private System.Windows.Forms.Button btnTrans;
+        private System.Windows.Forms.Button btnminstat;
         private System.Windows.Forms.Label lbinvWd;
     }
 }
