@@ -20,7 +20,7 @@ namespace atmMachine
         public static string server = "localhost";
         public static string database = "cusdata";
         public static string user = "root";
-        public static string pass = "";   // <------ write your database password here
+        public static string pass = "0909";   // <------ write your database password here
 
 
         //From data base
@@ -77,7 +77,6 @@ namespace atmMachine
         internal void insertData()
         {
 
-            MessageBox.Show($"{pin} {fullName} {email} {newAccNrDb} {balance} ");
             string query = "UPDATE cusdata.useracc SET pin= '" + pin + "' , fullName= '" + fullName + "' , email= '" + email + "'  , balance= '" + balance + "' WHERE accNr = " + newAccNrDb + "";
             conn.Open();
 
@@ -149,36 +148,28 @@ namespace atmMachine
         }
 
 
-
+        //Create new account
         internal void createAcc()
         {
-            lastAccNr();
-            //MessageBox.Show($"{newPinDb} create");
+        
+            string query = "insert into  cusdata.useracc (pin, fullName, email, balance) values (0, 0, 0, 0 )";
 
-
-            if (newPinDb != "0")
-            {
-                string query = "insert into  cusdata.useracc (pin, fullName, email, balance) values (0, 0, 0, 0 )";
-
-                conn.Open();
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                var ds = new DataSet();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            var ds = new DataSet();
 
 
 
-                cmd.ExecuteReader();
+            cmd.ExecuteReader();
 
 
 
-                conn.Close();
-            }
-            else
-            {
-
-            }
-
+            conn.Close();
+            
+            
         }
 
+        //Get last account and pin
         internal void lastAccNr()
         {
 
@@ -191,10 +182,9 @@ namespace atmMachine
 
             while (reader.Read())
             {
+            }
                 newAccNrDb = (int)reader["accNr"];
                 newPinDb = (string)reader["pin"];
-                MessageBox.Show($"new acc {newAccNrDb} pin {newPinDb}");
-            }
             conn.Close();
         }
     }

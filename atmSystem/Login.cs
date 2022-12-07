@@ -14,10 +14,7 @@ namespace atmSystem
 {
     public partial class Login : Form
     {
-
-        public string UserName = "1234";
-        public string Pin = "Admin";
-
+        
         public Login()
         {
              
@@ -29,14 +26,7 @@ namespace atmSystem
             plnAtm.Location = new Point(5, 5);
         }
 
-        //Registration link will show the registration label 
 
-        private void LnkRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            pnlRegister.Height = pnlLogIn.Height;
-            pnlLogIn.Location = new Point(5, 5);
-            plnAtm.Location = new Point(380, 5);
-        }
 
         //closed the registration label
         private void btnClose_Click_1(object sender, EventArgs e)
@@ -76,29 +66,62 @@ namespace atmSystem
         }
 
         //Registration 
+        private void LnkRegister_Click(object sender, EventArgs e)
+        {
+            //Creating account nr 
+            dataBase dataBase = new dataBase();
+            dataBase.lastAccNr();
+            if (dataBase.newPinDb != "0")
+            {
+                dataBase.createAcc();
+                dataBase.lastAccNr();
+                txtAccNrReg.Text = Convert.ToString(dataBase.newAccNrDb);
+                MessageBox.Show($"{dataBase.newAccNrDb} new");
+
+            }
+            else
+            {
+                txtAccNrReg.Text = Convert.ToString(dataBase.newAccNrDb);
+                MessageBox.Show($"{dataBase.newAccNrDb} old");
+
+            }
+
+            //Clear all fields
+            txtFullName.Clear();
+            txtEmail.Clear();
+            txtPinReg.Clear();
+            txtPinConf.Clear();
+
+
+            txtAccNrReg.Enabled = false;
+            pnlRegister.Height = pnlLogIn.Height;
+            pnlLogIn.Location = new Point(5, 5);
+            plnAtm.Location = new Point(380, 5);
+
+        }
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string fullName, email, accountNr, Pin, confPin;
-
-            fullName = txtFullName.Text;
-            email = txtEmail.Text;  
-            accountNr = txtAccNrReg.Text;
-            Pin = txtPinReg.Text;
-            confPin = txtPinConf.Text;
+            dataBase dataBase = new dataBase();
+            
             // pin and conform pin  are not same error message will popup 
-            if ( Pin != confPin)
+            if ( txtPinReg.Text != txtPinConf.Text)
             {
                 lbNot.Text = "Pin do not match!";
 
             }
             //If the field empty
-            else if(fullName =="" || email == "" || accountNr == "" || Pin == "" || confPin == "")
+            else if(txtFullName.Text == "" || txtEmail.Text == "" || txtAccNrReg.Text == "" || txtPinReg.Text == "" || txtPinConf.Text == "")
             {
                 lbInv.Text = "Please fill out empty fields.";
 
             }
             else
             {
+                dataBase.fullName = txtFullName.Text;
+                dataBase.email = txtEmail.Text;
+                dataBase.pin = txtPinReg.Text;
+                dataBase.balance = "0";
+                dataBase.insertData();
                 MessageBox.Show("Your registration has been succesfull", "Congratulation!");
 
                 // go back to login 
@@ -195,5 +218,6 @@ namespace atmSystem
             lberror.Text = "";
 
         }
+
     }
 }

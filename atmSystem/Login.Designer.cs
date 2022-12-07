@@ -378,7 +378,7 @@
             this.LnkRegister.TabIndex = 4;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Register";
-            this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked_1);
+            this.LnkRegister.Click += new System.EventHandler(this.LnkRegister_Click);
             // 
             // btnLogin
             // 
