@@ -16,125 +16,20 @@ namespace atmSystem
     {
         
         public Login()
-        {
-             
+        {           
              InitializeComponent();
 
             //when the program start the registration,login and ATM logo labels will be this positions.
             pnlRegister.Height = 0;
             pnlLogIn.Location = new Point(314, 5);
             plnAtm.Location = new Point(5, 5);
-        }
 
 
-
-        //closed the registration label
-        private void btnClose_Click_1(object sender, EventArgs e)
-        {
-            pnlRegister.Height = 0;
-            pnlLogIn.Location = new Point(314, 5);
-            plnAtm.Location = new Point(5, 5);
-        }
-
-        //Login button
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            login();
-              
 
         }
 
-        //Close all application
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                DialogResult result = MessageBox.Show("Do you really want to exit?", "Dialog Title", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    Environment.Exit(0);
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
-            else
-            {
-                e.Cancel = true;
-            }
-        }
-
-        //Registration 
-        private void LnkRegister_Click(object sender, EventArgs e)
-        {
-            //Creating account nr 
-            dataBase dataBase = new dataBase();
-            dataBase.lastAccNr();
-            if (dataBase.newPinDb != "0")
-            {
-                dataBase.createAcc();
-                dataBase.lastAccNr();
-                txtAccNrReg.Text = Convert.ToString(dataBase.newAccNrDb);
-                MessageBox.Show($"{dataBase.newAccNrDb} new");
-
-            }
-            else
-            {
-                txtAccNrReg.Text = Convert.ToString(dataBase.newAccNrDb);
-                MessageBox.Show($"{dataBase.newAccNrDb} old");
-
-            }
-
-            //Clear all fields
-            txtFullName.Clear();
-            txtEmail.Clear();
-            txtPinReg.Clear();
-            txtPinConf.Clear();
-
-
-            txtAccNrReg.Enabled = false;
-            pnlRegister.Height = pnlLogIn.Height;
-            pnlLogIn.Location = new Point(5, 5);
-            plnAtm.Location = new Point(380, 5);
-
-        }
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            dataBase dataBase = new dataBase();
-            
-            // pin and conform pin  are not same error message will popup 
-            if ( txtPinReg.Text != txtPinConf.Text)
-            {
-                lbNot.Text = "Pin do not match!";
-
-            }
-            //If the field empty
-            else if(txtFullName.Text == "" || txtEmail.Text == "" || txtAccNrReg.Text == "" || txtPinReg.Text == "" || txtPinConf.Text == "")
-            {
-                lbInv.Text = "Please fill out empty fields.";
-
-            }
-            else
-            {
-                dataBase.fullName = txtFullName.Text;
-                dataBase.email = txtEmail.Text;
-                dataBase.pin = txtPinReg.Text;
-                dataBase.balance = "0";
-                dataBase.insertData();
-                MessageBox.Show("Your registration has been succesfull", "Congratulation!");
-
-                // go back to login 
-                pnlRegister.Height = 0;
-                pnlLogIn.Location = new Point(314, 5);
-                plnAtm.Location = new Point(5, 5);
-
-
-
-
-            }
-        }
-
+        
+        #region Login
         //Login 
         public void login()
         {
@@ -212,12 +107,156 @@ namespace atmSystem
 
             }
         }
+        //Login button
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            login();
+              
+
+        }
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Do you really want to exit?", "Dialog Title", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void txtPin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                login();
+            }
+            
+        }
+
+
+        #endregion
+
+        #region registration
+        private void LnkRegister_Click(object sender, EventArgs e)
+        {
+            //Creating account nr 
+            dataBase dataBase = new dataBase();
+            dataBase.lastAccNr();
+            if (dataBase.newPinDb != "0")
+            {
+                dataBase.createAcc();
+                dataBase.lastAccNr();
+                txtAccNrReg.Text = Convert.ToString(dataBase.newAccNrDb);
+
+            }
+            else
+            {
+                txtAccNrReg.Text = Convert.ToString(dataBase.newAccNrDb);
+
+            }
+
+            //Clear all fields
+            txtFullName.Clear();
+            txtEmail.Clear();
+            txtPinReg.Clear();
+            txtPinConf.Clear();
+            btnRegister.Enabled = false;
+
+            txtAccNrReg.Enabled = false;
+            pnlRegister.Height = pnlLogIn.Height;
+            pnlLogIn.Location = new Point(5, 5);
+            plnAtm.Location = new Point(380, 5);
+
+        }
+
+        public void registration()
+        {
+            dataBase dataBase = new dataBase();
+
+            // pin and conform pin  are not same error message will popup 
+            if (txtPinReg.Text != txtPinConf.Text)
+            {
+                lberrorReg.Text = "Pin do not match!";
+                txtPinReg.ForeColor = Color.Red;
+                txtPinConf.ForeColor = Color.Red;
+                pnlpinreg.BackColor = Color.Red;
+                pnlConPin.BackColor = Color.Red;
+
+            }
+            //If the field empty
+            else if (txtFullName.Text == "" || txtEmail.Text == "" || txtPinReg.Text == "" || txtPinConf.Text == "")
+            {
+                lbInv.Text = "Please fill out empty fields.";
+                
+            }
+            else
+            {
+                dataBase.fullName = txtFullName.Text;
+                dataBase.email = txtEmail.Text;
+                dataBase.pin = txtPinReg.Text;
+                dataBase.balance = "0";
+                dataBase.insertData();
+                MessageBox.Show("Your registration has been succesfull", "Congratulation!");
+
+                // go back to login 
+                pnlRegister.Height = 0;
+                pnlLogIn.Location = new Point(314, 5);
+                plnAtm.Location = new Point(5, 5);
+
+            }
+        }
+        private void btnRegister_KeyDown(object sender, KeyEventArgs e)
+        {
+            registration();
+        }
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            registration();
+            
+        }
 
         private void txtAccNr_Click(object sender, EventArgs e)
         {
             lberror.Text = "";
 
         }
+        
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            pnlRegister.Height = 0;
+            pnlLogIn.Location = new Point(314, 5);
+            plnAtm.Location = new Point(5, 5);
+        }
 
-    }
+        private void txtPinConf_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                registration();
+            }
+        }
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == false)
+            {
+                btnRegister.Enabled = false;
+            }
+            else
+            {
+                btnRegister.Enabled=true;
+            }
+        }
+
+            #endregion
+    }   
 }

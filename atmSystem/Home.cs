@@ -204,10 +204,6 @@ namespace atmSystem
         }
        
         
-
-        
-
-       
         private void withdraw()
         {
             dataBase dataBase = new dataBase();
@@ -236,6 +232,7 @@ namespace atmSystem
                     if (Convert.ToInt32(dataBase.balanceDb) < cashWd)
                     {
                         MessageBox.Show("Du har inte tillräckligt med pengar.");
+                        txtcashWd.SelectAll();
 
                     }
                     else
@@ -269,6 +266,11 @@ namespace atmSystem
 
         private void txtcashWd_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                withdraw();
+
+            }
             lbstarWd.Text = "";
             lbinvWd.Text = "";
             lbMaxWd.ForeColor = Color.DodgerBlue;

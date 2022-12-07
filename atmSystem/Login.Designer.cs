@@ -31,21 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pnlLogIn = new System.Windows.Forms.Panel();
             this.pnlRegister = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pnlConPin = new System.Windows.Forms.Panel();
             this.txtPinConf = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlemail = new System.Windows.Forms.Panel();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.pnlaccreg = new System.Windows.Forms.Panel();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.pnlpinreg = new System.Windows.Forms.Panel();
             this.txtPinReg = new System.Windows.Forms.TextBox();
             this.lbNot = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtAccNrReg = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtFullName = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.lbInv = new System.Windows.Forms.Label();
-            this.lbPinNotMtch = new System.Windows.Forms.Label();
+            this.lberrorReg = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,11 +70,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnlLogIn.SuspendLayout();
             this.pnlRegister.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlConPin.SuspendLayout();
+            this.pnlemail.SuspendLayout();
+            this.pnlaccreg.SuspendLayout();
+            this.pnlpinreg.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.pnlPin.SuspendLayout();
             this.pnlAccNr.SuspendLayout();
@@ -101,16 +102,17 @@
             // 
             // pnlRegister
             // 
-            this.pnlRegister.Controls.Add(this.panel5);
-            this.pnlRegister.Controls.Add(this.panel4);
+            this.pnlRegister.Controls.Add(this.checkBox1);
+            this.pnlRegister.Controls.Add(this.pnlConPin);
+            this.pnlRegister.Controls.Add(this.pnlemail);
+            this.pnlRegister.Controls.Add(this.pnlaccreg);
+            this.pnlRegister.Controls.Add(this.pnlpinreg);
             this.pnlRegister.Controls.Add(this.lbNot);
-            this.pnlRegister.Controls.Add(this.panel2);
             this.pnlRegister.Controls.Add(this.panel3);
-            this.pnlRegister.Controls.Add(this.panel1);
             this.pnlRegister.Controls.Add(this.btnClose);
             this.pnlRegister.Controls.Add(this.btnRegister);
             this.pnlRegister.Controls.Add(this.lbInv);
-            this.pnlRegister.Controls.Add(this.lbPinNotMtch);
+            this.pnlRegister.Controls.Add(this.lberrorReg);
             this.pnlRegister.Controls.Add(this.label6);
             this.pnlRegister.Controls.Add(this.lbEmail);
             this.pnlRegister.Controls.Add(this.label7);
@@ -124,17 +126,29 @@
             this.pnlRegister.Size = new System.Drawing.Size(380, 10);
             this.pnlRegister.TabIndex = 5;
             // 
-            // panel5
+            // checkBox1
             // 
-            this.panel5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel5.Controls.Add(this.txtPinConf);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(28, 334);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.panel5.Size = new System.Drawing.Size(300, 30);
-            this.panel5.TabIndex = 5;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(29, 362);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(229, 24);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Agree Terms and Conditions";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // pnlConPin
+            // 
+            this.pnlConPin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlConPin.Controls.Add(this.txtPinConf);
+            this.pnlConPin.ForeColor = System.Drawing.Color.White;
+            this.pnlConPin.Location = new System.Drawing.Point(28, 308);
+            this.pnlConPin.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlConPin.Name = "pnlConPin";
+            this.pnlConPin.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.pnlConPin.Size = new System.Drawing.Size(300, 30);
+            this.pnlConPin.TabIndex = 5;
             // 
             // txtPinConf
             // 
@@ -144,54 +158,22 @@
             this.txtPinConf.Location = new System.Drawing.Point(0, 0);
             this.txtPinConf.Margin = new System.Windows.Forms.Padding(2);
             this.txtPinConf.Name = "txtPinConf";
+            this.txtPinConf.PasswordChar = '*';
             this.txtPinConf.Size = new System.Drawing.Size(300, 29);
             this.txtPinConf.TabIndex = 5;
+            this.txtPinConf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPinConf_KeyDown);
             // 
-            // panel4
+            // pnlemail
             // 
-            this.panel4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel4.Controls.Add(this.txtPinReg);
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(29, 276);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.panel4.Size = new System.Drawing.Size(300, 30);
-            this.panel4.TabIndex = 4;
-            // 
-            // txtPinReg
-            // 
-            this.txtPinReg.BackColor = System.Drawing.Color.White;
-            this.txtPinReg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPinReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPinReg.Location = new System.Drawing.Point(0, 0);
-            this.txtPinReg.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPinReg.Name = "txtPinReg";
-            this.txtPinReg.Size = new System.Drawing.Size(300, 29);
-            this.txtPinReg.TabIndex = 4;
-            // 
-            // lbNot
-            // 
-            this.lbNot.AutoSize = true;
-            this.lbNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNot.ForeColor = System.Drawing.Color.Red;
-            this.lbNot.Location = new System.Drawing.Point(25, 284);
-            this.lbNot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbNot.Name = "lbNot";
-            this.lbNot.Size = new System.Drawing.Size(0, 15);
-            this.lbNot.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Controls.Add(this.txtEmail);
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(28, 160);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.panel2.Size = new System.Drawing.Size(300, 30);
-            this.panel2.TabIndex = 2;
+            this.pnlemail.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlemail.Controls.Add(this.txtEmail);
+            this.pnlemail.ForeColor = System.Drawing.Color.White;
+            this.pnlemail.Location = new System.Drawing.Point(29, 192);
+            this.pnlemail.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlemail.Name = "pnlemail";
+            this.pnlemail.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.pnlemail.Size = new System.Drawing.Size(300, 30);
+            this.pnlemail.TabIndex = 2;
             // 
             // txtEmail
             // 
@@ -204,12 +186,70 @@
             this.txtEmail.Size = new System.Drawing.Size(300, 29);
             this.txtEmail.TabIndex = 2;
             // 
+            // pnlaccreg
+            // 
+            this.pnlaccreg.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlaccreg.Controls.Add(this.txtFullName);
+            this.pnlaccreg.ForeColor = System.Drawing.Color.White;
+            this.pnlaccreg.Location = new System.Drawing.Point(28, 134);
+            this.pnlaccreg.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlaccreg.Name = "pnlaccreg";
+            this.pnlaccreg.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.pnlaccreg.Size = new System.Drawing.Size(300, 30);
+            this.pnlaccreg.TabIndex = 1;
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.BackColor = System.Drawing.Color.White;
+            this.txtFullName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtFullName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFullName.Location = new System.Drawing.Point(0, 0);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(300, 29);
+            this.txtFullName.TabIndex = 1;
+            // 
+            // pnlpinreg
+            // 
+            this.pnlpinreg.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlpinreg.Controls.Add(this.txtPinReg);
+            this.pnlpinreg.ForeColor = System.Drawing.Color.White;
+            this.pnlpinreg.Location = new System.Drawing.Point(29, 250);
+            this.pnlpinreg.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlpinreg.Name = "pnlpinreg";
+            this.pnlpinreg.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.pnlpinreg.Size = new System.Drawing.Size(300, 30);
+            this.pnlpinreg.TabIndex = 4;
+            // 
+            // txtPinReg
+            // 
+            this.txtPinReg.BackColor = System.Drawing.Color.White;
+            this.txtPinReg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPinReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPinReg.Location = new System.Drawing.Point(0, 0);
+            this.txtPinReg.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPinReg.Name = "txtPinReg";
+            this.txtPinReg.PasswordChar = '*';
+            this.txtPinReg.Size = new System.Drawing.Size(300, 29);
+            this.txtPinReg.TabIndex = 4;
+            // 
+            // lbNot
+            // 
+            this.lbNot.AutoSize = true;
+            this.lbNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNot.ForeColor = System.Drawing.Color.Red;
+            this.lbNot.Location = new System.Drawing.Point(25, 258);
+            this.lbNot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNot.Name = "lbNot";
+            this.lbNot.Size = new System.Drawing.Size(0, 15);
+            this.lbNot.TabIndex = 6;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel3.Controls.Add(this.txtAccNrReg);
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(29, 218);
+            this.panel3.Location = new System.Drawing.Point(29, 76);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
@@ -226,29 +266,6 @@
             this.txtAccNrReg.Name = "txtAccNrReg";
             this.txtAccNrReg.Size = new System.Drawing.Size(300, 29);
             this.txtAccNrReg.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.txtFullName);
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(29, 102);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.panel1.Size = new System.Drawing.Size(300, 30);
-            this.panel1.TabIndex = 1;
-            // 
-            // txtFullName
-            // 
-            this.txtFullName.BackColor = System.Drawing.Color.White;
-            this.txtFullName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtFullName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFullName.Location = new System.Drawing.Point(0, 0);
-            this.txtFullName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(300, 29);
-            this.txtFullName.TabIndex = 1;
             // 
             // btnClose
             // 
@@ -267,45 +284,46 @@
             this.btnRegister.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(76, 395);
+            this.btnRegister.Location = new System.Drawing.Point(88, 397);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(0);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(165, 27);
+            this.btnRegister.Size = new System.Drawing.Size(165, 37);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.TabStop = false;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnRegister_KeyDown);
             // 
             // lbInv
             // 
             this.lbInv.AutoSize = true;
             this.lbInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInv.ForeColor = System.Drawing.Color.Red;
-            this.lbInv.Location = new System.Drawing.Point(121, 49);
+            this.lbInv.Location = new System.Drawing.Point(143, 34);
             this.lbInv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbInv.Name = "lbInv";
             this.lbInv.Size = new System.Drawing.Size(0, 15);
             this.lbInv.TabIndex = 6;
             // 
-            // lbPinNotMtch
+            // lberrorReg
             // 
-            this.lbPinNotMtch.AutoSize = true;
-            this.lbPinNotMtch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPinNotMtch.ForeColor = System.Drawing.Color.Red;
-            this.lbPinNotMtch.Location = new System.Drawing.Point(31, 368);
-            this.lbPinNotMtch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbPinNotMtch.Name = "lbPinNotMtch";
-            this.lbPinNotMtch.Size = new System.Drawing.Size(75, 13);
-            this.lbPinNotMtch.TabIndex = 6;
-            this.lbPinNotMtch.Text = "Pin not match!";
+            this.lberrorReg.AutoSize = true;
+            this.lberrorReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberrorReg.ForeColor = System.Drawing.Color.Red;
+            this.lberrorReg.Location = new System.Drawing.Point(31, 342);
+            this.lberrorReg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lberrorReg.Name = "lberrorReg";
+            this.lberrorReg.Size = new System.Drawing.Size(0, 13);
+            this.lberrorReg.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 251);
+            this.label6.Location = new System.Drawing.Point(27, 225);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 24);
@@ -316,18 +334,18 @@
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(25, 135);
+            this.lbEmail.Location = new System.Drawing.Point(25, 109);
             this.lbEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(57, 24);
+            this.lbEmail.Size = new System.Drawing.Size(97, 24);
             this.lbEmail.TabIndex = 6;
-            this.lbEmail.Text = "Email";
+            this.lbEmail.Text = "Full Name";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(25, 309);
+            this.label7.Location = new System.Drawing.Point(25, 283);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 24);
@@ -338,29 +356,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 193);
+            this.label3.Location = new System.Drawing.Point(26, 167);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
+            this.label3.Size = new System.Drawing.Size(57, 24);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Account";
+            this.label3.Text = "Email";
             // 
             // lbFName
             // 
             this.lbFName.AutoSize = true;
             this.lbFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFName.Location = new System.Drawing.Point(24, 77);
+            this.lbFName.Location = new System.Drawing.Point(24, 51);
             this.lbFName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFName.Name = "lbFName";
-            this.lbFName.Size = new System.Drawing.Size(97, 24);
+            this.lbFName.Size = new System.Drawing.Size(105, 24);
             this.lbFName.TabIndex = 7;
-            this.lbFName.Text = "Full Name";
+            this.lbFName.Text = "Account Nr";
             // 
             // lbSingUp
             // 
             this.lbSingUp.AutoSize = true;
             this.lbSingUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSingUp.Location = new System.Drawing.Point(33, 13);
+            this.lbSingUp.Location = new System.Drawing.Point(33, 5);
             this.lbSingUp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSingUp.Name = "lbSingUp";
             this.lbSingUp.Size = new System.Drawing.Size(95, 25);
@@ -371,7 +389,7 @@
             // 
             this.LnkRegister.AutoSize = true;
             this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnkRegister.Location = new System.Drawing.Point(134, 387);
+            this.LnkRegister.Location = new System.Drawing.Point(144, 373);
             this.LnkRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LnkRegister.Name = "LnkRegister";
             this.LnkRegister.Size = new System.Drawing.Size(92, 25);
@@ -385,11 +403,12 @@
             this.btnLogin.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(76, 309);
+            this.btnLogin.Location = new System.Drawing.Point(88, 293);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(165, 27);
+            this.btnLogin.Size = new System.Drawing.Size(180, 37);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -415,8 +434,10 @@
             this.txtPin.Location = new System.Drawing.Point(0, 0);
             this.txtPin.Margin = new System.Windows.Forms.Padding(2);
             this.txtPin.Name = "txtPin";
+            this.txtPin.PasswordChar = '*';
             this.txtPin.Size = new System.Drawing.Size(300, 29);
             this.txtPin.TabIndex = 2;
+            this.txtPin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPin_KeyDown);
             // 
             // pnlAccNr
             // 
@@ -457,7 +478,7 @@
             // 
             this.lbNoAcc.AutoSize = true;
             this.lbNoAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNoAcc.Location = new System.Drawing.Point(88, 355);
+            this.lbNoAcc.Location = new System.Drawing.Point(98, 342);
             this.lbNoAcc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNoAcc.Name = "lbNoAcc";
             this.lbNoAcc.Size = new System.Drawing.Size(170, 20);
@@ -561,16 +582,16 @@
             this.pnlLogIn.PerformLayout();
             this.pnlRegister.ResumeLayout(false);
             this.pnlRegister.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlConPin.ResumeLayout(false);
+            this.pnlConPin.PerformLayout();
+            this.pnlemail.ResumeLayout(false);
+            this.pnlemail.PerformLayout();
+            this.pnlaccreg.ResumeLayout(false);
+            this.pnlaccreg.PerformLayout();
+            this.pnlpinreg.ResumeLayout(false);
+            this.pnlpinreg.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.pnlPin.ResumeLayout(false);
             this.pnlPin.PerformLayout();
@@ -586,15 +607,15 @@
 
         private System.Windows.Forms.Panel pnlLogIn;
         private System.Windows.Forms.Panel pnlRegister;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnlConPin;
         private System.Windows.Forms.TextBox txtPinConf;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlpinreg;
         private System.Windows.Forms.TextBox txtPinReg;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlemail;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtAccNrReg;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlaccreg;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Label lbInv;
@@ -620,8 +641,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Label lbPinNotMtch;
+        private System.Windows.Forms.Label lberrorReg;
         private System.Windows.Forms.Label lberror;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

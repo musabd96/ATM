@@ -426,6 +426,7 @@
             this.btn200.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn200.FlatAppearance.BorderSize = 0;
             this.btn200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn200.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn200.ForeColor = System.Drawing.Color.White;
             this.btn200.Location = new System.Drawing.Point(6, 187);
             this.btn200.Margin = new System.Windows.Forms.Padding(0);
@@ -442,6 +443,7 @@
             this.btnTrans.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTrans.FlatAppearance.BorderSize = 0;
             this.btnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrans.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrans.ForeColor = System.Drawing.Color.White;
             this.btnTrans.Location = new System.Drawing.Point(571, 128);
             this.btnTrans.Margin = new System.Windows.Forms.Padding(0);
@@ -458,6 +460,7 @@
             this.btnBalance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBalance.FlatAppearance.BorderSize = 0;
             this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBalance.ForeColor = System.Drawing.Color.White;
             this.btnBalance.Location = new System.Drawing.Point(571, 187);
             this.btnBalance.Margin = new System.Windows.Forms.Padding(0);
@@ -474,6 +477,7 @@
             this.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeposit.FlatAppearance.BorderSize = 0;
             this.btnDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposit.ForeColor = System.Drawing.Color.White;
             this.btnDeposit.Location = new System.Drawing.Point(571, 248);
             this.btnDeposit.Margin = new System.Windows.Forms.Padding(0);
@@ -490,6 +494,7 @@
             this.btn100.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn100.FlatAppearance.BorderSize = 0;
             this.btn100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn100.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn100.ForeColor = System.Drawing.Color.White;
             this.btn100.Location = new System.Drawing.Point(6, 248);
             this.btn100.Margin = new System.Windows.Forms.Padding(0);
@@ -506,6 +511,7 @@
             this.btnOkeyWith.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOkeyWith.FlatAppearance.BorderSize = 0;
             this.btnOkeyWith.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOkeyWith.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOkeyWith.ForeColor = System.Drawing.Color.White;
             this.btnOkeyWith.Location = new System.Drawing.Point(272, 261);
             this.btnOkeyWith.Margin = new System.Windows.Forms.Padding(0);
@@ -522,6 +528,7 @@
             this.btn500.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn500.FlatAppearance.BorderSize = 0;
             this.btn500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn500.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn500.ForeColor = System.Drawing.Color.White;
             this.btn500.Location = new System.Drawing.Point(6, 128);
             this.btn500.Margin = new System.Windows.Forms.Padding(0);
@@ -615,7 +622,7 @@
             // 
             this.lbAcc.AutoSize = true;
             this.lbAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAcc.Location = new System.Drawing.Point(132, 66);
+            this.lbAcc.Location = new System.Drawing.Point(132, 64);
             this.lbAcc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAcc.Name = "lbAcc";
             this.lbAcc.Size = new System.Drawing.Size(27, 24);
@@ -626,7 +633,7 @@
             // 
             this.lbname.AutoSize = true;
             this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbname.Location = new System.Drawing.Point(79, 30);
+            this.lbname.Location = new System.Drawing.Point(82, 30);
             this.lbname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbname.Name = "lbname";
             this.lbname.Size = new System.Drawing.Size(58, 24);
@@ -637,7 +644,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 30);
+            this.label4.Location = new System.Drawing.Point(22, 30);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 24);
@@ -648,7 +655,7 @@
             // 
             this.lbAccNr.AutoSize = true;
             this.lbAccNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccNr.Location = new System.Drawing.Point(9, 66);
+            this.lbAccNr.Location = new System.Drawing.Point(9, 64);
             this.lbAccNr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccNr.Name = "lbAccNr";
             this.lbAccNr.Size = new System.Drawing.Size(110, 24);
@@ -694,7 +701,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(297, 77);
+            this.label2.Location = new System.Drawing.Point(297, 71);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 24);
