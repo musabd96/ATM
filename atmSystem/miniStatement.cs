@@ -94,12 +94,5 @@ namespace atmSystem
             btnHome.Visible = true;
             pnlMenuBar.Size = new Size(130, 225);
         }
-
-        private void miniStatement_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Login Login = new Login();
-
-            Login.closeApp();
-        }
     }
 }
