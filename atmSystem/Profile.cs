@@ -120,10 +120,13 @@ namespace atmSystem
                 {
                     try
                     {
-                        if (Convert.ToInt32(txtNewPin.Text) == Convert.ToInt32(txtConfPin.Text))
+                        int newpin, ConfPin;
+                        newpin = Convert.ToInt32(txtNewPin.Text);
+                        ConfPin = Convert.ToInt32(txtConfPin.Text);
+
+                        if (newpin == ConfPin)
                         {
-                            MessageBox.Show($"{txtNewPin.Text}");
-                            newPin = txtNewPin.Text;
+                            newPin = Convert.ToString(newpin);
                             MessageBox.Show($"{newPin}");
                             dataBase.newPin();
                         }
