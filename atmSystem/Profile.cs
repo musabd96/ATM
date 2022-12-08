@@ -111,6 +111,7 @@ namespace atmSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            // check if old pin is ok, new pin and confirm pin - Method runs 
             dataBase dataBase = new dataBase();
             dataBase.getData();
             try
