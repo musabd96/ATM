@@ -141,7 +141,22 @@ namespace atmSystem
                 }
                 else
                 {
-                    MessageBox.Show("Du skrev in fel lösenord");
+                    txtOldPin.ForeColor = Color.Red;
+                    txtOldPin.BackColor = Color.Red;
+                    txtNewPin.ForeColor = Color.Red;
+                    txtNewPin.BackColor = Color.Red;
+                    txtConfPin.ForeColor = Color.Red;
+                    txtConfPin.BackColor = Color.Red;
+                    MessageBox.Show("Wrång password, you baboon!");
+                    txtOldPin.ForeColor = Color.White;
+                    txtOldPin.BackColor = Color.White;
+                    txtNewPin.ForeColor = Color.White;
+                    txtNewPin.BackColor = Color.White;
+                    txtConfPin.ForeColor = Color.White;
+                    txtConfPin.BackColor = Color.White;
+                    txtNewPin.Clear();
+                    txtConfPin.Clear();
+                    txtOldPin.Clear(); // XD
                 }
             }
             catch (Exception ex)
@@ -153,6 +168,7 @@ namespace atmSystem
             txtNewPin
             txtConfPin
             */
+
         }
     }
 
