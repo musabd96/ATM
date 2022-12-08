@@ -287,12 +287,7 @@ namespace atmSystem
             lbMaxWd.ForeColor = Color.DodgerBlue;
         }
 
-        private void Home_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Login Login = new Login();
-
-            Login.closeApp();
-        }
+        
     }
         
 }

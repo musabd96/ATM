@@ -269,7 +269,6 @@
             this.Name = "miniStatement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "miniStatement";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.miniStatement_FormClosed);
             this.pnlProfWh.ResumeLayout(false);
             this.pnlProfWh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

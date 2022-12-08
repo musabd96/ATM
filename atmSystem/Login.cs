@@ -121,7 +121,23 @@ namespace atmSystem
         }
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            closeApp();
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Do you really want to exit?", "Dialog Title", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+            
         }
 
         private void txtPin_KeyDown(object sender, KeyEventArgs e)
@@ -249,26 +265,8 @@ namespace atmSystem
 
             #endregion
 
-        //Close Application
+        
 
-        internal void closeApp()
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                DialogResult result = MessageBox.Show("Do you really want to exit?", "Dialog Title", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    Environment.Exit(0);
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
-            else
-            {
-                e.Cancel = true;
-            }
-        }
+        
     }   
 }
