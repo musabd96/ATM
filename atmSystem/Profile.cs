@@ -113,7 +113,6 @@ namespace atmSystem
         {
             dataBase dataBase = new dataBase();
             dataBase.getData();
-            MessageBox.Show($"{dataBase.pinDb}");
             try
             {
                 if (txtOldPin.Text == dataBase.pinDb)
@@ -127,8 +126,11 @@ namespace atmSystem
                         if (newpin == ConfPin)
                         {
                             newPin = Convert.ToString(newpin);
-                            MessageBox.Show($"{newPin}");
                             dataBase.newPin();
+                            txtNewPin.Clear();
+                            txtConfPin.Clear();
+                            txtOldPin.Clear();
+                            MessageBox.Show($"{dataBase.accountNrDb} pin is now changed to {newPin}");
                         }
                     }
                     catch (Exception ex)
