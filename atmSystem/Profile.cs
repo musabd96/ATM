@@ -14,6 +14,7 @@ namespace atmSystem
 {
     
 
+
     public partial class Profile : Form
     {
 
@@ -108,9 +109,45 @@ namespace atmSystem
             menuBarClose();
         }
 
-        
-
-       
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            MessageBox.Show($"{dataBase.pinDb}");
+            try
+            {
+                if (txtOldPin.Text == dataBase.pinDb)
+                {
+                    try
+                    {
+                        if (Convert.ToInt32(txtNewPin.Text) == Convert.ToInt32(txtConfPin.Text))
+                        {
+                            MessageBox.Show($"{txtNewPin.Text}");
+                            newPin = txtNewPin.Text;
+                            MessageBox.Show($"{newPin}");
+                            dataBase.newPin();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Du skrev in fel lösenord");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            /*
+            txtOldPin
+            txtNewPin
+            txtConfPin
+            */
+        }
     }
 
        

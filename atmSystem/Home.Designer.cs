@@ -275,10 +275,10 @@
             this.pnlDeposit.Controls.Add(this.lbFName);
             this.pnlDeposit.Controls.Add(this.lbDepo);
             this.pnlDeposit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDeposit.Location = new System.Drawing.Point(0, 331);
+            this.pnlDeposit.Location = new System.Drawing.Point(0, 94);
             this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDeposit.Name = "pnlDeposit";
-            this.pnlDeposit.Size = new System.Drawing.Size(701, 10);
+            this.pnlDeposit.Size = new System.Drawing.Size(701, 247);
             this.pnlDeposit.TabIndex = 5;
             this.pnlDeposit.Click += new System.EventHandler(this.pnlDeposit_Click);
             // 
@@ -417,9 +417,9 @@
             this.lbDepo.Location = new System.Drawing.Point(275, 24);
             this.lbDepo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDepo.Name = "lbDepo";
-            this.lbDepo.Size = new System.Drawing.Size(122, 37);
+            this.lbDepo.Size = new System.Drawing.Size(132, 37);
             this.lbDepo.TabIndex = 8;
-            this.lbDepo.Text = "Diposit";
+            this.lbDepo.Text = "Deposit";
             // 
             // btn200
             // 
