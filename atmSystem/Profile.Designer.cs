@@ -517,6 +517,7 @@
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Profile_FormClosed);
             this.pnlProfWh.ResumeLayout(false);
             this.pnlProfWh.PerformLayout();
             this.pnlCchanPin.ResumeLayout(false);

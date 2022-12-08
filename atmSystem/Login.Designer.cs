@@ -510,11 +510,11 @@
             // lberror
             // 
             this.lberror.AutoSize = true;
-            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lberror.Location = new System.Drawing.Point(143, 92);
+            this.lberror.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberror.Location = new System.Drawing.Point(123, 92);
             this.lberror.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lberror.Name = "lberror";
-            this.lberror.Size = new System.Drawing.Size(0, 16);
+            this.lberror.Size = new System.Drawing.Size(0, 17);
             this.lberror.TabIndex = 0;
             // 
             // lbLogin

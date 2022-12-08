@@ -111,7 +111,12 @@ namespace atmSystem
             menuBarClose();
         }
 
-        
+        private void Profile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Login Login = new Login();
+
+            Login.closeApp();
+        }
     }
 
        
