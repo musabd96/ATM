@@ -12,8 +12,6 @@ using atmMachine;
 
 namespace atmSystem
 {
-    
-
 
     public partial class Profile : Form
     {
@@ -22,6 +20,8 @@ namespace atmSystem
         public Profile()
         {
             InitializeComponent();
+
+
 
             picMenuBar.Dock = DockStyle.Right;
             lbMenuBar.Text = "";
