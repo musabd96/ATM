@@ -147,7 +147,7 @@ namespace atmSystem
                     txtNewPin.BackColor = Color.Red;
                     txtConfPin.ForeColor = Color.Red;
                     txtConfPin.BackColor = Color.Red;
-                    MessageBox.Show("Wrång password, you baboon!");
+                    MessageBox.Show($"Wrong pin, {dataBase.fullNameDb}\nTry again");
                     txtOldPin.ForeColor = Color.White;
                     txtOldPin.BackColor = Color.White;
                     txtNewPin.ForeColor = Color.White;
