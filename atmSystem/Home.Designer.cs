@@ -74,7 +74,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbBalWd = new System.Windows.Forms.Label();
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
@@ -213,8 +213,6 @@
             // 
             // pnlWithdraw
             // 
-            this.pnlWithdraw.Controls.Add(this.label5);
-            this.pnlWithdraw.Controls.Add(this.label3);
             this.pnlWithdraw.Controls.Add(this.panel1);
             this.pnlWithdraw.Controls.Add(this.panel7);
             this.pnlWithdraw.Controls.Add(this.pnlDeposit);
@@ -230,8 +228,10 @@
             this.pnlWithdraw.Controls.Add(this.lbstarWd);
             this.pnlWithdraw.Controls.Add(this.lbinvWd);
             this.pnlWithdraw.Controls.Add(this.label9);
+            this.pnlWithdraw.Controls.Add(this.lbBalWd);
             this.pnlWithdraw.Controls.Add(this.lbAcc);
             this.pnlWithdraw.Controls.Add(this.lbname);
+            this.pnlWithdraw.Controls.Add(this.label3);
             this.pnlWithdraw.Controls.Add(this.label4);
             this.pnlWithdraw.Controls.Add(this.lbAccNr);
             this.pnlWithdraw.Controls.Add(this.lbLogin);
@@ -275,10 +275,10 @@
             this.pnlDeposit.Controls.Add(this.lbFName);
             this.pnlDeposit.Controls.Add(this.lbDepo);
             this.pnlDeposit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDeposit.Location = new System.Drawing.Point(0, 324);
+            this.pnlDeposit.Location = new System.Drawing.Point(0, 331);
             this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDeposit.Name = "pnlDeposit";
-            this.pnlDeposit.Size = new System.Drawing.Size(701, 17);
+            this.pnlDeposit.Size = new System.Drawing.Size(701, 10);
             this.pnlDeposit.TabIndex = 5;
             this.pnlDeposit.Click += new System.EventHandler(this.pnlDeposit_Click);
             // 
@@ -383,7 +383,7 @@
             // 
             this.lbBalDep.AutoSize = true;
             this.lbBalDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBalDep.Location = new System.Drawing.Point(589, 49);
+            this.lbBalDep.Location = new System.Drawing.Point(572, 43);
             this.lbBalDep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbBalDep.Name = "lbBalDep";
             this.lbBalDep.Size = new System.Drawing.Size(73, 24);
@@ -394,7 +394,7 @@
             // 
             this.lbFName.AutoSize = true;
             this.lbFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFName.Location = new System.Drawing.Point(497, 49);
+            this.lbFName.Location = new System.Drawing.Point(480, 43);
             this.lbFName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFName.Name = "lbFName";
             this.lbFName.Size = new System.Drawing.Size(83, 24);
@@ -687,23 +687,23 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(527, 64);
+            this.label3.Location = new System.Drawing.Point(480, 58);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 24);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Balance:";
             // 
-            // label5
+            // lbBalWd
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(614, 64);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 24);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "amount";
+            this.lbBalWd.AutoSize = true;
+            this.lbBalWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBalWd.Location = new System.Drawing.Point(572, 58);
+            this.lbBalWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbBalWd.Name = "lbBalWd";
+            this.lbBalWd.Size = new System.Drawing.Size(73, 24);
+            this.lbBalWd.TabIndex = 0;
+            this.lbBalWd.Text = "amount";
             // 
             // Home
             // 
@@ -719,7 +719,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(716, 489);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(716, 489);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -787,7 +789,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnminstat;
         private System.Windows.Forms.Label lbinvWd;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbBalWd;
         private System.Windows.Forms.Label label3;
     }
 }

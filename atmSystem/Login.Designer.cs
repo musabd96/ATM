@@ -453,8 +453,10 @@
             // 
             // txtAccNr
             // 
+            this.txtAccNr.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAccNr.BackColor = System.Drawing.Color.White;
-            this.txtAccNr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAccNr.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccNr.Location = new System.Drawing.Point(0, 0);
             this.txtAccNr.Margin = new System.Windows.Forms.Padding(2);
@@ -519,6 +521,7 @@
             // 
             // lbLogin
             // 
+            this.lbLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbLogin.AutoSize = true;
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogin.Location = new System.Drawing.Point(33, 55);
@@ -564,8 +567,7 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this.pnlLogIn);
@@ -575,6 +577,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(716, 489);
+            this.MinimumSize = new System.Drawing.Size(716, 489);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

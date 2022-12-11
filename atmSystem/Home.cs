@@ -44,7 +44,7 @@ namespace atmSystem
             lbAccNrDep.Text = dataBase.accountNrDb.ToString();  
             lbBalDep.Text = dataBase.balanceDb.ToString();
             lbname.Text = dataBase.fullNameDb;
-            label5.Text = dataBase.balanceDb;
+            lbBalWd.Text = dataBase.balanceDb;
 
             if (dataBase.accountNrDb == 1234)
             {
@@ -79,7 +79,9 @@ namespace atmSystem
         private void btnHome_Click(object sender, EventArgs e)
         {
             menuBarClose();
-
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            lbBalWd.Text = dataBase.balanceDb;
             pnlDeposit.Height = 0;
 
         }
@@ -248,6 +250,8 @@ namespace atmSystem
                         newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
                         dataBase.newBalance();
                         dataBase.getData();
+                        lbBalWd.Text = dataBase.balanceDb;
+
                         dataBase.miniStatement();
                         MessageBox.Show($"Du har tagit ut: {cashWd} SEK" +
                                         $"\nfrån ditt Konto nummer: {dataBase.accountNrDb}");
@@ -271,7 +275,6 @@ namespace atmSystem
             withdraw();
             dataBase dataBase = new dataBase();
             dataBase.getData();
-            label5.Text = dataBase.balanceDb;
 
         }
 
@@ -282,8 +285,6 @@ namespace atmSystem
                 withdraw();
                 dataBase dataBase = new dataBase();
                 dataBase.getData();
-                label5.Text = dataBase.balanceDb;
-
             }
             lbstarWd.Text = "";
             lbinvWd.Text = "";
@@ -314,6 +315,8 @@ namespace atmSystem
                     newBalance = Convert.ToInt32(dataBase.balanceDb) + cashDp;
                     dataBase.newBalance();
                     dataBase.getData();
+
+                    lbBalDep.Text = dataBase.balanceDb;
                     dataBase.miniStatement();
                     MessageBox.Show($"Du har suttit in: {cashDp} SEK" +
                                     $"\nfrån ditt Konto nummer: {dataBase.accountNrDb}");
