@@ -69,6 +69,9 @@ namespace atmSystem
             menuBarClose();
             btnHome.Enabled = true;
             pnlDeposit.Height = pnlWithdraw.Height;
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            lbBalDep.Text = dataBase.balanceDb;
         }
 
         //Home button in menubar 
@@ -333,6 +336,9 @@ namespace atmSystem
         private void btnOkey_Click(object sender, EventArgs e)
         {
             deposit();
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            lbBalDep.Text = dataBase.balanceDb;
 
         }
 
