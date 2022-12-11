@@ -87,7 +87,9 @@ namespace atmSystem
 
         private void btnService_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hi! 'customer Name'. Thank you for you contact us!", "Customer Server");
+            MessageBox.Show($"Hello! {dataBase.fullNameDb}, " +
+                            $"thank you for contacting us,\n " +
+                            $"we'll be in touch very soon", "Customer service");
         }
 
        

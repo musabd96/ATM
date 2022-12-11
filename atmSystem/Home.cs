@@ -178,7 +178,9 @@ namespace atmSystem
 
             menuBarClose();
 
-            MessageBox.Show($"Hi! {dataBase.fullName}. Thank you for you contact us!", "Customer Server");
+            MessageBox.Show($"Hello! {dataBase.fullNameDb}, " +
+                            $"thank you for contacting us,\n " +
+                            $"we'll be in touch very soon", "Customer service");
         }
 
         private void plnAtm_Click(object sender, EventArgs e)
