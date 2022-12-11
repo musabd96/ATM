@@ -13,8 +13,6 @@ using atmMachine;
 namespace atmSystem
 {
 
-    //public static string newPin { get; set; }
-
     public partial class Profile : Form
     {
 
@@ -111,9 +109,67 @@ namespace atmSystem
             menuBarClose();
         }
 
-        
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            // check if old pin is ok, new pin and confirm pin - Method runs 
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            try
+            {
+                if (txtOldPin.Text == dataBase.pinDb)
+                {
+                    try
+                    {
+                        int newpin, ConfPin;
+                        newpin = Convert.ToInt32(txtNewPin.Text);
+                        ConfPin = Convert.ToInt32(txtConfPin.Text);
 
-       
+                        if (newpin == ConfPin)
+                        {
+                            newPin = Convert.ToString(newpin);
+                            dataBase.newPin();
+                            txtNewPin.Clear();
+                            txtConfPin.Clear();
+                            txtOldPin.Clear();
+                            MessageBox.Show($"{dataBase.accountNrDb} pin is now changed to {newPin}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else
+                {
+                    txtOldPin.ForeColor = Color.Red;
+                    txtOldPin.BackColor = Color.Red;
+                    txtNewPin.ForeColor = Color.Red;
+                    txtNewPin.BackColor = Color.Red;
+                    txtConfPin.ForeColor = Color.Red;
+                    txtConfPin.BackColor = Color.Red;
+                    MessageBox.Show($"Wrong pin, {dataBase.fullNameDb}\nTry again");
+                    txtOldPin.ForeColor = Color.White;
+                    txtOldPin.BackColor = Color.White;
+                    txtNewPin.ForeColor = Color.White;
+                    txtNewPin.BackColor = Color.White;
+                    txtConfPin.ForeColor = Color.White;
+                    txtConfPin.BackColor = Color.White;
+                    txtNewPin.Clear();
+                    txtConfPin.Clear();
+                    txtOldPin.Clear(); // XD
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            /*
+            txtOldPin
+            txtNewPin
+            txtConfPin
+            */
+
+        }
     }
 
        
