@@ -41,6 +41,8 @@ namespace atmSystem
             dataBase dataBase = new dataBase();
             dataBase.getData();
             lbAcc.Text = dataBase.accountNrDb.ToString();
+            lbAccNrDep.Text = dataBase.accountNrDb.ToString();  
+            lbBalDep.Text = dataBase.balanceDb.ToString();
             lbname.Text = dataBase.fullNameDb;
 
             if(dataBase.accountNrDb == 1234)
@@ -343,6 +345,8 @@ namespace atmSystem
 
 
         }
+
+       
     }
         
 }
