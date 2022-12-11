@@ -94,5 +94,10 @@ namespace atmSystem
             btnHome.Visible = true;
             pnlMenuBar.Size = new Size(130, 225);
         }
+
+        private void miniStatement_Load(object sender, EventArgs e)
+        {
+            ControlBox = false;
+        }
     }
 }

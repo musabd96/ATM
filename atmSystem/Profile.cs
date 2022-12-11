@@ -156,19 +156,20 @@ namespace atmSystem
                     txtConfPin.BackColor = Color.White;
                     txtNewPin.Clear();
                     txtConfPin.Clear();
-                    txtOldPin.Clear(); // XD
+                    txtOldPin.Clear(); 
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            /*
-            txtOldPin
-            txtNewPin
-            txtConfPin
-            */
+           
 
+        }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            ControlBox = false;
         }
     }
 

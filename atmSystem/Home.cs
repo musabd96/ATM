@@ -353,7 +353,10 @@ namespace atmSystem
 
         }
 
-       
+        private void Home_Load(object sender, EventArgs e)
+        {
+            ControlBox = false;
+        }
     }
         
 }

@@ -520,6 +520,7 @@
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
+            this.Load += new System.EventHandler(this.Profile_Load);
             this.pnlProfWh.ResumeLayout(false);
             this.pnlProfWh.PerformLayout();
             this.pnlCchanPin.ResumeLayout(false);
