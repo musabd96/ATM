@@ -44,8 +44,9 @@ namespace atmSystem
             lbAccNrDep.Text = dataBase.accountNrDb.ToString();  
             lbBalDep.Text = dataBase.balanceDb.ToString();
             lbname.Text = dataBase.fullNameDb;
+            label5.Text = dataBase.balanceDb;
 
-            if(dataBase.accountNrDb == 1234)
+            if (dataBase.accountNrDb == 1234)
             {
                 btnminstat.Enabled = false;
             }
@@ -203,15 +204,6 @@ namespace atmSystem
             this.Close();
         }
 
-        private void btnBalance_Click(object sender, EventArgs e)
-        {
-            dataBase dataBase = new dataBase();
-            dataBase.getData();
-            MessageBox.Show($"Ditt Saldo är: {dataBase.balanceDb}");//Close menu bar 
-
-            menuBarClose();
-        }
-
         private void pnlDeposit_Click(object sender, EventArgs e)
         {
             //Close menu bar 
@@ -277,6 +269,9 @@ namespace atmSystem
         private void btnOkeyWith_Click(object sender, EventArgs e)
         {
             withdraw();
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            label5.Text = dataBase.balanceDb;
 
         }
 
@@ -285,6 +280,9 @@ namespace atmSystem
             if (e.KeyCode == Keys.Enter)
             {
                 withdraw();
+                dataBase dataBase = new dataBase();
+                dataBase.getData();
+                label5.Text = dataBase.balanceDb;
 
             }
             lbstarWd.Text = "";

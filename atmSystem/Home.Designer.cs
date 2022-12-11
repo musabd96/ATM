@@ -54,7 +54,6 @@
             this.lbDepo = new System.Windows.Forms.Label();
             this.btn200 = new System.Windows.Forms.Button();
             this.btnminstat = new System.Windows.Forms.Button();
-            this.btnBalance = new System.Windows.Forms.Button();
             this.btnDeposit = new System.Windows.Forms.Button();
             this.btn100 = new System.Windows.Forms.Button();
             this.btnOkeyWith = new System.Windows.Forms.Button();
@@ -74,6 +73,8 @@
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
@@ -212,12 +213,13 @@
             // 
             // pnlWithdraw
             // 
+            this.pnlWithdraw.Controls.Add(this.label5);
+            this.pnlWithdraw.Controls.Add(this.label3);
             this.pnlWithdraw.Controls.Add(this.panel1);
             this.pnlWithdraw.Controls.Add(this.panel7);
             this.pnlWithdraw.Controls.Add(this.pnlDeposit);
             this.pnlWithdraw.Controls.Add(this.btn200);
             this.pnlWithdraw.Controls.Add(this.btnminstat);
-            this.pnlWithdraw.Controls.Add(this.btnBalance);
             this.pnlWithdraw.Controls.Add(this.btnDeposit);
             this.pnlWithdraw.Controls.Add(this.btn100);
             this.pnlWithdraw.Controls.Add(this.btnOkeyWith);
@@ -273,10 +275,10 @@
             this.pnlDeposit.Controls.Add(this.lbFName);
             this.pnlDeposit.Controls.Add(this.lbDepo);
             this.pnlDeposit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDeposit.Location = new System.Drawing.Point(0, 42);
+            this.pnlDeposit.Location = new System.Drawing.Point(0, 324);
             this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDeposit.Name = "pnlDeposit";
-            this.pnlDeposit.Size = new System.Drawing.Size(701, 299);
+            this.pnlDeposit.Size = new System.Drawing.Size(701, 17);
             this.pnlDeposit.TabIndex = 5;
             this.pnlDeposit.Click += new System.EventHandler(this.pnlDeposit_Click);
             // 
@@ -435,7 +437,7 @@
             this.btnminstat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnminstat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnminstat.ForeColor = System.Drawing.Color.White;
-            this.btnminstat.Location = new System.Drawing.Point(571, 128);
+            this.btnminstat.Location = new System.Drawing.Point(570, 187);
             this.btnminstat.Margin = new System.Windows.Forms.Padding(0);
             this.btnminstat.Name = "btnminstat";
             this.btnminstat.Size = new System.Drawing.Size(125, 51);
@@ -443,23 +445,6 @@
             this.btnminstat.Text = "Mini statment";
             this.btnminstat.UseVisualStyleBackColor = false;
             this.btnminstat.Click += new System.EventHandler(this.btnTrans_Click);
-            // 
-            // btnBalance
-            // 
-            this.btnBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBalance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBalance.FlatAppearance.BorderSize = 0;
-            this.btnBalance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBalance.ForeColor = System.Drawing.Color.White;
-            this.btnBalance.Location = new System.Drawing.Point(571, 187);
-            this.btnBalance.Margin = new System.Windows.Forms.Padding(0);
-            this.btnBalance.Name = "btnBalance";
-            this.btnBalance.Size = new System.Drawing.Size(125, 51);
-            this.btnBalance.TabIndex = 3;
-            this.btnBalance.Text = "Balance";
-            this.btnBalance.UseVisualStyleBackColor = false;
-            this.btnBalance.Click += new System.EventHandler(this.btnBalance_Click);
             // 
             // btnDeposit
             // 
@@ -698,6 +683,28 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(527, 64);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 24);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Balance:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(614, 64);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 24);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "amount";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -778,8 +785,9 @@
         private System.Windows.Forms.Panel plnAtm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnBalance;
         private System.Windows.Forms.Button btnminstat;
         private System.Windows.Forms.Label lbinvWd;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
     }
 }
