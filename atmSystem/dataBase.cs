@@ -20,7 +20,7 @@ namespace atmMachine
         public static string server = "localhost";
         public static string database = "cusdata";
         public static string user = "root";
-        public static string pass = "";   // <------ write your database password here
+        public static string pass = "Dahlin12345!!";   // <------ write your database password here
 
 
         //From data base

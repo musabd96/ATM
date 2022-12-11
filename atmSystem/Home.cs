@@ -232,7 +232,7 @@ namespace atmSystem
                 }
 
                 
-                if (cashWd >= 10000)
+                if (cashWd >= 10001)
                 {
                     lbstarWd.Text = "*";
                     
@@ -287,7 +287,62 @@ namespace atmSystem
             lbMaxWd.ForeColor = Color.DodgerBlue;
         }
 
-        
+        private void deposit()
+        {
+            dataBase dataBase = new dataBase();
+            dataBase.getData();
+            try
+            {
+                
+                if(txtAmDep.Text != "")
+                {
+                    cashDp = Convert.ToInt32(txtAmDep.Text);
+                }
+
+                if (cashDp >= 10001)
+                {
+
+                    lbstarDp.Show();
+                    lbMaxDp.ForeColor = Color.Red;
+                }
+               
+                else
+                {
+                    newBalance = Convert.ToInt32(dataBase.balanceDb) + cashDp;
+                    dataBase.newBalance();
+                    dataBase.getData();
+                    dataBase.miniStatement();
+                    MessageBox.Show($"Du har suttit in: {cashDp} SEK" +
+                                    $"\nfrån ditt Konto nummer: {dataBase.accountNrDb}");
+
+                }
+               
+            }
+
+            catch
+            {
+                
+            }
+
+
+
+        }
+
+        private void btnOkey_Click(object sender, EventArgs e)
+        {
+            deposit();
+
+        }
+
+        private void txtAmDep_TextChanged(object sender, EventArgs e)
+        {
+            
+            lbstarDp.Hide();
+            lbMaxDp.ForeColor= Color.DodgerBlue;
+
+
+
+        }
     }
         
 }

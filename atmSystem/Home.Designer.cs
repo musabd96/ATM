@@ -42,7 +42,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.pnlDeposit = new System.Windows.Forms.Panel();
             this.lbstarDp = new System.Windows.Forms.Label();
-            this.lbinvDp = new System.Windows.Forms.Label();
             this.pnlDpAmt = new System.Windows.Forms.Panel();
             this.txtAmDep = new System.Windows.Forms.TextBox();
             this.btnOkey = new System.Windows.Forms.Button();
@@ -264,7 +263,6 @@
             // pnlDeposit
             // 
             this.pnlDeposit.Controls.Add(this.lbstarDp);
-            this.pnlDeposit.Controls.Add(this.lbinvDp);
             this.pnlDeposit.Controls.Add(this.pnlDpAmt);
             this.pnlDeposit.Controls.Add(this.btnOkey);
             this.pnlDeposit.Controls.Add(this.lbAccNrDep);
@@ -275,10 +273,10 @@
             this.pnlDeposit.Controls.Add(this.lbFName);
             this.pnlDeposit.Controls.Add(this.lbDepo);
             this.pnlDeposit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDeposit.Location = new System.Drawing.Point(0, 94);
+            this.pnlDeposit.Location = new System.Drawing.Point(0, 79);
             this.pnlDeposit.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDeposit.Name = "pnlDeposit";
-            this.pnlDeposit.Size = new System.Drawing.Size(701, 247);
+            this.pnlDeposit.Size = new System.Drawing.Size(701, 262);
             this.pnlDeposit.TabIndex = 5;
             this.pnlDeposit.Click += new System.EventHandler(this.pnlDeposit_Click);
             // 
@@ -287,24 +285,13 @@
             this.lbstarDp.AutoSize = true;
             this.lbstarDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbstarDp.ForeColor = System.Drawing.Color.Red;
-            this.lbstarDp.Location = new System.Drawing.Point(183, 171);
+            this.lbstarDp.Location = new System.Drawing.Point(178, 167);
             this.lbstarDp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbstarDp.Name = "lbstarDp";
             this.lbstarDp.Size = new System.Drawing.Size(18, 24);
             this.lbstarDp.TabIndex = 9;
             this.lbstarDp.Text = "*";
-            // 
-            // lbinvDp
-            // 
-            this.lbinvDp.AutoSize = true;
-            this.lbinvDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbinvDp.ForeColor = System.Drawing.Color.Red;
-            this.lbinvDp.Location = new System.Drawing.Point(116, 171);
-            this.lbinvDp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbinvDp.Name = "lbinvDp";
-            this.lbinvDp.Size = new System.Drawing.Size(49, 16);
-            this.lbinvDp.TabIndex = 10;
-            this.lbinvDp.Text = "Invalid ";
+            this.lbstarDp.Visible = false;
             // 
             // pnlDpAmt
             // 
@@ -328,6 +315,7 @@
             this.txtAmDep.Name = "txtAmDep";
             this.txtAmDep.Size = new System.Drawing.Size(300, 29);
             this.txtAmDep.TabIndex = 3;
+            this.txtAmDep.TextChanged += new System.EventHandler(this.txtAmDep_TextChanged);
             // 
             // btnOkey
             // 
@@ -343,6 +331,7 @@
             this.btnOkey.TabStop = false;
             this.btnOkey.Text = "Okey";
             this.btnOkey.UseVisualStyleBackColor = false;
+            this.btnOkey.Click += new System.EventHandler(this.btnOkey_Click);
             // 
             // lbAccNrDep
             // 
@@ -760,7 +749,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel pnlDeposit;
         private System.Windows.Forms.Label lbstarDp;
-        private System.Windows.Forms.Label lbinvDp;
         private System.Windows.Forms.Panel pnlDpAmt;
         private System.Windows.Forms.TextBox txtAmDep;
         private System.Windows.Forms.Button btnOkey;
