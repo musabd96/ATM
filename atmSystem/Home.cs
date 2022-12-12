@@ -247,6 +247,10 @@ namespace atmSystem
                         txtcashWd.SelectAll();
 
                     }
+                    else if (cashWd < 0)
+                    {
+                        MessageBox.Show("You cannot withdraw a negative number");
+                    }
                     else
                     {
                         newBalance = Convert.ToInt32(dataBase.balanceDb) - cashWd;
@@ -311,7 +315,10 @@ namespace atmSystem
                     lbstarDp.Show();
                     lbMaxDp.ForeColor = Color.Red;
                 }
-               
+                else if (cashDp < 0)
+                {
+                    MessageBox.Show("You cannot deposit a negative number");
+                }
                 else
                 {
                     newBalance = Convert.ToInt32(dataBase.balanceDb) + cashDp;
