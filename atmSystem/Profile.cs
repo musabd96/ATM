@@ -143,19 +143,13 @@ namespace atmSystem
                 }
                 else
                 {
-                    txtOldPin.ForeColor = Color.Red;
                     txtOldPin.BackColor = Color.Red;
-                    txtNewPin.ForeColor = Color.Red;
                     txtNewPin.BackColor = Color.Red;
-                    txtConfPin.ForeColor = Color.Red;
                     txtConfPin.BackColor = Color.Red;
                     MessageBox.Show($"Wrong pin, {dataBase.fullNameDb}\nTry again");
-                    txtOldPin.ForeColor = Color.Black;
                     txtOldPin.BackColor = Color.White;
-                    txtNewPin.ForeColor = Color.Black;
                     txtNewPin.BackColor = Color.White;
-                    txtConfPin.ForeColor = Color.Black;
-                    txtConfPin.BackColor = Color.White;
+                    txtConfPin.BackColor = Color.White; // field becomes red then white if pins don't match
                     txtNewPin.Clear();
                     txtConfPin.Clear();
                     txtOldPin.Clear(); 

@@ -65,16 +65,16 @@
             this.lbstarWd = new System.Windows.Forms.Label();
             this.lbinvWd = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lbBalWd = new System.Windows.Forms.Label();
             this.lbAcc = new System.Windows.Forms.Label();
             this.lbname = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbAccNr = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
             this.plnAtm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbBalWd = new System.Windows.Forms.Label();
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
@@ -593,6 +593,17 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "SEK";
             // 
+            // lbBalWd
+            // 
+            this.lbBalWd.AutoSize = true;
+            this.lbBalWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBalWd.Location = new System.Drawing.Point(572, 58);
+            this.lbBalWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbBalWd.Name = "lbBalWd";
+            this.lbBalWd.Size = new System.Drawing.Size(73, 24);
+            this.lbBalWd.TabIndex = 0;
+            this.lbBalWd.Text = "amount";
+            // 
             // lbAcc
             // 
             this.lbAcc.AutoSize = true;
@@ -614,6 +625,17 @@
             this.lbname.Size = new System.Drawing.Size(58, 24);
             this.lbname.TabIndex = 0;
             this.lbname.Text = "name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(480, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Balance:";
             // 
             // label4
             // 
@@ -682,28 +704,6 @@
             this.label2.Size = new System.Drawing.Size(83, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Machine";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(480, 58);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Balance:";
-            // 
-            // lbBalWd
-            // 
-            this.lbBalWd.AutoSize = true;
-            this.lbBalWd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBalWd.Location = new System.Drawing.Point(572, 58);
-            this.lbBalWd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbBalWd.Name = "lbBalWd";
-            this.lbBalWd.Size = new System.Drawing.Size(73, 24);
-            this.lbBalWd.TabIndex = 0;
-            this.lbBalWd.Text = "amount";
             // 
             // Home
             // 
