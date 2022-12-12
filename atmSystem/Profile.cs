@@ -150,11 +150,11 @@ namespace atmSystem
                     txtConfPin.ForeColor = Color.Red;
                     txtConfPin.BackColor = Color.Red;
                     MessageBox.Show($"Wrong pin, {dataBase.fullNameDb}\nTry again");
-                    txtOldPin.ForeColor = Color.White;
+                    txtOldPin.ForeColor = Color.Black;
                     txtOldPin.BackColor = Color.White;
-                    txtNewPin.ForeColor = Color.White;
+                    txtNewPin.ForeColor = Color.Black;
                     txtNewPin.BackColor = Color.White;
-                    txtConfPin.ForeColor = Color.White;
+                    txtConfPin.ForeColor = Color.Black;
                     txtConfPin.BackColor = Color.White;
                     txtNewPin.Clear();
                     txtConfPin.Clear();
