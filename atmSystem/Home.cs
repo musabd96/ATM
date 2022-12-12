@@ -249,6 +249,8 @@ namespace atmSystem
                     }
                     else if (cashWd < 0)
                     {
+                        lbstarWd.Text = "*";
+
                         MessageBox.Show("You cannot withdraw a negative number");
                     }
                     else
@@ -317,6 +319,7 @@ namespace atmSystem
                 }
                 else if (cashDp < 0)
                 {
+                    lbstarDp.Show();
                     MessageBox.Show("You cannot deposit a negative number");
                 }
                 else
