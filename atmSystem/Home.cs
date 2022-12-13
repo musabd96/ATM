@@ -243,7 +243,7 @@ namespace atmSystem
                 {
                     if (Convert.ToInt32(dataBase.balanceDb) < cashWd)
                     {
-                        MessageBox.Show("Du har inte tillräckligt med pengar.");
+                        MessageBox.Show("You don't have enough money.");
                         txtcashWd.SelectAll();
 
                     }
@@ -261,8 +261,8 @@ namespace atmSystem
                         lbBalWd.Text = dataBase.balanceDb;
 
                         dataBase.miniStatement();
-                        MessageBox.Show($"Du har tagit ut: {cashWd} SEK" +
-                                        $"\nfrån ditt Konto nummer: {dataBase.accountNrDb}");
+                        MessageBox.Show($"You have withdrawn: {cashWd} SEK" +
+                                        $"\nfrom you account number: {dataBase.accountNrDb}");
                     }
 
                 }
@@ -272,7 +272,7 @@ namespace atmSystem
             }
             catch
             {
-                lbinvWd.Text = "Invalid inmatning.";
+                lbinvWd.Text = "Invalid input.";
 
             }
 
@@ -330,8 +330,8 @@ namespace atmSystem
 
                     lbBalDep.Text = dataBase.balanceDb;
                     dataBase.miniStatement();
-                    MessageBox.Show($"Du har suttit in: {cashDp} SEK" +
-                                    $"\nfrån ditt Konto nummer: {dataBase.accountNrDb}");
+                    MessageBox.Show($"You have deposited: {cashDp} SEK" +
+                                    $"\nfrom your account number: {dataBase.accountNrDb}");
 
                 }
                

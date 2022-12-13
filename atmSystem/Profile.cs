@@ -133,7 +133,7 @@ namespace atmSystem
                             txtNewPin.Clear();
                             txtConfPin.Clear();
                             txtOldPin.Clear();
-                            MessageBox.Show($"{dataBase.accountNrDb} pin is now changed to {newPin}");
+                            MessageBox.Show($"{dataBase.accountNrDb} account's pin is now changed to {newPin}");
                         }
                     }
                     catch (Exception ex)
