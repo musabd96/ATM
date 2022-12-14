@@ -33,12 +33,16 @@
             this.pnlRegister = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pnlConPin = new System.Windows.Forms.Panel();
+            this.pBShowConfP = new System.Windows.Forms.PictureBox();
+            this.pBHidConfPin = new System.Windows.Forms.PictureBox();
             this.txtPinConf = new System.Windows.Forms.TextBox();
             this.pnlemail = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.pnlaccreg = new System.Windows.Forms.Panel();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.pnlpinreg = new System.Windows.Forms.Panel();
+            this.pBShowPinRg = new System.Windows.Forms.PictureBox();
+            this.pBHidPinRg = new System.Windows.Forms.PictureBox();
             this.txtPinReg = new System.Windows.Forms.TextBox();
             this.lbNot = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -56,6 +60,8 @@
             this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pnlPin = new System.Windows.Forms.Panel();
+            this.pBShowPin = new System.Windows.Forms.PictureBox();
+            this.pBHidPin = new System.Windows.Forms.PictureBox();
             this.txtPin = new System.Windows.Forms.TextBox();
             this.pnlAccNr = new System.Windows.Forms.Panel();
             this.txtAccNr = new System.Windows.Forms.TextBox();
@@ -71,12 +77,18 @@
             this.pnlLogIn.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.pnlConPin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowConfP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidConfPin)).BeginInit();
             this.pnlemail.SuspendLayout();
             this.pnlaccreg.SuspendLayout();
             this.pnlpinreg.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowPinRg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidPinRg)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.pnlPin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowPin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidPin)).BeginInit();
             this.pnlAccNr.SuspendLayout();
             this.plnAtm.SuspendLayout();
             this.SuspendLayout();
@@ -120,10 +132,10 @@
             this.pnlRegister.Controls.Add(this.lbFName);
             this.pnlRegister.Controls.Add(this.lbSingUp);
             this.pnlRegister.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlRegister.Location = new System.Drawing.Point(0, 430);
+            this.pnlRegister.Location = new System.Drawing.Point(0, 40);
             this.pnlRegister.Margin = new System.Windows.Forms.Padding(2);
             this.pnlRegister.Name = "pnlRegister";
-            this.pnlRegister.Size = new System.Drawing.Size(380, 10);
+            this.pnlRegister.Size = new System.Drawing.Size(380, 400);
             this.pnlRegister.TabIndex = 5;
             // 
             // checkBox1
@@ -141,6 +153,8 @@
             // pnlConPin
             // 
             this.pnlConPin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlConPin.Controls.Add(this.pBShowConfP);
+            this.pnlConPin.Controls.Add(this.pBHidConfPin);
             this.pnlConPin.Controls.Add(this.txtPinConf);
             this.pnlConPin.ForeColor = System.Drawing.Color.White;
             this.pnlConPin.Location = new System.Drawing.Point(28, 308);
@@ -149,6 +163,32 @@
             this.pnlConPin.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.pnlConPin.Size = new System.Drawing.Size(300, 30);
             this.pnlConPin.TabIndex = 5;
+            // 
+            // pBShowConfP
+            // 
+            this.pBShowConfP.BackColor = System.Drawing.Color.White;
+            this.pBShowConfP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBShowConfP.Image = ((System.Drawing.Image)(resources.GetObject("pBShowConfP.Image")));
+            this.pBShowConfP.Location = new System.Drawing.Point(277, 1);
+            this.pBShowConfP.Name = "pBShowConfP";
+            this.pBShowConfP.Size = new System.Drawing.Size(20, 24);
+            this.pBShowConfP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBShowConfP.TabIndex = 18;
+            this.pBShowConfP.TabStop = false;
+            this.pBShowConfP.Click += new System.EventHandler(this.pBShowConfP_Click);
+            // 
+            // pBHidConfPin
+            // 
+            this.pBHidConfPin.BackColor = System.Drawing.Color.White;
+            this.pBHidConfPin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBHidConfPin.Image = ((System.Drawing.Image)(resources.GetObject("pBHidConfPin.Image")));
+            this.pBHidConfPin.Location = new System.Drawing.Point(277, 1);
+            this.pBHidConfPin.Name = "pBHidConfPin";
+            this.pBHidConfPin.Size = new System.Drawing.Size(20, 24);
+            this.pBHidConfPin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHidConfPin.TabIndex = 17;
+            this.pBHidConfPin.TabStop = false;
+            this.pBHidConfPin.Click += new System.EventHandler(this.pBHidConfPin_Click);
             // 
             // txtPinConf
             // 
@@ -212,6 +252,8 @@
             // pnlpinreg
             // 
             this.pnlpinreg.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlpinreg.Controls.Add(this.pBShowPinRg);
+            this.pnlpinreg.Controls.Add(this.pBHidPinRg);
             this.pnlpinreg.Controls.Add(this.txtPinReg);
             this.pnlpinreg.ForeColor = System.Drawing.Color.White;
             this.pnlpinreg.Location = new System.Drawing.Point(29, 250);
@@ -220,6 +262,32 @@
             this.pnlpinreg.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.pnlpinreg.Size = new System.Drawing.Size(300, 30);
             this.pnlpinreg.TabIndex = 4;
+            // 
+            // pBShowPinRg
+            // 
+            this.pBShowPinRg.BackColor = System.Drawing.Color.White;
+            this.pBShowPinRg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBShowPinRg.Image = ((System.Drawing.Image)(resources.GetObject("pBShowPinRg.Image")));
+            this.pBShowPinRg.Location = new System.Drawing.Point(276, 0);
+            this.pBShowPinRg.Name = "pBShowPinRg";
+            this.pBShowPinRg.Size = new System.Drawing.Size(20, 24);
+            this.pBShowPinRg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBShowPinRg.TabIndex = 17;
+            this.pBShowPinRg.TabStop = false;
+            this.pBShowPinRg.Click += new System.EventHandler(this.pBShowPinRg_Click);
+            // 
+            // pBHidPinRg
+            // 
+            this.pBHidPinRg.BackColor = System.Drawing.Color.White;
+            this.pBHidPinRg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBHidPinRg.Image = ((System.Drawing.Image)(resources.GetObject("pBHidPinRg.Image")));
+            this.pBHidPinRg.Location = new System.Drawing.Point(276, 1);
+            this.pBHidPinRg.Name = "pBHidPinRg";
+            this.pBHidPinRg.Size = new System.Drawing.Size(20, 24);
+            this.pBHidPinRg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHidPinRg.TabIndex = 17;
+            this.pBHidPinRg.TabStop = false;
+            this.pBHidPinRg.Click += new System.EventHandler(this.pBHidPinRg_Click);
             // 
             // txtPinReg
             // 
@@ -417,6 +485,8 @@
             // pnlPin
             // 
             this.pnlPin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlPin.Controls.Add(this.pBShowPin);
+            this.pnlPin.Controls.Add(this.pBHidPin);
             this.pnlPin.Controls.Add(this.txtPin);
             this.pnlPin.ForeColor = System.Drawing.Color.White;
             this.pnlPin.Location = new System.Drawing.Point(38, 242);
@@ -425,6 +495,32 @@
             this.pnlPin.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.pnlPin.Size = new System.Drawing.Size(300, 30);
             this.pnlPin.TabIndex = 2;
+            // 
+            // pBShowPin
+            // 
+            this.pBShowPin.BackColor = System.Drawing.Color.White;
+            this.pBShowPin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBShowPin.Image = ((System.Drawing.Image)(resources.GetObject("pBShowPin.Image")));
+            this.pBShowPin.Location = new System.Drawing.Point(277, 3);
+            this.pBShowPin.Name = "pBShowPin";
+            this.pBShowPin.Size = new System.Drawing.Size(20, 24);
+            this.pBShowPin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBShowPin.TabIndex = 17;
+            this.pBShowPin.TabStop = false;
+            this.pBShowPin.Click += new System.EventHandler(this.pBShowPin_Click_1);
+            // 
+            // pBHidPin
+            // 
+            this.pBHidPin.BackColor = System.Drawing.Color.White;
+            this.pBHidPin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBHidPin.Image = ((System.Drawing.Image)(resources.GetObject("pBHidPin.Image")));
+            this.pBHidPin.Location = new System.Drawing.Point(277, 3);
+            this.pBHidPin.Name = "pBHidPin";
+            this.pBHidPin.Size = new System.Drawing.Size(20, 24);
+            this.pBHidPin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHidPin.TabIndex = 17;
+            this.pBHidPin.TabStop = false;
+            this.pBHidPin.Click += new System.EventHandler(this.pBHidPin_Click);
             // 
             // txtPin
             // 
@@ -589,17 +685,23 @@
             this.pnlRegister.PerformLayout();
             this.pnlConPin.ResumeLayout(false);
             this.pnlConPin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowConfP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidConfPin)).EndInit();
             this.pnlemail.ResumeLayout(false);
             this.pnlemail.PerformLayout();
             this.pnlaccreg.ResumeLayout(false);
             this.pnlaccreg.PerformLayout();
             this.pnlpinreg.ResumeLayout(false);
             this.pnlpinreg.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowPinRg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidPinRg)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.pnlPin.ResumeLayout(false);
             this.pnlPin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowPin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidPin)).EndInit();
             this.pnlAccNr.ResumeLayout(false);
             this.pnlAccNr.PerformLayout();
             this.plnAtm.ResumeLayout(false);
@@ -649,6 +751,12 @@
         private System.Windows.Forms.Label lberrorReg;
         private System.Windows.Forms.Label lberror;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.PictureBox pBHidPin;
+        private System.Windows.Forms.PictureBox pBShowPin;
+        private System.Windows.Forms.PictureBox pBHidPinRg;
+        private System.Windows.Forms.PictureBox pBHidConfPin;
+        private System.Windows.Forms.PictureBox pBShowConfP;
+        private System.Windows.Forms.PictureBox pBShowPinRg;
     }
 }
 

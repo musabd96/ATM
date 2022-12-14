@@ -263,10 +263,74 @@ namespace atmSystem
             }
         }
 
-            #endregion
+
+
+
+        #endregion
+        private void pBHidPin_Click(object sender, EventArgs e)
+        {
+
+            if (txtPin.PasswordChar == '\0')
+            {
+                pBShowPin.BringToFront();
+                txtPin.PasswordChar = '*';
+            }
+        }
+
+        private void pBShowPin_Click_1(object sender, EventArgs e)
+        {
+
+            if (txtPin.PasswordChar == '*')
+            {
+                pBHidPin.BringToFront();
+                txtPin.PasswordChar = '\0';
+            }
+        }
+
+        private void pBShowPin_Click(object sender, EventArgs e)
+        {
+        }
+        private void pBHidOld_Click(object sender, EventArgs e)
+        {
+        }
 
         
 
-        
+        private void pBHidPinRg_Click(object sender, EventArgs e)
+        {
+            if (txtPinReg.PasswordChar == '\0')
+            {
+                pBShowPinRg.BringToFront();
+                txtPinReg.PasswordChar = '*';
+            }
+        }
+
+        private void pBHidConfPin_Click(object sender, EventArgs e)
+        {
+            if (txtPinConf.PasswordChar == '\0')
+            {
+                pBShowConfP.BringToFront();
+                txtPinConf.PasswordChar = '*';
+            }
+        }
+
+        private void pBShowPinRg_Click(object sender, EventArgs e)
+        {
+            if (txtPinReg.PasswordChar == '*')
+            {
+                pBHidPinRg.BringToFront();
+                txtPinReg.PasswordChar = '\0';
+            }
+        }
+
+        private void pBShowConfP_Click(object sender, EventArgs e)
+        {
+            if (txtPinConf.PasswordChar == '*')
+            {
+                pBHidConfPin.BringToFront();
+                txtPinConf.PasswordChar = '\0';
+            }
+        }
+
     }   
 }

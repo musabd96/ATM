@@ -211,6 +211,66 @@ namespace atmSystem
             }
 
         }
+
+        
+
+        private void pBHidOld_Click(object sender, EventArgs e)
+        {
+            if (txtOldPin.PasswordChar == '\0')
+            {
+                pBShowOld.BringToFront();
+                txtOldPin.PasswordChar = '*';
+            }
+        }
+
+       
+
+
+        private void pBHidNew_Click(object sender, EventArgs e)
+        {
+            if (txtNewPin.PasswordChar == '\0')
+            {
+                pBShowNew.BringToFront();
+                txtNewPin.PasswordChar = '*';
+            }
+        }
+       
+
+        private void pBHidConP_Click(object sender, EventArgs e)
+        {
+            if (txtConfPin.PasswordChar == '\0')
+            {
+                pBShowConP.BringToFront();
+                txtConfPin.PasswordChar = '*';
+            }
+        }
+
+        private void pBShowOld_Click(object sender, EventArgs e)
+        {
+            if (txtOldPin.PasswordChar == '*')
+            {
+                pBHidOld.BringToFront();
+                txtOldPin.PasswordChar = '\0';
+            }
+        }
+
+        private void pBShowNew_Click(object sender, EventArgs e)
+        {
+            if (txtNewPin.PasswordChar == '*')
+            {
+                pBHidNew.BringToFront();
+                txtNewPin.PasswordChar = '\0';
+            }
+        }
+
+        private void pBShowConP_Click(object sender, EventArgs e)
+        {
+            if (txtConfPin.PasswordChar == '*')
+            {
+                pBHidConP.BringToFront();
+                txtConfPin.PasswordChar = '\0';
+            }
+        }
     }
 
        

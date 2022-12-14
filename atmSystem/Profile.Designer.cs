@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.pnlProfWh = new System.Windows.Forms.Panel();
             this.pnlCchanPin = new System.Windows.Forms.Panel();
+            this.lbstarConP = new System.Windows.Forms.Label();
+            this.lbstarNew = new System.Windows.Forms.Label();
+            this.lbstarOld = new System.Windows.Forms.Label();
             this.lbchangePin = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -64,9 +67,12 @@
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnService = new System.Windows.Forms.Button();
-            this.lbstarOld = new System.Windows.Forms.Label();
-            this.lbstarNew = new System.Windows.Forms.Label();
-            this.lbstarConP = new System.Windows.Forms.Label();
+            this.pBHidOld = new System.Windows.Forms.PictureBox();
+            this.pBHidNew = new System.Windows.Forms.PictureBox();
+            this.pBHidConP = new System.Windows.Forms.PictureBox();
+            this.pBShowConP = new System.Windows.Forms.PictureBox();
+            this.pBShowNew = new System.Windows.Forms.PictureBox();
+            this.pBShowOld = new System.Windows.Forms.PictureBox();
             this.pnlProfWh.SuspendLayout();
             this.pnlCchanPin.SuspendLayout();
             this.pnlOldPin.SuspendLayout();
@@ -76,6 +82,12 @@
             this.pnlMenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidOld)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidNew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidConP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowConP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowNew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowOld)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlProfWh
@@ -112,10 +124,40 @@
             this.pnlCchanPin.Controls.Add(this.pnlNewPin);
             this.pnlCchanPin.Controls.Add(this.pnlConfPin);
             this.pnlCchanPin.Controls.Add(this.lberror);
-            this.pnlCchanPin.Location = new System.Drawing.Point(395, 105);
+            this.pnlCchanPin.Location = new System.Drawing.Point(391, 105);
             this.pnlCchanPin.Name = "pnlCchanPin";
-            this.pnlCchanPin.Size = new System.Drawing.Size(294, 232);
+            this.pnlCchanPin.Size = new System.Drawing.Size(298, 232);
             this.pnlCchanPin.TabIndex = 15;
+            // 
+            // lbstarConP
+            // 
+            this.lbstarConP.AutoSize = true;
+            this.lbstarConP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbstarConP.ForeColor = System.Drawing.Color.Red;
+            this.lbstarConP.Location = new System.Drawing.Point(267, 143);
+            this.lbstarConP.Name = "lbstarConP";
+            this.lbstarConP.Size = new System.Drawing.Size(0, 25);
+            this.lbstarConP.TabIndex = 16;
+            // 
+            // lbstarNew
+            // 
+            this.lbstarNew.AutoSize = true;
+            this.lbstarNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbstarNew.ForeColor = System.Drawing.Color.Red;
+            this.lbstarNew.Location = new System.Drawing.Point(267, 103);
+            this.lbstarNew.Name = "lbstarNew";
+            this.lbstarNew.Size = new System.Drawing.Size(0, 25);
+            this.lbstarNew.TabIndex = 16;
+            // 
+            // lbstarOld
+            // 
+            this.lbstarOld.AutoSize = true;
+            this.lbstarOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbstarOld.ForeColor = System.Drawing.Color.Red;
+            this.lbstarOld.Location = new System.Drawing.Point(267, 66);
+            this.lbstarOld.Name = "lbstarOld";
+            this.lbstarOld.Size = new System.Drawing.Size(0, 25);
+            this.lbstarOld.TabIndex = 16;
             // 
             // lbchangePin
             // 
@@ -195,6 +237,8 @@
             // pnlOldPin
             // 
             this.pnlOldPin.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlOldPin.Controls.Add(this.pBShowOld);
+            this.pnlOldPin.Controls.Add(this.pBHidOld);
             this.pnlOldPin.Controls.Add(this.txtOldPin);
             this.pnlOldPin.ForeColor = System.Drawing.Color.White;
             this.pnlOldPin.Location = new System.Drawing.Point(129, 61);
@@ -218,6 +262,8 @@
             // pnlNewPin
             // 
             this.pnlNewPin.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlNewPin.Controls.Add(this.pBShowNew);
+            this.pnlNewPin.Controls.Add(this.pBHidNew);
             this.pnlNewPin.Controls.Add(this.txtNewPin);
             this.pnlNewPin.ForeColor = System.Drawing.Color.White;
             this.pnlNewPin.Location = new System.Drawing.Point(129, 97);
@@ -241,6 +287,8 @@
             // pnlConfPin
             // 
             this.pnlConfPin.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlConfPin.Controls.Add(this.pBShowConP);
+            this.pnlConfPin.Controls.Add(this.pBHidConP);
             this.pnlConfPin.Controls.Add(this.txtConfPin);
             this.pnlConfPin.ForeColor = System.Drawing.Color.White;
             this.pnlConfPin.Location = new System.Drawing.Point(129, 135);
@@ -511,35 +559,83 @@
             this.btnService.UseVisualStyleBackColor = false;
             this.btnService.Click += new System.EventHandler(this.btnService_Click);
             // 
-            // lbstarOld
+            // pBHidOld
             // 
-            this.lbstarOld.AutoSize = true;
-            this.lbstarOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbstarOld.ForeColor = System.Drawing.Color.Red;
-            this.lbstarOld.Location = new System.Drawing.Point(267, 66);
-            this.lbstarOld.Name = "lbstarOld";
-            this.lbstarOld.Size = new System.Drawing.Size(0, 25);
-            this.lbstarOld.TabIndex = 16;
+            this.pBHidOld.BackColor = System.Drawing.Color.White;
+            this.pBHidOld.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBHidOld.Image = ((System.Drawing.Image)(resources.GetObject("pBHidOld.Image")));
+            this.pBHidOld.Location = new System.Drawing.Point(118, 3);
+            this.pBHidOld.Name = "pBHidOld";
+            this.pBHidOld.Size = new System.Drawing.Size(20, 24);
+            this.pBHidOld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHidOld.TabIndex = 16;
+            this.pBHidOld.TabStop = false;
+            this.pBHidOld.Click += new System.EventHandler(this.pBHidOld_Click);
             // 
-            // lbstarNew
+            // pBHidNew
             // 
-            this.lbstarNew.AutoSize = true;
-            this.lbstarNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbstarNew.ForeColor = System.Drawing.Color.Red;
-            this.lbstarNew.Location = new System.Drawing.Point(267, 103);
-            this.lbstarNew.Name = "lbstarNew";
-            this.lbstarNew.Size = new System.Drawing.Size(0, 25);
-            this.lbstarNew.TabIndex = 16;
+            this.pBHidNew.BackColor = System.Drawing.Color.White;
+            this.pBHidNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBHidNew.Image = ((System.Drawing.Image)(resources.GetObject("pBHidNew.Image")));
+            this.pBHidNew.Location = new System.Drawing.Point(118, 3);
+            this.pBHidNew.Name = "pBHidNew";
+            this.pBHidNew.Size = new System.Drawing.Size(20, 24);
+            this.pBHidNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHidNew.TabIndex = 16;
+            this.pBHidNew.TabStop = false;
+            this.pBHidNew.Click += new System.EventHandler(this.pBHidNew_Click);
             // 
-            // lbstarConP
+            // pBHidConP
             // 
-            this.lbstarConP.AutoSize = true;
-            this.lbstarConP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbstarConP.ForeColor = System.Drawing.Color.Red;
-            this.lbstarConP.Location = new System.Drawing.Point(267, 143);
-            this.lbstarConP.Name = "lbstarConP";
-            this.lbstarConP.Size = new System.Drawing.Size(0, 25);
-            this.lbstarConP.TabIndex = 16;
+            this.pBHidConP.BackColor = System.Drawing.Color.White;
+            this.pBHidConP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBHidConP.Image = ((System.Drawing.Image)(resources.GetObject("pBHidConP.Image")));
+            this.pBHidConP.Location = new System.Drawing.Point(118, 3);
+            this.pBHidConP.Name = "pBHidConP";
+            this.pBHidConP.Size = new System.Drawing.Size(20, 24);
+            this.pBHidConP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHidConP.TabIndex = 16;
+            this.pBHidConP.TabStop = false;
+            this.pBHidConP.Click += new System.EventHandler(this.pBHidConP_Click);
+            // 
+            // pBShowConP
+            // 
+            this.pBShowConP.BackColor = System.Drawing.Color.White;
+            this.pBShowConP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBShowConP.Image = ((System.Drawing.Image)(resources.GetObject("pBShowConP.Image")));
+            this.pBShowConP.Location = new System.Drawing.Point(118, 3);
+            this.pBShowConP.Name = "pBShowConP";
+            this.pBShowConP.Size = new System.Drawing.Size(20, 24);
+            this.pBShowConP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBShowConP.TabIndex = 16;
+            this.pBShowConP.TabStop = false;
+            this.pBShowConP.Click += new System.EventHandler(this.pBShowConP_Click);
+            // 
+            // pBShowNew
+            // 
+            this.pBShowNew.BackColor = System.Drawing.Color.White;
+            this.pBShowNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBShowNew.Image = ((System.Drawing.Image)(resources.GetObject("pBShowNew.Image")));
+            this.pBShowNew.Location = new System.Drawing.Point(118, 3);
+            this.pBShowNew.Name = "pBShowNew";
+            this.pBShowNew.Size = new System.Drawing.Size(20, 24);
+            this.pBShowNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBShowNew.TabIndex = 16;
+            this.pBShowNew.TabStop = false;
+            this.pBShowNew.Click += new System.EventHandler(this.pBShowNew_Click);
+            // 
+            // pBShowOld
+            // 
+            this.pBShowOld.BackColor = System.Drawing.Color.White;
+            this.pBShowOld.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pBShowOld.Image = ((System.Drawing.Image)(resources.GetObject("pBShowOld.Image")));
+            this.pBShowOld.Location = new System.Drawing.Point(118, 3);
+            this.pBShowOld.Name = "pBShowOld";
+            this.pBShowOld.Size = new System.Drawing.Size(20, 24);
+            this.pBShowOld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBShowOld.TabIndex = 16;
+            this.pBShowOld.TabStop = false;
+            this.pBShowOld.Click += new System.EventHandler(this.pBShowOld_Click);
             // 
             // Profile
             // 
@@ -577,6 +673,12 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidOld)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidNew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHidConP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowConP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowNew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBShowOld)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -621,5 +723,11 @@
         private System.Windows.Forms.Label lbstarConP;
         private System.Windows.Forms.Label lbstarNew;
         private System.Windows.Forms.Label lbstarOld;
+        private System.Windows.Forms.PictureBox pBHidOld;
+        private System.Windows.Forms.PictureBox pBHidNew;
+        private System.Windows.Forms.PictureBox pBHidConP;
+        private System.Windows.Forms.PictureBox pBShowOld;
+        private System.Windows.Forms.PictureBox pBShowNew;
+        private System.Windows.Forms.PictureBox pBShowConP;
     }
 }
