@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using atmMachine;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace atmSystem
 {
@@ -133,7 +134,24 @@ namespace atmSystem
                             txtNewPin.Clear();
                             txtConfPin.Clear();
                             txtOldPin.Clear();
-                            MessageBox.Show($"{dataBase.accountNrDb} account's pin is now changed to {newPin}");
+                            lberror.Text = "";
+                            lbstarNew.Text = "";
+                            lbstarConP.Text = "";
+                            MessageBox.Show($"{dataBase.accountNrDb} pin is now changed", "CHANGED PIN");
+                        }
+                        else
+                        {
+
+                            txtNewPin.ForeColor = Color.Red;
+                            txtConfPin.ForeColor = Color.Red;
+                            pnlNewPin.BackColor = Color.Red;
+                            pnlConfPin.BackColor = Color.Red;
+                            lberror.Text = "Pin do not match!";
+                            lbstarNew.Text = "*";
+                            lbstarConP.Text = "*";
+                            txtNewPin.Focus();
+                            txtNewPin.SelectAll();
+                            txtConfPin.SelectAll();
                         }
                     }
                     catch (Exception ex)
@@ -143,16 +161,12 @@ namespace atmSystem
                 }
                 else
                 {
-                    txtOldPin.BackColor = Color.Red;
-                    txtNewPin.BackColor = Color.Red;
-                    txtConfPin.BackColor = Color.Red;
-                    MessageBox.Show($"Wrong pin, {dataBase.fullNameDb}\nTry again");
-                    txtOldPin.BackColor = Color.White;
-                    txtNewPin.BackColor = Color.White;
-                    txtConfPin.BackColor = Color.White; // field becomes red then white if pins don't match
-                    txtNewPin.Clear();
-                    txtConfPin.Clear();
-                    txtOldPin.Clear(); 
+                    pnlOldPin.BackColor = Color.Red;
+                    txtOldPin.ForeColor = Color.Red;
+                    lberror.Text = "Wrong pin!";
+                    lbstarOld.Text = "*";
+                    txtOldPin.SelectAll();
+                    txtOldPin.Focus();
                 }
             }
             catch (Exception ex)
@@ -166,6 +180,36 @@ namespace atmSystem
         private void Profile_Load(object sender, EventArgs e)
         {
             ControlBox = false;
+        }
+
+        private void txtOldPin_TextChanged(object sender, EventArgs e)
+        {
+            pnlOldPin.BackColor = Color.DodgerBlue;
+            txtOldPin.ForeColor = Color.Black;
+
+        }
+
+        private void txtNewPin_TextChanged(object sender, EventArgs e)
+        {
+            pnlNewPin.BackColor = Color.DodgerBlue;
+            txtNewPin.ForeColor = Color.Black;
+        }
+
+        private void txtConfPin_TextChanged(object sender, EventArgs e)
+        {
+            pnlConfPin.BackColor = Color.DodgerBlue;
+            txtConfPin.ForeColor = Color.Black;
+            pnlNewPin.BackColor = Color.DodgerBlue;
+            txtNewPin.ForeColor = Color.Black;
+        }
+
+        private void txtConfPin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnSave_Click(sender, e);
+            }
+
         }
     }
 

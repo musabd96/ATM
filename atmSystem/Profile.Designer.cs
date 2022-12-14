@@ -44,7 +44,7 @@
             this.txtNewPin = new System.Windows.Forms.TextBox();
             this.pnlConfPin = new System.Windows.Forms.Panel();
             this.txtConfPin = new System.Windows.Forms.TextBox();
-            this.lbChPin = new System.Windows.Forms.Label();
+            this.lberror = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbAcc = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,6 +64,9 @@
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnService = new System.Windows.Forms.Button();
+            this.lbstarOld = new System.Windows.Forms.Label();
+            this.lbstarNew = new System.Windows.Forms.Label();
+            this.lbstarConP = new System.Windows.Forms.Label();
             this.pnlProfWh.SuspendLayout();
             this.pnlCchanPin.SuspendLayout();
             this.pnlOldPin.SuspendLayout();
@@ -95,6 +98,9 @@
             // 
             // pnlCchanPin
             // 
+            this.pnlCchanPin.Controls.Add(this.lbstarConP);
+            this.pnlCchanPin.Controls.Add(this.lbstarNew);
+            this.pnlCchanPin.Controls.Add(this.lbstarOld);
             this.pnlCchanPin.Controls.Add(this.lbchangePin);
             this.pnlCchanPin.Controls.Add(this.label12);
             this.pnlCchanPin.Controls.Add(this.label13);
@@ -105,7 +111,7 @@
             this.pnlCchanPin.Controls.Add(this.pnlOldPin);
             this.pnlCchanPin.Controls.Add(this.pnlNewPin);
             this.pnlCchanPin.Controls.Add(this.pnlConfPin);
-            this.pnlCchanPin.Controls.Add(this.lbChPin);
+            this.pnlCchanPin.Controls.Add(this.lberror);
             this.pnlCchanPin.Location = new System.Drawing.Point(395, 105);
             this.pnlCchanPin.Name = "pnlCchanPin";
             this.pnlCchanPin.Size = new System.Drawing.Size(294, 232);
@@ -207,6 +213,7 @@
             this.txtOldPin.PasswordChar = '*';
             this.txtOldPin.Size = new System.Drawing.Size(141, 29);
             this.txtOldPin.TabIndex = 1;
+            this.txtOldPin.TextChanged += new System.EventHandler(this.txtOldPin_TextChanged);
             // 
             // pnlNewPin
             // 
@@ -229,6 +236,7 @@
             this.txtNewPin.PasswordChar = '*';
             this.txtNewPin.Size = new System.Drawing.Size(141, 29);
             this.txtNewPin.TabIndex = 1;
+            this.txtNewPin.TextChanged += new System.EventHandler(this.txtNewPin_TextChanged);
             // 
             // pnlConfPin
             // 
@@ -251,16 +259,18 @@
             this.txtConfPin.PasswordChar = '*';
             this.txtConfPin.Size = new System.Drawing.Size(141, 29);
             this.txtConfPin.TabIndex = 1;
+            this.txtConfPin.TextChanged += new System.EventHandler(this.txtConfPin_TextChanged);
+            this.txtConfPin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtConfPin_KeyDown);
             // 
-            // lbChPin
+            // lberror
             // 
-            this.lbChPin.AutoSize = true;
-            this.lbChPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChPin.ForeColor = System.Drawing.Color.Red;
-            this.lbChPin.Location = new System.Drawing.Point(132, 36);
-            this.lbChPin.Name = "lbChPin";
-            this.lbChPin.Size = new System.Drawing.Size(0, 15);
-            this.lbChPin.TabIndex = 2;
+            this.lberror.AutoSize = true;
+            this.lberror.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lberror.ForeColor = System.Drawing.Color.Red;
+            this.lberror.Location = new System.Drawing.Point(140, 36);
+            this.lberror.Name = "lberror";
+            this.lberror.Size = new System.Drawing.Size(0, 20);
+            this.lberror.TabIndex = 2;
             // 
             // panel1
             // 
@@ -501,6 +511,36 @@
             this.btnService.UseVisualStyleBackColor = false;
             this.btnService.Click += new System.EventHandler(this.btnService_Click);
             // 
+            // lbstarOld
+            // 
+            this.lbstarOld.AutoSize = true;
+            this.lbstarOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbstarOld.ForeColor = System.Drawing.Color.Red;
+            this.lbstarOld.Location = new System.Drawing.Point(267, 66);
+            this.lbstarOld.Name = "lbstarOld";
+            this.lbstarOld.Size = new System.Drawing.Size(0, 25);
+            this.lbstarOld.TabIndex = 16;
+            // 
+            // lbstarNew
+            // 
+            this.lbstarNew.AutoSize = true;
+            this.lbstarNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbstarNew.ForeColor = System.Drawing.Color.Red;
+            this.lbstarNew.Location = new System.Drawing.Point(267, 103);
+            this.lbstarNew.Name = "lbstarNew";
+            this.lbstarNew.Size = new System.Drawing.Size(0, 25);
+            this.lbstarNew.TabIndex = 16;
+            // 
+            // lbstarConP
+            // 
+            this.lbstarConP.AutoSize = true;
+            this.lbstarConP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbstarConP.ForeColor = System.Drawing.Color.Red;
+            this.lbstarConP.Location = new System.Drawing.Point(267, 143);
+            this.lbstarConP.Name = "lbstarConP";
+            this.lbstarConP.Size = new System.Drawing.Size(0, 25);
+            this.lbstarConP.TabIndex = 16;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,7 +609,7 @@
         private System.Windows.Forms.TextBox txtNewPin;
         private System.Windows.Forms.Panel pnlConfPin;
         private System.Windows.Forms.TextBox txtConfPin;
-        private System.Windows.Forms.Label lbChPin;
+        private System.Windows.Forms.Label lberror;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbAcc;
         private System.Windows.Forms.Label label5;
@@ -578,5 +618,8 @@
         private System.Windows.Forms.Label lbFullName;
         private System.Windows.Forms.Label lbAccNr;
         private System.Windows.Forms.Label lbLogin;
+        private System.Windows.Forms.Label lbstarConP;
+        private System.Windows.Forms.Label lbstarNew;
+        private System.Windows.Forms.Label lbstarOld;
     }
 }
