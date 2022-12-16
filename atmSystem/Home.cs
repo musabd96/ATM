@@ -239,6 +239,12 @@ namespace atmSystem
                     
                     lbMaxWd.ForeColor = Color.Red;
                 }
+                else if ( cashWd <= 0)
+                {
+                    lbstarWd.Text = "*";
+                    MessageBox.Show("You cannot withdrow a negative number");
+
+                }
                 else
                 {
                     if (Convert.ToInt32(dataBase.balanceDb) < cashWd)
